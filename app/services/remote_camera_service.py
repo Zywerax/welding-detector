@@ -3,6 +3,7 @@ Remote Camera Service - Proxy do camera-server
 Streamuje dane BEZPOŚREDNIO z camera-server bez dekodowania
 """
 import httpx
+import re
 from app.core.config import settings
 
 
@@ -65,3 +66,67 @@ class RemoteCameraService:
                 "status": "error",
                 "message": str(e)
             }
+    
+    async def capture_frame_from_stream(self) -> bytes:
+        """
+        Wyciąga pojedynczą klatkę JPEG ze strumienia MJPEG.
+        
+        Działa w Dockerze! Nie wymaga opencv-python.
+        Parsuje strumień MJPEG i wyciąga pierwszą kompletną klatkę JPEG.
+        
+        Returns:
+            bytes: Surowe dane JPEG obrazu lub b'' w przypadku błędu
+        """
+        try:
+            async with httpx.AsyncClient(timeout=10.0) as client:
+                async with client.stream('GET', self.stream_endpoint) as response:
+                    if response.status_code != 200:
+                        print(f"❌ Camera server błąd: {response.status_code}")
+                        return b''
+                    
+                    print(f"✅ Pobieranie klatki ze strumienia: {self.stream_endpoint}")
+                    
+                    # Bufor na dane
+                    buffer = b''
+                    jpeg_data = b''
+                    in_jpeg = False
+                    
+                    # Czytaj strumień chunk po chunk
+                    async for chunk in response.aiter_bytes(chunk_size=8192):
+                        buffer += chunk
+                        
+                        # Szukaj początku JPEG (FF D8)
+                        if not in_jpeg:
+                            jpeg_start = buffer.find(b'\xff\xd8')
+                            if jpeg_start != -1:
+                                in_jpeg = True
+                                buffer = buffer[jpeg_start:]  # Odetnij wszystko przed JPEG
+                                jpeg_data = buffer
+                        else:
+                            jpeg_data += chunk
+                        
+                        # Szukaj końca JPEG (FF D9)
+                        if in_jpeg:
+                            jpeg_end = jpeg_data.find(b'\xff\xd9')
+                            if jpeg_end != -1:
+                                # Znaleziono kompletny JPEG!
+                                jpeg_frame = jpeg_data[:jpeg_end + 2]  # +2 dla FF D9
+                                print(f"✅ Pobrano klatkę: {len(jpeg_frame)} bytes")
+                                return jpeg_frame
+                        
+                        # Bezpieczeństwo: jeśli bufor przekroczy 5MB, coś jest nie tak
+                        if len(jpeg_data) > 5 * 1024 * 1024:
+                            print("❌ Przekroczono maksymalny rozmiar bufora")
+                            return b''
+                    
+                    # Jeśli dotarliśmy tu, stream się zakończył bez kompletnej klatki
+                    print("❌ Stream zakończył się przed znalezieniem klatki")
+                    return b''
+                    
+        except httpx.ConnectError as e:
+            print(f"❌ Nie można połączyć się z camera-server: {e}")
+            return b''
+        except Exception as e:
+            print(f"❌ Błąd pobierania klatki: {e}")
+            return b''
+
