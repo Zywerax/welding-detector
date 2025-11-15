@@ -2,10 +2,13 @@ from fastapi import APIRouter
 from fastapi.responses import StreamingResponse, Response
 from app.services.remote_camera_service import RemoteCameraService
 from app.services.image_processing_service import ImageProcessingService
+from app.services.video_recorder_service import VideoRecorder
+
 
 router = APIRouter()
 camera_service = RemoteCameraService()
 image_processing = ImageProcessingService()
+video_recorder = VideoRecorder()
 
 @router.get("/stream")
 async def stream():
@@ -118,3 +121,14 @@ async def detect_edges(threshold1: int = 50, threshold2: int = 150):
             status_code=500,
             media_type="text/plain"
         )
+
+    
+@router.post("/start_recording")
+def start_recording():
+    video_recorder.start()
+    return {"status": "recording started"}
+
+@router.post("/stop_recording")
+def stop_recording():
+    video_recorder.stop()
+    return {"status": "recording stopped"}
