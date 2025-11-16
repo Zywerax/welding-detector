@@ -48,16 +48,22 @@ def capture():
 def health():
     """
     Health check endpoint - sprawdza czy kamera jest dostępna.
+    Zwraca szczegółowe statystyki kamery.
     """
-    frame = camera.get_frame()
-    if frame:
-        return {
-            "status": "healthy",
-            "camera": "connected",
-            "frame_size": len(frame)
-        }
-    else:
-        return {
-            "status": "unhealthy",
-            "camera": "disconnected"
-        }
+    stats = camera.get_stats()
+    is_healthy = camera.is_healthy()
+    
+    return {
+        "status": "healthy" if is_healthy else "degraded",
+        "camera": "connected" if stats["is_opened"] else "disconnected",
+        "details": stats
+    }
+
+@app.get("/stats", tags=["Camera"])
+def get_camera_stats():
+    """
+    Endpoint zwracający szczegółowe statystyki kamery.
+    Użyteczny do monitorowania i debugowania.
+    """
+    return camera.get_stats()
+ 

@@ -21,5 +21,3 @@ services:
       # Upewnij się że host.docker.internal działa
       - "host.docker.internal:host-gateway"
     command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
-  camera_server:
-    command: uvicorn camera_server.stream:app --host 0.0.0.0 --port 8001
