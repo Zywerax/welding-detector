@@ -4,7 +4,7 @@
 
 from fastapi import FastAPI
 from fastapi.responses import StreamingResponse, Response
-from app.services.camera_USB_service import Camera_USB_Service
+from camera_server.camera_USB_service import Camera_USB_Service
 import time
 
 app = FastAPI(
@@ -44,21 +44,6 @@ def capture():
     else:
         return Response(content=b"", status_code=503, media_type="text/plain")
 
-@app.get("/health", tags=["Camera"])
-def health():
-    """
-    Health check endpoint - sprawdza czy kamera jest dostępna.
-    Zwraca szczegółowe statystyki kamery.
-    """
-    stats = camera.get_stats()
-    is_healthy = camera.is_healthy()
-    
-    return {
-        "status": "healthy" if is_healthy else "degraded",
-        "camera": "connected" if stats["is_opened"] else "disconnected",
-        "details": stats
-    }
-
 @app.get("/stats", tags=["Camera"])
 def get_camera_stats():
     """
@@ -66,4 +51,5 @@ def get_camera_stats():
     Użyteczny do monitorowania i debugowania.
     """
     return camera.get_stats()
+
  
