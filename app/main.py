@@ -10,7 +10,7 @@ from contextlib import asynccontextmanager
 import logging
 
 from app.config import settings
-from app.api.routes import camera_router, edge_router
+from app.api.routes import camera_router, edge_router, recording_router
 from app.services.remote_camera_service import get_camera_service
 from app.api.models import AppHealthResponse, HealthStatus
 
@@ -56,8 +56,9 @@ app = FastAPI(
 API do detekcji krawędzi stołu za pomocą kamery MJPEG.
 
 ### Funkcje:
-- 📹 **Stream MJPEG** - podgląd na żywo z kamery
-- 📸 **Capture** - pojedyncze zdjęcia
+- 📹 **Stream MJPEG** - podgląd na żywo z kamery (z timestampem)
+- 📸 **Capture** - pojedyncze zdjęcia z timestampem
+- 🔴 **Recording** - wskaźnik nagrywania (migająca czerwona kropka)
 - 🔍 **Edge Detection** - wykrywanie krawędzi stołu (wkrótce)
 
 ### Architektura:
@@ -96,6 +97,9 @@ async def root():
             "camera_stream": "/camera/stream",
             "camera_capture": "/camera/capture",
             "camera_health": "/camera/health",
+            "recording_start": "/recording/start",
+            "recording_stop": "/recording/stop",
+            "recording_status": "/recording/status",
             "edge_detect": "/edge/detect (coming soon)",
             "health": "/health"
         }
@@ -142,6 +146,7 @@ async def health_check():
 
 app.include_router(camera_router)
 app.include_router(edge_router)
+app.include_router(recording_router)
 
 
 # ============== MAIN ENTRY POINT ==============

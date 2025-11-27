@@ -2,16 +2,20 @@
 API Routes - Endpointy do obsługi kamery i detekcji krawędzi.
 """
 
-from fastapi import APIRouter, Depends, HTTPException
+from fastapi import APIRouter, Depends, HTTPException, Query
 from fastapi.responses import StreamingResponse, Response
 import logging
 
 from app.services.remote_camera_service import RemoteCameraService, get_camera_service
+from app.services.frame_overlay_service import FrameOverlayService, get_overlay_service
 from app.api.models import (
     CameraHealthResponse,
     CameraStatsResponse,
     ErrorResponse,
-    HealthStatus
+    HealthStatus,
+    RecordingStatusResponse,
+    RecordingStartResponse,
+    RecordingStopResponse
 )
 
 logger = logging.getLogger(__name__)
@@ -22,29 +26,38 @@ camera_router = APIRouter(prefix="/camera", tags=["Camera"])
 # Router dla endpointów detekcji krawędzi (na przyszłość)
 edge_router = APIRouter(prefix="/edge", tags=["Edge Detection"])
 
+# Router dla nagrywania
+recording_router = APIRouter(prefix="/recording", tags=["Recording"])
+
 
 # ============== CAMERA ENDPOINTS ==============
 
 @camera_router.get(
     "/stream",
     summary="Stream MJPEG z kamery",
-    description="Zwraca ciągły stream klatek w formacie MJPEG. Używaj do podglądu na żywo.",
+    description="Zwraca ciągły stream klatek w formacie MJPEG z timestampem i wskaźnikiem nagrywania.",
     responses={
         200: {"content": {"multipart/x-mixed-replace": {}}},
         503: {"model": ErrorResponse, "description": "Kamera niedostępna"}
     }
 )
 async def stream_camera(
-    camera_service: RemoteCameraService = Depends(get_camera_service)
+    overlay: bool = Query(True, description="Czy nakładać overlay (timestamp + REC indicator)"),
+    camera_service: RemoteCameraService = Depends(get_camera_service),
+    overlay_service: FrameOverlayService = Depends(get_overlay_service)
 ):
     """
     Endpoint streamujący wideo z kamery w formacie MJPEG.
     
     Format streamu: multipart/x-mixed-replace z boundary=frame
-    Każda klatka to osobny JPEG.
+    Każda klatka zawiera:
+    - Timestamp (lewy górny róg)
+    - Wskaźnik REC gdy nagrywanie aktywne (prawy górny róg, migająca czerwona kropka)
     """
     async def generate_mjpeg():
         async for frame in camera_service.stream_frames():
+            if overlay:
+                frame = overlay_service.apply_overlay_to_jpeg(frame)
             yield (
                 b'--frame\r\n'
                 b'Content-Type: image/jpeg\r\n\r\n' + frame + b'\r\n'
@@ -59,20 +72,22 @@ async def stream_camera(
 @camera_router.get(
     "/capture",
     summary="Pobierz pojedynczą klatkę",
-    description="Zwraca pojedynczy snapshot z kamery jako obraz JPEG.",
+    description="Zwraca pojedynczy snapshot z kamery jako obraz JPEG z timestampem.",
     responses={
         200: {"content": {"image/jpeg": {}}},
         503: {"model": ErrorResponse, "description": "Nie udało się pobrać klatki"}
     }
 )
 async def capture_frame(
-    camera_service: RemoteCameraService = Depends(get_camera_service)
+    overlay: bool = Query(True, description="Czy nakładać overlay (timestamp + REC indicator)"),
+    camera_service: RemoteCameraService = Depends(get_camera_service),
+    overlay_service: FrameOverlayService = Depends(get_overlay_service)
 ):
     """
     Endpoint zwracający pojedynczą klatkę z kamery.
     
     Przydatny do:
-    - Robienia zdjęć
+    - Robienia zdjęć z timestampem
     - Testowania połączenia
     - Analizy pojedynczych klatek
     """
@@ -83,6 +98,9 @@ async def capture_frame(
             status_code=503,
             detail="Nie udało się pobrać klatki z kamery. Sprawdź połączenie z serwerem kamery."
         )
+    
+    if overlay:
+        frame = overlay_service.apply_overlay_to_jpeg(frame)
     
     return Response(
         content=frame,
@@ -177,3 +195,78 @@ async def stream_with_edge():
         "message": "Edge detection stream - coming soon!",
         "status": "not_implemented"
     }
+
+
+# ============== RECORDING ENDPOINTS ==============
+
+@recording_router.get(
+    "/status",
+    response_model=RecordingStatusResponse,
+    summary="Status nagrywania",
+    description="Sprawdza czy nagrywanie jest aktywne i zwraca czas trwania."
+)
+async def recording_status(
+    overlay_service: FrameOverlayService = Depends(get_overlay_service)
+):
+    """
+    Zwraca aktualny status nagrywania.
+    """
+    return RecordingStatusResponse(
+        is_recording=overlay_service.is_recording,
+        duration_seconds=overlay_service.get_recording_duration()
+    )
+
+
+@recording_router.post(
+    "/start",
+    response_model=RecordingStartResponse,
+    summary="Rozpocznij nagrywanie",
+    description="Rozpoczyna nagrywanie - aktywuje czerwoną kropkę na streamie."
+)
+async def start_recording(
+    overlay_service: FrameOverlayService = Depends(get_overlay_service)
+):
+    """
+    Rozpoczyna nagrywanie.
+    Aktywuje wskaźnik REC (migająca czerwona kropka) na streamie.
+    """
+    if overlay_service.is_recording:
+        raise HTTPException(
+            status_code=400,
+            detail="Nagrywanie już jest aktywne"
+        )
+    
+    overlay_service.start_recording()
+    
+    return RecordingStartResponse(
+        status="started",
+        message="Nagrywanie rozpoczęte. Czerwona kropka będzie widoczna na streamie."
+    )
+
+
+@recording_router.post(
+    "/stop",
+    response_model=RecordingStopResponse,
+    summary="Zatrzymaj nagrywanie",
+    description="Zatrzymuje nagrywanie i zwraca czas trwania."
+)
+async def stop_recording(
+    overlay_service: FrameOverlayService = Depends(get_overlay_service)
+):
+    """
+    Zatrzymuje nagrywanie.
+    Wyłącza wskaźnik REC na streamie.
+    """
+    if not overlay_service.is_recording:
+        raise HTTPException(
+            status_code=400,
+            detail="Nagrywanie nie jest aktywne"
+        )
+    
+    duration = overlay_service.stop_recording()
+    
+    return RecordingStopResponse(
+        status="stopped",
+        duration_seconds=duration,
+        message=f"Nagrywanie zatrzymane. Czas trwania: {duration:.2f}s"
+    )

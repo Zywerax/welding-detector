@@ -81,3 +81,24 @@ class ErrorResponse(BaseModel):
     error: str
     detail: Optional[str] = None
     status_code: int
+
+
+# ============== RECORDING MODELS ==============
+
+class RecordingStatusResponse(BaseModel):
+    """Response ze statusem nagrywania."""
+    is_recording: bool = Field(..., description="Czy nagrywanie jest aktywne")
+    duration_seconds: Optional[float] = Field(None, description="Czas nagrywania w sekundach")
+
+
+class RecordingStartResponse(BaseModel):
+    """Response po rozpoczęciu nagrywania."""
+    status: str = Field(..., description="Status operacji")
+    message: str = Field(..., description="Komunikat")
+
+
+class RecordingStopResponse(BaseModel):
+    """Response po zatrzymaniu nagrywania."""
+    status: str = Field(..., description="Status operacji")
+    duration_seconds: Optional[float] = Field(None, description="Całkowity czas nagrywania")
+    message: str = Field(..., description="Komunikat")
