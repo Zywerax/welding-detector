@@ -6,9 +6,8 @@ import cv2 # type: ignore
 import threading
 import time
 import logging
-from datetime import datetime
 from typing import Optional
-from app.core import settings
+from app.config import settings
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)

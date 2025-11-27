@@ -6,8 +6,10 @@ class Settings(BaseSettings):
     """
     Klasa konfiguracyjna ładująca zmienne środowiskowe z pliku .env
     """
-    # Konfiguracja kamery
+    # Konfiguracja kamery USB
     CAMERA_INDEX: int = 0
+
+    # Konfiguracja kamery - docker
     CAMERA_SERVER_URL: str = "http://host.docker.internal:8001"
     
     # Konfiguracja aplikacji

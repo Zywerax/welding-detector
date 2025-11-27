@@ -1,3 +1,3 @@
-from app.api.routes import router
+from app.api.routes import camera_router, edge_router
 
-__all__ = ["router"]
+__all__ = ["camera_router", "edge_router"]
