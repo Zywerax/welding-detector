@@ -5,15 +5,29 @@ import numpy as np
 import threading
 import time
 import logging
+import os
 from pathlib import Path
 from datetime import datetime
 from typing import Optional
 
 logger = logging.getLogger(__name__)
 
-# Folder na nagrania - w ustawieniach Docker będzie montowany jako volume
-RECORDINGS_DIR = Path("/app/recordings")
-RECORDINGS_DIR.mkdir(exist_ok=True)
+# Folder na nagrania - Docker: /app/recordings, Lokalnie: ./recordings
+def _get_recordings_dir() -> Path:
+    """Zwraca folder nagrań (kompatybilny z Docker i Windows)."""
+    docker_path = Path("/app/recordings")
+    local_path = Path(__file__).parent.parent.parent / "recordings"
+    
+    # Użyj Docker path jeśli istnieje lub jesteśmy w Linux
+    if docker_path.exists() or os.name != 'nt':
+        docker_path.mkdir(exist_ok=True)
+        return docker_path
+    
+    # Lokalnie (Windows)
+    local_path.mkdir(exist_ok=True)
+    return local_path
+
+RECORDINGS_DIR = _get_recordings_dir()
 
 
 class VideoRecorderService:
