@@ -1,6 +1,6 @@
 """CameraService - DirectShow capture + MJPEG streaming + MP4 recording."""
 
-import cv2
+import cv2 #type: ignore
 import asyncio
 import threading
 import time
