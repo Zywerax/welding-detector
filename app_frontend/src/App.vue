@@ -69,7 +69,7 @@
       </div>
 
       <!-- Ustawienia -->
-      <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
+      <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4">
         <!-- Kontrast -->
         <div class="space-y-2">
           <label class="font-medium">🎚️ Kontrast</label>
@@ -164,55 +164,77 @@
         Brak nagrań
       </div>
       
-      <ul v-else>
-        <li 
-          v-for="rec in recordings" 
-          :key="rec.filename"
-          class="flex justify-between items-center py-2 border-b last:border-0"
-        >
-          <div>
-            <span class="font-medium">🎬 {{ rec.filename }}</span>
-            <span class="text-gray-500 text-sm ml-2">({{ rec.size_mb }} MB)</span>
-            <span 
-              v-if="overlayStatus[rec.filename]" 
-              class="text-xs ml-2 px-2 py-0.5 rounded"
-              :class="{
-                'bg-yellow-200 text-yellow-800': overlayStatus[rec.filename].status === 'processing',
-                'bg-green-200 text-green-800': overlayStatus[rec.filename].status === 'completed',
-                'bg-red-200 text-red-800': overlayStatus[rec.filename].status === 'failed'
-              }"
-            >
-              {{ overlayStatus[rec.filename].status === 'processing' 
-                ? `⏳ ${overlayStatus[rec.filename].progress || 0}%` 
-                : overlayStatus[rec.filename].status === 'completed' ? '✅ Overlay' : '❌ Błąd' }}
-            </span>
-          </div>
-          <div class="flex gap-1">
-            <button 
-              v-if="!rec.filename.includes('_overlay') && !overlayStatus[rec.filename]"
-              @click="applyOverlay(rec.filename)" 
-              class="text-purple-500 hover:text-purple-700 px-2 py-1 text-sm"
-              title="Nałóż timestamp"
-            >
-              🎨
-            </button>
-            <button 
-              @click="downloadRecording(rec.filename)" 
-              class="text-blue-500 hover:text-blue-700 px-2 py-1"
-              title="Pobierz"
-            >
-              ⬇️
-            </button>
-            <button 
-              @click="deleteRecording(rec.filename)" 
-              class="text-red-500 hover:text-red-700 px-2 py-1"
-              title="Usuń"
-            >
-              🗑️
-            </button>
-          </div>
-        </li>
-      </ul>
+      <table v-else class="w-full">
+        <thead>
+          <tr class="text-left border-b">
+            <th class="py-2">Plik</th>
+            <th class="py-2">Rozmiar</th>
+            <th class="py-2">Notatka</th>
+            <th class="py-2 text-right">Akcje</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr 
+            v-for="rec in recordings" 
+            :key="rec.filename"
+            class="border-b last:border-0 hover:bg-gray-50"
+          >
+            <td class="py-2">
+              <span class="font-medium">🎬 {{ rec.filename }}</span>
+              <span 
+                v-if="overlayStatus[rec.filename]" 
+                class="text-xs ml-2 px-2 py-0.5 rounded"
+                :class="{
+                  'bg-yellow-200 text-yellow-800': overlayStatus[rec.filename].status === 'processing',
+                  'bg-green-200 text-green-800': overlayStatus[rec.filename].status === 'completed',
+                  'bg-red-200 text-red-800': overlayStatus[rec.filename].status === 'failed'
+                }"
+              >
+                {{ overlayStatus[rec.filename].status === 'processing' 
+                  ? `⏳ ${overlayStatus[rec.filename].progress || 0}%` 
+                  : overlayStatus[rec.filename].status === 'completed' ? '✅ Overlay' : '❌ Błąd' }}
+              </span>
+            </td>
+            <td class="py-2 text-gray-500 text-sm">{{ rec.size_mb }} MB</td>
+            <td class="py-2">
+              <input 
+                type="text" 
+                :value="rec.note || ''"
+                @blur="saveNote(rec.filename, $event.target.value)"
+                @keyup.enter="$event.target.blur()"
+                placeholder="Dodaj notatkę..."
+                class="w-full px-2 py-1 text-sm border rounded hover:border-blue-400 focus:border-blue-500 focus:outline-none"
+              >
+            </td>
+            <td class="py-2 text-right">
+              <div class="flex gap-1 justify-end">
+                <button 
+                  v-if="!rec.filename.includes('_overlay') && !overlayStatus[rec.filename]"
+                  @click="applyOverlay(rec.filename)" 
+                  class="text-purple-500 hover:text-purple-700 px-2 py-1 text-sm"
+                  title="Nałóż timestamp"
+                >
+                  🎨
+                </button>
+                <button 
+                  @click="downloadRecording(rec.filename)" 
+                  class="text-blue-500 hover:text-blue-700 px-2 py-1"
+                  title="Pobierz"
+                >
+                  ⬇️
+                </button>
+                <button 
+                  @click="deleteRecording(rec.filename)" 
+                  class="text-red-500 hover:text-red-700 px-2 py-1"
+                  title="Usuń"
+                >
+                  🗑️
+                </button>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
 </template>
@@ -321,6 +343,19 @@ async function fetchRecordings() {
   } catch (e) {
     console.error('Error fetching recordings:', e)
     showToast('❌ Nie można pobrać listy nagrań', 'error')
+  }
+}
+
+async function saveNote(filename, note) {
+  try {
+    const response = await fetch(`${API}/recording/${filename}/note?note=${encodeURIComponent(note)}`, { method: 'PUT' })
+    if (!response.ok) throw new Error('Błąd zapisu')
+    
+    // Aktualizuj lokalnie
+    const rec = recordings.value.find(r => r.filename === filename)
+    if (rec) rec.note = note
+  } catch (e) {
+    showToast('❌ Nie udało się zapisać notatki', 'error')
   }
 }
 
