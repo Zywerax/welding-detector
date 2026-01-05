@@ -3,6 +3,7 @@
 from fastapi import APIRouter, Depends, HTTPException, Query
 from fastapi.responses import StreamingResponse, Response, FileResponse
 from datetime import datetime
+from typing import Optional
 
 from app.services.camera_service import CameraService, get_camera_service
 from app.services.frame_overlay_service import FrameOverlayService, get_overlay_service
@@ -125,9 +126,8 @@ async def set_recording_note(filename: str, note: str = Query("", max_length=500
         raise HTTPException(404, "File not found")
     return {"status": "saved", "filename": filename, "note": note}
 
-
 @recording_router.post("/{filename}/apply-overlay")
-async def apply_overlay(filename: str, start_time: str = None, camera: CameraService = Depends(get_camera_service), overlay: VideoOverlayService = Depends(get_video_overlay_service)):
+async def apply_overlay(filename: str, start_time: Optional[str] = None, camera: CameraService = Depends(get_camera_service), overlay: VideoOverlayService = Depends(get_video_overlay_service)):
     if not camera.get_recording_path(filename):
         raise HTTPException(404, "File not found")
     parsed_time = datetime.fromisoformat(start_time) if start_time else None

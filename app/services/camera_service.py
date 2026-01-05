@@ -78,7 +78,7 @@ class CameraService:
         self.cap.set(cv2.CAP_PROP_FRAME_HEIGHT, self.height)
         self.cap.set(cv2.CAP_PROP_FPS, self.requested_fps)
         # Try MJPEG format - faster than raw
-        self.cap.set(cv2.CAP_PROP_FOURCC, cv2.VideoWriter_fourcc(*'MJPG'))
+        self.cap.set(cv2.CAP_PROP_FOURCC, cv2.VideoWriter_fourcc(*'MJPG')) # type: ignore
         
         # Measure actual FPS (includes warmup)
         self._measure_actual_fps()
@@ -212,7 +212,7 @@ class CameraService:
         # Record at placeholder FPS - will be fixed in stop_recording
         self._video_writer = cv2.VideoWriter(
             str(self._temp_recording_path), 
-            cv2.VideoWriter_fourcc(*'mp4v'), 
+            cv2.VideoWriter_fourcc(*'mp4v'), #type: ignore
             30.0, 
             (w, h)
         )
@@ -250,7 +250,7 @@ class CameraService:
         
         size_mb = self._recording_path.stat().st_size / (1024 * 1024) if self._recording_path and self._recording_path.exists() else 0
         
-        result = {"filename": self._recording_path.name, "duration_seconds": round(duration, 1), "frames": frames, "fps": round(real_fps, 1), "size_mb": round(size_mb, 2)}
+        result = {"filename": self._recording_path.name if self._recording_path else "", "duration_seconds": round(duration, 1), "frames": frames, "fps": round(real_fps, 1), "size_mb": round(size_mb, 2)}
         logger.info(f"⏹️ Stopped: {result}")
         self._recording_path = self._recording_start = self._temp_recording_path = None
         self._frame_count = 0
@@ -260,7 +260,7 @@ class CameraService:
         """Re-encode temp video with correct FPS for proper playback speed."""
         try:
             cap = cv2.VideoCapture(str(self._temp_recording_path))
-            writer = cv2.VideoWriter(str(self._recording_path), cv2.VideoWriter_fourcc(*'mp4v'), target_fps, (self._record_width, self._record_height))
+            writer = cv2.VideoWriter(str(self._recording_path), cv2.VideoWriter_fourcc(*'mp4v'), target_fps, (self._record_width, self._record_height)) # type: ignore
             
             while True:
                 ret, frame = cap.read()
@@ -270,12 +270,13 @@ class CameraService:
             
             cap.release()
             writer.release()
-            self._temp_recording_path.unlink()  # Delete temp file
+            if self._temp_recording_path:
+                self._temp_recording_path.unlink()  # Delete temp file
             logger.info(f"✅ Re-encoded with {target_fps:.1f} fps")
         except Exception as e:
             logger.error(f"Re-encode failed: {e}")
             # Fallback - just rename temp to final
-            if self._temp_recording_path.exists():
+            if self._temp_recording_path and self._temp_recording_path.exists() and self._recording_path:
                 self._temp_recording_path.rename(self._recording_path)
     
     @property
@@ -345,7 +346,7 @@ class CameraService:
             "is_recording": self._recording
         }
     
-    def apply_settings(self, contrast: int = None, fps: int = None, jpeg_quality: int = None, resolution: str = None) -> dict:
+    def apply_settings(self, contrast: Optional[int] = None, fps: Optional[int] = None, jpeg_quality: Optional[int] = None, resolution: Optional[str] = None) -> dict:
         results = {}
         if contrast is not None and self.cap:
             self.cap.set(cv2.CAP_PROP_CONTRAST, contrast)
