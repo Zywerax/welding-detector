@@ -137,3 +137,53 @@ class TrimToMotionResponse(BaseModel):
     output_size_mb: Optional[float] = None
     reduction_percent: Optional[float] = None
     message: Optional[str] = None
+
+
+# ============== IMAGE ENHANCEMENT ==============
+
+class EnhancementPresetEnum(str, Enum):
+    """Dostępne presety przetwarzania obrazu."""
+    ORIGINAL = "original"           # Bez zmian
+    WELD_ENHANCE = "weld_enhance"   # Najlepszy dla spawów
+    HIGH_CONTRAST = "high_contrast" # Mocny kontrast
+    EDGE_OVERLAY = "edge_overlay"   # Krawędzie spawu kolorowo
+    HEATMAP = "heatmap"             # Pseudokolory
+    DENOISE = "denoise"             # Redukcja szumu
+
+
+class ImageEnhancementParams(BaseModel):
+    """Parametry przetwarzania obrazu - do ręcznego dostrajania."""
+    # CLAHE
+    clahe: Optional[float] = None        # clip_limit (1.0-4.0), None = wyłączone
+    clahe_grid: int = 8                  # Rozmiar siatki
+    
+    # Sharpening
+    sharpen: Optional[float] = None      # amount (0.5-3.0)
+    
+    # Unsharp mask
+    unsharp: Optional[float] = None      # amount
+    unsharp_radius: float = 1.0
+    
+    # Gamma
+    gamma: Optional[float] = None        # <1 ciemniej, >1 jaśniej
+    
+    # Contrast/Brightness
+    contrast: Optional[float] = None     # alpha (1.0-3.0)
+    brightness: int = 0                  # beta (-100 do 100)
+    
+    # Denoise
+    denoise: Optional[int] = None        # strength (5-15)
+    
+    # Edge overlay
+    edges: bool = False                  # Włącz nakładkę krawędzi
+    edge_color: str = "green"            # green, red, blue, yellow
+    
+    # Heatmap
+    heatmap: Optional[str] = None        # colormap: jet, hot, turbo, etc.
+
+
+class EnhancementPresetsResponse(BaseModel):
+    """Lista dostępnych presetów i opcji."""
+    presets: List[str]
+    colormaps: List[str]
+    edge_colors: List[str]

@@ -11,12 +11,17 @@ from app.services.frame_overlay_service import FrameOverlayService, get_overlay_
 from app.services.video_overlay_service import VideoOverlayService, get_video_overlay_service
 from app.services.frame_extractor_service import FrameExtractorService, get_frame_extractor_service
 from app.services.motion_detection_service import MotionDetectionService, get_motion_detection_service
+from app.services.image_enhancement_service import (
+    ImageEnhancementService, get_enhancement_service,
+    EnhancementPreset, EnhancementParams
+)
 from app.api.models import (
     CameraHealthResponse, HealthStatus,
     RecordingStatusResponse, RecordingStartResponse, RecordingStopResponse, RecordingListResponse,
     CameraSettingsRequest,
     VideoInfoResponse, ExtractFramesRequest, ExtractFramesResponse, FrameResponse,
-    MotionAnalysisResponse, MotionSegmentResponse, TrimToMotionRequest, TrimToMotionResponse
+    MotionAnalysisResponse, MotionSegmentResponse, TrimToMotionRequest, TrimToMotionResponse,
+    EnhancementPresetEnum, ImageEnhancementParams, EnhancementPresetsResponse
 )
 
 camera_router = APIRouter(prefix="/camera", tags=["Camera"])
@@ -212,20 +217,41 @@ async def extract_frames(
 async def get_single_frame(
     filename: str,
     frame_index: int,
+    # Preset (szybki wybór)
+    preset: Optional[EnhancementPresetEnum] = Query(None, description="Preset: original, weld_enhance, high_contrast, edge_overlay, heatmap, denoise"),
+    # Ręczne parametry (nadpisują preset)
+    clahe: Optional[float] = Query(None, description="CLAHE clip_limit (1.0-4.0)"),
+    sharpen: Optional[float] = Query(None, description="Sharpen amount (0.5-3.0)"),
+    gamma: Optional[float] = Query(None, description="Gamma (<1 darker, >1 brighter)"),
+    contrast: Optional[float] = Query(None, description="Contrast (1.0-3.0)"),
+    brightness: Optional[int] = Query(None, description="Brightness (-100 to 100)"),
+    denoise: Optional[int] = Query(None, description="Denoise strength (5-15)"),
+    edges: bool = Query(False, description="Overlay edge detection"),
+    heatmap: Optional[str] = Query(None, description="Heatmap colormap: jet, hot, turbo, viridis"),
     camera: CameraService = Depends(get_camera_service),
-    extractor: FrameExtractorService = Depends(get_frame_extractor_service)
+    enhancer: ImageEnhancementService = Depends(get_enhancement_service)
 ):
     """
-    Pobiera pojedynczą klatkę z nagrania jako JPEG.
+    Pobiera pojedynczą klatkę z nagrania jako JPEG z opcjonalnym przetwarzaniem.
     
-    - frame_index: numer klatki (0-based)
+    **Presety:**
+    - `original` - bez zmian
+    - `weld_enhance` - najlepszy dla spawów (CLAHE + sharpen + denoise)
+    - `high_contrast` - mocny kontrast
+    - `edge_overlay` - kolorowe krawędzie spawu
+    - `heatmap` - pseudokolory
+    - `denoise` - redukcja szumu
+    
+    **Przykłady:**
+    - `/frame/100?preset=weld_enhance` - użyj presetu
+    - `/frame/100?clahe=2.5&sharpen=1.5` - ręczne parametry
+    - `/frame/100?preset=weld_enhance&gamma=1.3` - preset + dostrojenie
     """
     path = camera.get_recording_path(filename)
     if not path:
         raise HTTPException(404, "File not found")
     
     try:
-        # Użyj generatora aby nie ładować wszystkich klatek
         import cv2
         cap = cv2.VideoCapture(str(path))
         if not cap.isOpened():
@@ -236,13 +262,50 @@ async def get_single_frame(
             cap.release()
             raise HTTPException(400, f"Frame index out of range (0-{total_frames-1})")
         
-        # Przeskocz do żądanej klatki
         cap.set(cv2.CAP_PROP_POS_FRAMES, frame_index)
         ret, frame = cap.read()
         cap.release()
         
         if not ret:
             raise HTTPException(500, "Cannot read frame")
+        
+        # Zastosuj przetwarzanie obrazu
+        has_custom_params = any([clahe, sharpen, gamma, contrast, brightness, denoise, edges, heatmap])
+        
+        if preset or has_custom_params:
+            # Zacznij od presetu lub pustych parametrów
+            if preset:
+                params = enhancer.get_preset_params(EnhancementPreset(preset.value))
+            else:
+                params = EnhancementParams()
+            
+            # Nadpisz ręcznymi parametrami
+            if clahe is not None:
+                params.clahe_enabled = True
+                params.clahe_clip_limit = clahe
+            if sharpen is not None:
+                params.sharpen_enabled = True
+                params.sharpen_amount = sharpen
+            if gamma is not None:
+                params.gamma_enabled = True
+                params.gamma_value = gamma
+            if contrast is not None:
+                params.contrast_enabled = True
+                params.contrast_alpha = contrast
+            if brightness is not None:
+                params.contrast_enabled = True
+                params.contrast_beta = brightness
+            if denoise is not None:
+                params.denoise_enabled = True
+                params.denoise_strength = denoise
+            if edges:
+                params.edge_overlay_enabled = True
+            if heatmap:
+                params.heatmap_enabled = True
+                colormaps = enhancer.list_colormaps()
+                params.heatmap_colormap = colormaps.get(heatmap, cv2.COLORMAP_JET)
+            
+            frame = enhancer.enhance(frame, params)
         
         # Encode to JPEG
         _, buffer = cv2.imencode('.jpg', frame, [cv2.IMWRITE_JPEG_QUALITY, 95])
@@ -252,6 +315,16 @@ async def get_single_frame(
         raise
     except Exception as e:
         raise HTTPException(500, f"Failed to get frame: {e}")
+
+
+@recording_router.get("/enhancement/presets", response_model=EnhancementPresetsResponse)
+async def list_enhancement_presets(enhancer: ImageEnhancementService = Depends(get_enhancement_service)):
+    """Zwraca listę dostępnych presetów i opcji przetwarzania obrazu."""
+    return EnhancementPresetsResponse(
+        presets=enhancer.list_presets(),
+        colormaps=list(enhancer.list_colormaps().keys()),
+        edge_colors=["green", "red", "blue", "yellow", "cyan", "magenta"]
+    )
 
 
 # ============== MOTION DETECTION ==============
