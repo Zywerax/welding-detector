@@ -1,0 +1,5789 @@
+{
+  "1_trimmed.mp4:0": {
+    "video_filename": "1_trimmed.mp4",
+    "frame_index": 0,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:36:40.290827",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "2_rec_20251203_133048_trimmed.mp4:104": {
+    "video_filename": "2_rec_20251203_133048_trimmed.mp4",
+    "frame_index": 104,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:42:37.678505",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "2_rec_20251203_133048_trimmed.mp4:105": {
+    "video_filename": "2_rec_20251203_133048_trimmed.mp4",
+    "frame_index": 105,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:42:43.723213",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "2_rec_20251203_133048_trimmed.mp4:106": {
+    "video_filename": "2_rec_20251203_133048_trimmed.mp4",
+    "frame_index": 106,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:42:45.894069",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "2_rec_20251203_133048_trimmed.mp4:107": {
+    "video_filename": "2_rec_20251203_133048_trimmed.mp4",
+    "frame_index": 107,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:42:48.057588",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "2_rec_20251203_133048_trimmed.mp4:108": {
+    "video_filename": "2_rec_20251203_133048_trimmed.mp4",
+    "frame_index": 108,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:42:50.234945",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "2_rec_20251203_133048_trimmed.mp4:109": {
+    "video_filename": "2_rec_20251203_133048_trimmed.mp4",
+    "frame_index": 109,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:42:52.322594",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "2_rec_20251203_133048_trimmed.mp4:110": {
+    "video_filename": "2_rec_20251203_133048_trimmed.mp4",
+    "frame_index": 110,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:42:54.583044",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "2_rec_20251203_133048_trimmed.mp4:111": {
+    "video_filename": "2_rec_20251203_133048_trimmed.mp4",
+    "frame_index": 111,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:42:56.825011",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "2_rec_20251203_133048_trimmed.mp4:112": {
+    "video_filename": "2_rec_20251203_133048_trimmed.mp4",
+    "frame_index": 112,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:42:59.048005",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "2_rec_20251203_133048_trimmed.mp4:113": {
+    "video_filename": "2_rec_20251203_133048_trimmed.mp4",
+    "frame_index": 113,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:43:01.264284",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "2_rec_20251203_133048_trimmed.mp4:114": {
+    "video_filename": "2_rec_20251203_133048_trimmed.mp4",
+    "frame_index": 114,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:43:03.360786",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "2_rec_20251203_133048_trimmed.mp4:115": {
+    "video_filename": "2_rec_20251203_133048_trimmed.mp4",
+    "frame_index": 115,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:43:05.686696",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "2_rec_20251203_133048_trimmed.mp4:116": {
+    "video_filename": "2_rec_20251203_133048_trimmed.mp4",
+    "frame_index": 116,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:43:08.014292",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "2_rec_20251203_133048_trimmed.mp4:117": {
+    "video_filename": "2_rec_20251203_133048_trimmed.mp4",
+    "frame_index": 117,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:43:10.383118",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "2_rec_20251203_133048_trimmed.mp4:118": {
+    "video_filename": "2_rec_20251203_133048_trimmed.mp4",
+    "frame_index": 118,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:43:12.655782",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "2_rec_20251203_133048_trimmed.mp4:119": {
+    "video_filename": "2_rec_20251203_133048_trimmed.mp4",
+    "frame_index": 119,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:43:14.993753",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "2_rec_20251203_133048_trimmed.mp4:120": {
+    "video_filename": "2_rec_20251203_133048_trimmed.mp4",
+    "frame_index": 120,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:43:17.615470",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "2_rec_20251203_133048_trimmed.mp4:121": {
+    "video_filename": "2_rec_20251203_133048_trimmed.mp4",
+    "frame_index": 121,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:43:20.055959",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "2_rec_20251203_133048_trimmed.mp4:122": {
+    "video_filename": "2_rec_20251203_133048_trimmed.mp4",
+    "frame_index": 122,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:43:22.334463",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "2_rec_20251203_133048_trimmed.mp4:123": {
+    "video_filename": "2_rec_20251203_133048_trimmed.mp4",
+    "frame_index": 123,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:43:24.624292",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "2_rec_20251203_133048_trimmed.mp4:124": {
+    "video_filename": "2_rec_20251203_133048_trimmed.mp4",
+    "frame_index": 124,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:43:27.069842",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "2_rec_20251203_133048_trimmed.mp4:125": {
+    "video_filename": "2_rec_20251203_133048_trimmed.mp4",
+    "frame_index": 125,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:43:37.995385",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "2_rec_20251203_133048_trimmed.mp4:126": {
+    "video_filename": "2_rec_20251203_133048_trimmed.mp4",
+    "frame_index": 126,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:43:40.143260",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "2_rec_20251203_133048_trimmed.mp4:127": {
+    "video_filename": "2_rec_20251203_133048_trimmed.mp4",
+    "frame_index": 127,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:43:42.446804",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "2_rec_20251203_133048_trimmed.mp4:128": {
+    "video_filename": "2_rec_20251203_133048_trimmed.mp4",
+    "frame_index": 128,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:43:44.562957",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "2_rec_20251203_133048_trimmed.mp4:129": {
+    "video_filename": "2_rec_20251203_133048_trimmed.mp4",
+    "frame_index": 129,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:43:46.782344",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "2_rec_20251203_133048_trimmed.mp4:130": {
+    "video_filename": "2_rec_20251203_133048_trimmed.mp4",
+    "frame_index": 130,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:43:49.024276",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "2_rec_20251203_133048_trimmed.mp4:131": {
+    "video_filename": "2_rec_20251203_133048_trimmed.mp4",
+    "frame_index": 131,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:43:51.292101",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "2_rec_20251203_133048_trimmed.mp4:132": {
+    "video_filename": "2_rec_20251203_133048_trimmed.mp4",
+    "frame_index": 132,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:43:53.472355",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "2_rec_20251203_133048_trimmed.mp4:133": {
+    "video_filename": "2_rec_20251203_133048_trimmed.mp4",
+    "frame_index": 133,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:43:55.628641",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "2_rec_20251203_133048_trimmed.mp4:134": {
+    "video_filename": "2_rec_20251203_133048_trimmed.mp4",
+    "frame_index": 134,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:43:57.517136",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "2_rec_20251203_133048_trimmed.mp4:135": {
+    "video_filename": "2_rec_20251203_133048_trimmed.mp4",
+    "frame_index": 135,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:43:59.609536",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "2_rec_20251203_133048_trimmed.mp4:136": {
+    "video_filename": "2_rec_20251203_133048_trimmed.mp4",
+    "frame_index": 136,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:44:01.656957",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "2_rec_20251203_133048_trimmed.mp4:137": {
+    "video_filename": "2_rec_20251203_133048_trimmed.mp4",
+    "frame_index": 137,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:44:03.857807",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "2_rec_20251203_133048_trimmed.mp4:138": {
+    "video_filename": "2_rec_20251203_133048_trimmed.mp4",
+    "frame_index": 138,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:44:06.590760",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "2_rec_20251203_133048_trimmed.mp4:139": {
+    "video_filename": "2_rec_20251203_133048_trimmed.mp4",
+    "frame_index": 139,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:44:08.871182",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "2_rec_20251203_133048_trimmed.mp4:140": {
+    "video_filename": "2_rec_20251203_133048_trimmed.mp4",
+    "frame_index": 140,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:44:11.147839",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "2_rec_20251203_133048_trimmed.mp4:141": {
+    "video_filename": "2_rec_20251203_133048_trimmed.mp4",
+    "frame_index": 141,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:44:14.014830",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "2_rec_20251203_133048_trimmed.mp4:142": {
+    "video_filename": "2_rec_20251203_133048_trimmed.mp4",
+    "frame_index": 142,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:44:16.587723",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "2_rec_20251203_133048_trimmed.mp4:143": {
+    "video_filename": "2_rec_20251203_133048_trimmed.mp4",
+    "frame_index": 143,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:44:18.820212",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "2_rec_20251203_133048_trimmed.mp4:144": {
+    "video_filename": "2_rec_20251203_133048_trimmed.mp4",
+    "frame_index": 144,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:44:20.981250",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "2_rec_20251203_133048_trimmed.mp4:145": {
+    "video_filename": "2_rec_20251203_133048_trimmed.mp4",
+    "frame_index": 145,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:44:23.146512",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "2_rec_20251203_133048_trimmed.mp4:146": {
+    "video_filename": "2_rec_20251203_133048_trimmed.mp4",
+    "frame_index": 146,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:44:25.281491",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "2_rec_20251203_133048_trimmed.mp4:147": {
+    "video_filename": "2_rec_20251203_133048_trimmed.mp4",
+    "frame_index": 147,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:44:27.474540",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "2_rec_20251203_133048_trimmed.mp4:148": {
+    "video_filename": "2_rec_20251203_133048_trimmed.mp4",
+    "frame_index": 148,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:44:29.552011",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "2_rec_20251203_133048_trimmed.mp4:149": {
+    "video_filename": "2_rec_20251203_133048_trimmed.mp4",
+    "frame_index": 149,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:44:32.008212",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "2_rec_20251203_133048_trimmed.mp4:150": {
+    "video_filename": "2_rec_20251203_133048_trimmed.mp4",
+    "frame_index": 150,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:44:34.159681",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "2_rec_20251203_133048_trimmed.mp4:151": {
+    "video_filename": "2_rec_20251203_133048_trimmed.mp4",
+    "frame_index": 151,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:44:36.929907",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "2_rec_20251203_133048_trimmed.mp4:152": {
+    "video_filename": "2_rec_20251203_133048_trimmed.mp4",
+    "frame_index": 152,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:44:38.989473",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "2_rec_20251203_133048_trimmed.mp4:153": {
+    "video_filename": "2_rec_20251203_133048_trimmed.mp4",
+    "frame_index": 153,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:44:41.230178",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "2_rec_20251203_133048_trimmed.mp4:154": {
+    "video_filename": "2_rec_20251203_133048_trimmed.mp4",
+    "frame_index": 154,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:44:43.532284",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "2_rec_20251203_133048_trimmed.mp4:155": {
+    "video_filename": "2_rec_20251203_133048_trimmed.mp4",
+    "frame_index": 155,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:44:46.240602",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "2_rec_20251203_133048_trimmed.mp4:156": {
+    "video_filename": "2_rec_20251203_133048_trimmed.mp4",
+    "frame_index": 156,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:44:48.555187",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "2_rec_20251203_133048_trimmed.mp4:157": {
+    "video_filename": "2_rec_20251203_133048_trimmed.mp4",
+    "frame_index": 157,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:44:50.828615",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "2_rec_20251203_133048_trimmed.mp4:158": {
+    "video_filename": "2_rec_20251203_133048_trimmed.mp4",
+    "frame_index": 158,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:44:53.338139",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "2_rec_20251203_133048_trimmed.mp4:159": {
+    "video_filename": "2_rec_20251203_133048_trimmed.mp4",
+    "frame_index": 159,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:44:55.936171",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "2_rec_20251203_133048_trimmed.mp4:160": {
+    "video_filename": "2_rec_20251203_133048_trimmed.mp4",
+    "frame_index": 160,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:44:58.117534",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "2_rec_20251203_133048_trimmed.mp4:161": {
+    "video_filename": "2_rec_20251203_133048_trimmed.mp4",
+    "frame_index": 161,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:45:01.095124",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "2_rec_20251203_133048_trimmed.mp4:162": {
+    "video_filename": "2_rec_20251203_133048_trimmed.mp4",
+    "frame_index": 162,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:45:03.577859",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "2_rec_20251203_133048_trimmed.mp4:163": {
+    "video_filename": "2_rec_20251203_133048_trimmed.mp4",
+    "frame_index": 163,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:45:05.778524",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "2_rec_20251203_133048_trimmed.mp4:164": {
+    "video_filename": "2_rec_20251203_133048_trimmed.mp4",
+    "frame_index": 164,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:45:07.900657",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "2_rec_20251203_133048_trimmed.mp4:165": {
+    "video_filename": "2_rec_20251203_133048_trimmed.mp4",
+    "frame_index": 165,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:45:09.921433",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "2_rec_20251203_133048_trimmed.mp4:166": {
+    "video_filename": "2_rec_20251203_133048_trimmed.mp4",
+    "frame_index": 166,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:45:11.913444",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "2_rec_20251203_133048_trimmed.mp4:167": {
+    "video_filename": "2_rec_20251203_133048_trimmed.mp4",
+    "frame_index": 167,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:45:13.683599",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "2_rec_20251203_133048_trimmed.mp4:168": {
+    "video_filename": "2_rec_20251203_133048_trimmed.mp4",
+    "frame_index": 168,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:45:15.636318",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "2_rec_20251203_133048_trimmed.mp4:169": {
+    "video_filename": "2_rec_20251203_133048_trimmed.mp4",
+    "frame_index": 169,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:45:18.181234",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "2_rec_20251203_133048_trimmed.mp4:170": {
+    "video_filename": "2_rec_20251203_133048_trimmed.mp4",
+    "frame_index": 170,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:45:20.481290",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "2_rec_20251203_133048_trimmed.mp4:171": {
+    "video_filename": "2_rec_20251203_133048_trimmed.mp4",
+    "frame_index": 171,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:45:22.987571",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "2_rec_20251203_133048_trimmed.mp4:172": {
+    "video_filename": "2_rec_20251203_133048_trimmed.mp4",
+    "frame_index": 172,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:45:26.384171",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "2_rec_20251203_133048_trimmed.mp4:173": {
+    "video_filename": "2_rec_20251203_133048_trimmed.mp4",
+    "frame_index": 173,
+    "label": "skip",
+    "timestamp": "2026-01-07T14:45:28.895174",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "4_rec_20251203_133722_trimmed.mp4:110": {
+    "video_filename": "4_rec_20251203_133722_trimmed.mp4",
+    "frame_index": 110,
+    "label": "nok",
+    "timestamp": "2026-01-07T14:46:16.976697",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "4_rec_20251203_133722_trimmed.mp4:111": {
+    "video_filename": "4_rec_20251203_133722_trimmed.mp4",
+    "frame_index": 111,
+    "label": "nok",
+    "timestamp": "2026-01-07T14:46:22.564759",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "4_rec_20251203_133722_trimmed.mp4:112": {
+    "video_filename": "4_rec_20251203_133722_trimmed.mp4",
+    "frame_index": 112,
+    "label": "nok",
+    "timestamp": "2026-01-07T14:46:24.605964",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "4_rec_20251203_133722_trimmed.mp4:113": {
+    "video_filename": "4_rec_20251203_133722_trimmed.mp4",
+    "frame_index": 113,
+    "label": "nok",
+    "timestamp": "2026-01-07T14:46:26.647838",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "4_rec_20251203_133722_trimmed.mp4:114": {
+    "video_filename": "4_rec_20251203_133722_trimmed.mp4",
+    "frame_index": 114,
+    "label": "nok",
+    "timestamp": "2026-01-07T14:46:28.521299",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "4_rec_20251203_133722_trimmed.mp4:115": {
+    "video_filename": "4_rec_20251203_133722_trimmed.mp4",
+    "frame_index": 115,
+    "label": "nok",
+    "timestamp": "2026-01-07T14:46:30.438621",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "4_rec_20251203_133722_trimmed.mp4:116": {
+    "video_filename": "4_rec_20251203_133722_trimmed.mp4",
+    "frame_index": 116,
+    "label": "nok",
+    "timestamp": "2026-01-07T14:46:32.386784",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "4_rec_20251203_133722_trimmed.mp4:117": {
+    "video_filename": "4_rec_20251203_133722_trimmed.mp4",
+    "frame_index": 117,
+    "label": "nok",
+    "timestamp": "2026-01-07T14:46:34.420631",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "4_rec_20251203_133722_trimmed.mp4:118": {
+    "video_filename": "4_rec_20251203_133722_trimmed.mp4",
+    "frame_index": 118,
+    "label": "nok",
+    "timestamp": "2026-01-07T14:46:36.392502",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "4_rec_20251203_133722_trimmed.mp4:119": {
+    "video_filename": "4_rec_20251203_133722_trimmed.mp4",
+    "frame_index": 119,
+    "label": "nok",
+    "timestamp": "2026-01-07T14:46:38.269357",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "4_rec_20251203_133722_trimmed.mp4:120": {
+    "video_filename": "4_rec_20251203_133722_trimmed.mp4",
+    "frame_index": 120,
+    "label": "nok",
+    "timestamp": "2026-01-07T14:46:39.984815",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "4_rec_20251203_133722_trimmed.mp4:121": {
+    "video_filename": "4_rec_20251203_133722_trimmed.mp4",
+    "frame_index": 121,
+    "label": "nok",
+    "timestamp": "2026-01-07T14:46:42.068105",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "4_rec_20251203_133722_trimmed.mp4:122": {
+    "video_filename": "4_rec_20251203_133722_trimmed.mp4",
+    "frame_index": 122,
+    "label": "nok",
+    "timestamp": "2026-01-07T14:46:43.928277",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "4_rec_20251203_133722_trimmed.mp4:123": {
+    "video_filename": "4_rec_20251203_133722_trimmed.mp4",
+    "frame_index": 123,
+    "label": "nok",
+    "timestamp": "2026-01-07T14:46:45.923170",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "4_rec_20251203_133722_trimmed.mp4:124": {
+    "video_filename": "4_rec_20251203_133722_trimmed.mp4",
+    "frame_index": 124,
+    "label": "nok",
+    "timestamp": "2026-01-07T14:46:47.886943",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "4_rec_20251203_133722_trimmed.mp4:125": {
+    "video_filename": "4_rec_20251203_133722_trimmed.mp4",
+    "frame_index": 125,
+    "label": "nok",
+    "timestamp": "2026-01-07T14:46:49.994150",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "4_rec_20251203_133722_trimmed.mp4:126": {
+    "video_filename": "4_rec_20251203_133722_trimmed.mp4",
+    "frame_index": 126,
+    "label": "nok",
+    "timestamp": "2026-01-07T14:46:51.972422",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "4_rec_20251203_133722_trimmed.mp4:127": {
+    "video_filename": "4_rec_20251203_133722_trimmed.mp4",
+    "frame_index": 127,
+    "label": "nok",
+    "timestamp": "2026-01-07T14:46:54.077647",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "4_rec_20251203_133722_trimmed.mp4:128": {
+    "video_filename": "4_rec_20251203_133722_trimmed.mp4",
+    "frame_index": 128,
+    "label": "nok",
+    "timestamp": "2026-01-07T14:46:56.126075",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "4_rec_20251203_133722_trimmed.mp4:129": {
+    "video_filename": "4_rec_20251203_133722_trimmed.mp4",
+    "frame_index": 129,
+    "label": "nok",
+    "timestamp": "2026-01-07T14:46:58.157268",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "4_rec_20251203_133722_trimmed.mp4:130": {
+    "video_filename": "4_rec_20251203_133722_trimmed.mp4",
+    "frame_index": 130,
+    "label": "nok",
+    "timestamp": "2026-01-07T14:47:00.220770",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "4_rec_20251203_133722_trimmed.mp4:131": {
+    "video_filename": "4_rec_20251203_133722_trimmed.mp4",
+    "frame_index": 131,
+    "label": "nok",
+    "timestamp": "2026-01-07T14:47:02.321680",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "4_rec_20251203_133722_trimmed.mp4:132": {
+    "video_filename": "4_rec_20251203_133722_trimmed.mp4",
+    "frame_index": 132,
+    "label": "nok",
+    "timestamp": "2026-01-07T14:47:04.201975",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "4_rec_20251203_133722_trimmed.mp4:133": {
+    "video_filename": "4_rec_20251203_133722_trimmed.mp4",
+    "frame_index": 133,
+    "label": "nok",
+    "timestamp": "2026-01-07T14:47:06.210859",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "4_rec_20251203_133722_trimmed.mp4:134": {
+    "video_filename": "4_rec_20251203_133722_trimmed.mp4",
+    "frame_index": 134,
+    "label": "nok",
+    "timestamp": "2026-01-07T14:47:08.296773",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "4_rec_20251203_133722_trimmed.mp4:135": {
+    "video_filename": "4_rec_20251203_133722_trimmed.mp4",
+    "frame_index": 135,
+    "label": "nok",
+    "timestamp": "2026-01-07T14:47:10.459770",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "4_rec_20251203_133722_trimmed.mp4:136": {
+    "video_filename": "4_rec_20251203_133722_trimmed.mp4",
+    "frame_index": 136,
+    "label": "nok",
+    "timestamp": "2026-01-07T14:47:12.640226",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "4_rec_20251203_133722_trimmed.mp4:137": {
+    "video_filename": "4_rec_20251203_133722_trimmed.mp4",
+    "frame_index": 137,
+    "label": "nok",
+    "timestamp": "2026-01-07T14:47:14.530071",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "4_rec_20251203_133722_trimmed.mp4:138": {
+    "video_filename": "4_rec_20251203_133722_trimmed.mp4",
+    "frame_index": 138,
+    "label": "nok",
+    "timestamp": "2026-01-07T14:47:16.624779",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "4_rec_20251203_133722_trimmed.mp4:139": {
+    "video_filename": "4_rec_20251203_133722_trimmed.mp4",
+    "frame_index": 139,
+    "label": "nok",
+    "timestamp": "2026-01-07T14:47:18.614401",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "4_rec_20251203_133722_trimmed.mp4:140": {
+    "video_filename": "4_rec_20251203_133722_trimmed.mp4",
+    "frame_index": 140,
+    "label": "nok",
+    "timestamp": "2026-01-07T14:47:20.699992",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "4_rec_20251203_133722_trimmed.mp4:141": {
+    "video_filename": "4_rec_20251203_133722_trimmed.mp4",
+    "frame_index": 141,
+    "label": "nok",
+    "timestamp": "2026-01-07T14:47:22.628049",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "4_rec_20251203_133722_trimmed.mp4:142": {
+    "video_filename": "4_rec_20251203_133722_trimmed.mp4",
+    "frame_index": 142,
+    "label": "nok",
+    "timestamp": "2026-01-07T14:47:24.589777",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "4_rec_20251203_133722_trimmed.mp4:143": {
+    "video_filename": "4_rec_20251203_133722_trimmed.mp4",
+    "frame_index": 143,
+    "label": "nok",
+    "timestamp": "2026-01-07T14:47:26.532940",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "4_rec_20251203_133722_trimmed.mp4:144": {
+    "video_filename": "4_rec_20251203_133722_trimmed.mp4",
+    "frame_index": 144,
+    "label": "nok",
+    "timestamp": "2026-01-07T14:47:28.557753",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "4_rec_20251203_133722_trimmed.mp4:145": {
+    "video_filename": "4_rec_20251203_133722_trimmed.mp4",
+    "frame_index": 145,
+    "label": "nok",
+    "timestamp": "2026-01-07T14:47:30.463520",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "4_rec_20251203_133722_trimmed.mp4:146": {
+    "video_filename": "4_rec_20251203_133722_trimmed.mp4",
+    "frame_index": 146,
+    "label": "nok",
+    "timestamp": "2026-01-07T14:47:32.413606",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "4_rec_20251203_133722_trimmed.mp4:147": {
+    "video_filename": "4_rec_20251203_133722_trimmed.mp4",
+    "frame_index": 147,
+    "label": "nok",
+    "timestamp": "2026-01-07T14:47:34.508883",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "4_rec_20251203_133722_trimmed.mp4:148": {
+    "video_filename": "4_rec_20251203_133722_trimmed.mp4",
+    "frame_index": 148,
+    "label": "nok",
+    "timestamp": "2026-01-07T14:47:46.466400",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "4_rec_20251203_133722_trimmed.mp4:149": {
+    "video_filename": "4_rec_20251203_133722_trimmed.mp4",
+    "frame_index": 149,
+    "label": "nok",
+    "timestamp": "2026-01-07T14:47:48.753219",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "4_rec_20251203_133722_trimmed.mp4:150": {
+    "video_filename": "4_rec_20251203_133722_trimmed.mp4",
+    "frame_index": 150,
+    "label": "nok",
+    "timestamp": "2026-01-07T14:47:50.930649",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "4_rec_20251203_133722_trimmed.mp4:151": {
+    "video_filename": "4_rec_20251203_133722_trimmed.mp4",
+    "frame_index": 151,
+    "label": "nok",
+    "timestamp": "2026-01-07T14:47:53.382460",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "4_rec_20251203_133722_trimmed.mp4:152": {
+    "video_filename": "4_rec_20251203_133722_trimmed.mp4",
+    "frame_index": 152,
+    "label": "nok",
+    "timestamp": "2026-01-07T14:47:55.440253",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "4_rec_20251203_133722_trimmed.mp4:153": {
+    "video_filename": "4_rec_20251203_133722_trimmed.mp4",
+    "frame_index": 153,
+    "label": "nok",
+    "timestamp": "2026-01-07T14:47:57.409017",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "4_rec_20251203_133722_trimmed.mp4:154": {
+    "video_filename": "4_rec_20251203_133722_trimmed.mp4",
+    "frame_index": 154,
+    "label": "nok",
+    "timestamp": "2026-01-07T14:47:59.301002",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "4_rec_20251203_133722_trimmed.mp4:155": {
+    "video_filename": "4_rec_20251203_133722_trimmed.mp4",
+    "frame_index": 155,
+    "label": "nok",
+    "timestamp": "2026-01-07T14:48:01.160382",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "4_rec_20251203_133722_trimmed.mp4:156": {
+    "video_filename": "4_rec_20251203_133722_trimmed.mp4",
+    "frame_index": 156,
+    "label": "nok",
+    "timestamp": "2026-01-07T14:48:02.841090",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "4_rec_20251203_133722_trimmed.mp4:157": {
+    "video_filename": "4_rec_20251203_133722_trimmed.mp4",
+    "frame_index": 157,
+    "label": "nok",
+    "timestamp": "2026-01-07T14:48:04.973971",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "4_rec_20251203_133722_trimmed.mp4:158": {
+    "video_filename": "4_rec_20251203_133722_trimmed.mp4",
+    "frame_index": 158,
+    "label": "nok",
+    "timestamp": "2026-01-07T14:48:06.406820",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "4_rec_20251203_133722_trimmed.mp4:159": {
+    "video_filename": "4_rec_20251203_133722_trimmed.mp4",
+    "frame_index": 159,
+    "label": "nok",
+    "timestamp": "2026-01-07T14:48:08.938963",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "4_rec_20251203_133722_trimmed.mp4:160": {
+    "video_filename": "4_rec_20251203_133722_trimmed.mp4",
+    "frame_index": 160,
+    "label": "nok",
+    "timestamp": "2026-01-07T14:48:11.160080",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "4_rec_20251203_133722_trimmed.mp4:161": {
+    "video_filename": "4_rec_20251203_133722_trimmed.mp4",
+    "frame_index": 161,
+    "label": "nok",
+    "timestamp": "2026-01-07T14:48:13.117256",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "4_rec_20251203_133722_trimmed.mp4:162": {
+    "video_filename": "4_rec_20251203_133722_trimmed.mp4",
+    "frame_index": 162,
+    "label": "nok",
+    "timestamp": "2026-01-07T14:48:15.674065",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "4_rec_20251203_133722_trimmed.mp4:163": {
+    "video_filename": "4_rec_20251203_133722_trimmed.mp4",
+    "frame_index": 163,
+    "label": "nok",
+    "timestamp": "2026-01-07T14:48:18.135453",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "4_rec_20251203_133722_trimmed.mp4:164": {
+    "video_filename": "4_rec_20251203_133722_trimmed.mp4",
+    "frame_index": 164,
+    "label": "nok",
+    "timestamp": "2026-01-07T14:48:20.206441",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "4_rec_20251203_133722_trimmed.mp4:165": {
+    "video_filename": "4_rec_20251203_133722_trimmed.mp4",
+    "frame_index": 165,
+    "label": "nok",
+    "timestamp": "2026-01-07T14:48:22.288544",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "4_rec_20251203_133722_trimmed.mp4:166": {
+    "video_filename": "4_rec_20251203_133722_trimmed.mp4",
+    "frame_index": 166,
+    "label": "nok",
+    "timestamp": "2026-01-07T14:48:24.353234",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "4_rec_20251203_133722_trimmed.mp4:167": {
+    "video_filename": "4_rec_20251203_133722_trimmed.mp4",
+    "frame_index": 167,
+    "label": "nok",
+    "timestamp": "2026-01-07T14:48:26.322542",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "4_rec_20251203_133722_trimmed.mp4:168": {
+    "video_filename": "4_rec_20251203_133722_trimmed.mp4",
+    "frame_index": 168,
+    "label": "nok",
+    "timestamp": "2026-01-07T14:48:28.283375",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "4_rec_20251203_133722_trimmed.mp4:169": {
+    "video_filename": "4_rec_20251203_133722_trimmed.mp4",
+    "frame_index": 169,
+    "label": "nok",
+    "timestamp": "2026-01-07T14:48:29.981319",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "4_rec_20251203_133722_trimmed.mp4:170": {
+    "video_filename": "4_rec_20251203_133722_trimmed.mp4",
+    "frame_index": 170,
+    "label": "nok",
+    "timestamp": "2026-01-07T14:48:31.403186",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "4_rec_20251203_133722_trimmed.mp4:171": {
+    "video_filename": "4_rec_20251203_133722_trimmed.mp4",
+    "frame_index": 171,
+    "label": "nok",
+    "timestamp": "2026-01-07T14:48:33.256798",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "4_rec_20251203_133722_trimmed.mp4:172": {
+    "video_filename": "4_rec_20251203_133722_trimmed.mp4",
+    "frame_index": 172,
+    "label": "nok",
+    "timestamp": "2026-01-07T14:48:34.976318",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "4_rec_20251203_133722_trimmed.mp4:173": {
+    "video_filename": "4_rec_20251203_133722_trimmed.mp4",
+    "frame_index": 173,
+    "label": "nok",
+    "timestamp": "2026-01-07T14:48:36.989958",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "4_rec_20251203_133722_trimmed.mp4:174": {
+    "video_filename": "4_rec_20251203_133722_trimmed.mp4",
+    "frame_index": 174,
+    "label": "nok",
+    "timestamp": "2026-01-07T14:48:39.245987",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "4_rec_20251203_133722_trimmed.mp4:175": {
+    "video_filename": "4_rec_20251203_133722_trimmed.mp4",
+    "frame_index": 175,
+    "label": "nok",
+    "timestamp": "2026-01-07T14:48:41.479450",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "4_rec_20251203_133722_trimmed.mp4:176": {
+    "video_filename": "4_rec_20251203_133722_trimmed.mp4",
+    "frame_index": 176,
+    "label": "nok",
+    "timestamp": "2026-01-07T14:48:45.248733",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "3_rec_20251203_133512_trimmed.mp4:110": {
+    "video_filename": "3_rec_20251203_133512_trimmed.mp4",
+    "frame_index": 110,
+    "label": "skip",
+    "timestamp": "2026-01-07T14:49:05.723019",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "3_rec_20251203_133512_trimmed.mp4:111": {
+    "video_filename": "3_rec_20251203_133512_trimmed.mp4",
+    "frame_index": 111,
+    "label": "skip",
+    "timestamp": "2026-01-07T14:49:07.818254",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "3_rec_20251203_133512_trimmed.mp4:112": {
+    "video_filename": "3_rec_20251203_133512_trimmed.mp4",
+    "frame_index": 112,
+    "label": "skip",
+    "timestamp": "2026-01-07T14:49:10.100849",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "3_rec_20251203_133512_trimmed.mp4:113": {
+    "video_filename": "3_rec_20251203_133512_trimmed.mp4",
+    "frame_index": 113,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:49:15.081917",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "3_rec_20251203_133512_trimmed.mp4:114": {
+    "video_filename": "3_rec_20251203_133512_trimmed.mp4",
+    "frame_index": 114,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:49:17.079621",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "3_rec_20251203_133512_trimmed.mp4:115": {
+    "video_filename": "3_rec_20251203_133512_trimmed.mp4",
+    "frame_index": 115,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:49:19.111358",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "3_rec_20251203_133512_trimmed.mp4:116": {
+    "video_filename": "3_rec_20251203_133512_trimmed.mp4",
+    "frame_index": 116,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:49:20.995773",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "3_rec_20251203_133512_trimmed.mp4:117": {
+    "video_filename": "3_rec_20251203_133512_trimmed.mp4",
+    "frame_index": 117,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:49:23.021413",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "3_rec_20251203_133512_trimmed.mp4:118": {
+    "video_filename": "3_rec_20251203_133512_trimmed.mp4",
+    "frame_index": 118,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:49:24.986404",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "3_rec_20251203_133512_trimmed.mp4:119": {
+    "video_filename": "3_rec_20251203_133512_trimmed.mp4",
+    "frame_index": 119,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:49:27.080577",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "3_rec_20251203_133512_trimmed.mp4:120": {
+    "video_filename": "3_rec_20251203_133512_trimmed.mp4",
+    "frame_index": 120,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:49:28.992015",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "3_rec_20251203_133512_trimmed.mp4:121": {
+    "video_filename": "3_rec_20251203_133512_trimmed.mp4",
+    "frame_index": 121,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:49:30.418078",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "3_rec_20251203_133512_trimmed.mp4:122": {
+    "video_filename": "3_rec_20251203_133512_trimmed.mp4",
+    "frame_index": 122,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:49:32.269373",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "3_rec_20251203_133512_trimmed.mp4:123": {
+    "video_filename": "3_rec_20251203_133512_trimmed.mp4",
+    "frame_index": 123,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:49:34.210761",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "3_rec_20251203_133512_trimmed.mp4:124": {
+    "video_filename": "3_rec_20251203_133512_trimmed.mp4",
+    "frame_index": 124,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:49:36.079219",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "3_rec_20251203_133512_trimmed.mp4:125": {
+    "video_filename": "3_rec_20251203_133512_trimmed.mp4",
+    "frame_index": 125,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:49:37.955194",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "3_rec_20251203_133512_trimmed.mp4:126": {
+    "video_filename": "3_rec_20251203_133512_trimmed.mp4",
+    "frame_index": 126,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:49:39.411827",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "3_rec_20251203_133512_trimmed.mp4:127": {
+    "video_filename": "3_rec_20251203_133512_trimmed.mp4",
+    "frame_index": 127,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:49:41.317970",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "3_rec_20251203_133512_trimmed.mp4:128": {
+    "video_filename": "3_rec_20251203_133512_trimmed.mp4",
+    "frame_index": 128,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:49:43.269097",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "3_rec_20251203_133512_trimmed.mp4:129": {
+    "video_filename": "3_rec_20251203_133512_trimmed.mp4",
+    "frame_index": 129,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:49:45.234334",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "3_rec_20251203_133512_trimmed.mp4:130": {
+    "video_filename": "3_rec_20251203_133512_trimmed.mp4",
+    "frame_index": 130,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:49:47.229363",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "3_rec_20251203_133512_trimmed.mp4:131": {
+    "video_filename": "3_rec_20251203_133512_trimmed.mp4",
+    "frame_index": 131,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:49:49.062866",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "3_rec_20251203_133512_trimmed.mp4:132": {
+    "video_filename": "3_rec_20251203_133512_trimmed.mp4",
+    "frame_index": 132,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:49:51.057230",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "3_rec_20251203_133512_trimmed.mp4:133": {
+    "video_filename": "3_rec_20251203_133512_trimmed.mp4",
+    "frame_index": 133,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:49:52.770282",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "3_rec_20251203_133512_trimmed.mp4:134": {
+    "video_filename": "3_rec_20251203_133512_trimmed.mp4",
+    "frame_index": 134,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:49:54.719710",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "3_rec_20251203_133512_trimmed.mp4:135": {
+    "video_filename": "3_rec_20251203_133512_trimmed.mp4",
+    "frame_index": 135,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:49:56.629412",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "3_rec_20251203_133512_trimmed.mp4:136": {
+    "video_filename": "3_rec_20251203_133512_trimmed.mp4",
+    "frame_index": 136,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:49:58.555231",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "3_rec_20251203_133512_trimmed.mp4:137": {
+    "video_filename": "3_rec_20251203_133512_trimmed.mp4",
+    "frame_index": 137,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:50:00.560584",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "3_rec_20251203_133512_trimmed.mp4:138": {
+    "video_filename": "3_rec_20251203_133512_trimmed.mp4",
+    "frame_index": 138,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:50:02.440121",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "3_rec_20251203_133512_trimmed.mp4:139": {
+    "video_filename": "3_rec_20251203_133512_trimmed.mp4",
+    "frame_index": 139,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:50:04.334799",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "3_rec_20251203_133512_trimmed.mp4:140": {
+    "video_filename": "3_rec_20251203_133512_trimmed.mp4",
+    "frame_index": 140,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:50:06.226587",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "3_rec_20251203_133512_trimmed.mp4:141": {
+    "video_filename": "3_rec_20251203_133512_trimmed.mp4",
+    "frame_index": 141,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:50:08.144127",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "3_rec_20251203_133512_trimmed.mp4:142": {
+    "video_filename": "3_rec_20251203_133512_trimmed.mp4",
+    "frame_index": 142,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:50:10.061082",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "3_rec_20251203_133512_trimmed.mp4:143": {
+    "video_filename": "3_rec_20251203_133512_trimmed.mp4",
+    "frame_index": 143,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:50:12.180552",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "3_rec_20251203_133512_trimmed.mp4:144": {
+    "video_filename": "3_rec_20251203_133512_trimmed.mp4",
+    "frame_index": 144,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:50:13.904167",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "3_rec_20251203_133512_trimmed.mp4:145": {
+    "video_filename": "3_rec_20251203_133512_trimmed.mp4",
+    "frame_index": 145,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:50:15.895533",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "3_rec_20251203_133512_trimmed.mp4:146": {
+    "video_filename": "3_rec_20251203_133512_trimmed.mp4",
+    "frame_index": 146,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:50:18.336527",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "3_rec_20251203_133512_trimmed.mp4:147": {
+    "video_filename": "3_rec_20251203_133512_trimmed.mp4",
+    "frame_index": 147,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:50:20.572647",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "3_rec_20251203_133512_trimmed.mp4:148": {
+    "video_filename": "3_rec_20251203_133512_trimmed.mp4",
+    "frame_index": 148,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:50:22.937750",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "3_rec_20251203_133512_trimmed.mp4:149": {
+    "video_filename": "3_rec_20251203_133512_trimmed.mp4",
+    "frame_index": 149,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:50:25.090140",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "3_rec_20251203_133512_trimmed.mp4:150": {
+    "video_filename": "3_rec_20251203_133512_trimmed.mp4",
+    "frame_index": 150,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:50:27.230275",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "3_rec_20251203_133512_trimmed.mp4:151": {
+    "video_filename": "3_rec_20251203_133512_trimmed.mp4",
+    "frame_index": 151,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:50:29.120936",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "3_rec_20251203_133512_trimmed.mp4:152": {
+    "video_filename": "3_rec_20251203_133512_trimmed.mp4",
+    "frame_index": 152,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:50:30.918711",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "3_rec_20251203_133512_trimmed.mp4:153": {
+    "video_filename": "3_rec_20251203_133512_trimmed.mp4",
+    "frame_index": 153,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:50:32.806208",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "3_rec_20251203_133512_trimmed.mp4:154": {
+    "video_filename": "3_rec_20251203_133512_trimmed.mp4",
+    "frame_index": 154,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:50:34.731610",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "3_rec_20251203_133512_trimmed.mp4:155": {
+    "video_filename": "3_rec_20251203_133512_trimmed.mp4",
+    "frame_index": 155,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:50:36.622814",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "3_rec_20251203_133512_trimmed.mp4:156": {
+    "video_filename": "3_rec_20251203_133512_trimmed.mp4",
+    "frame_index": 156,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:50:38.431398",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "3_rec_20251203_133512_trimmed.mp4:157": {
+    "video_filename": "3_rec_20251203_133512_trimmed.mp4",
+    "frame_index": 157,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:50:40.430660",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "3_rec_20251203_133512_trimmed.mp4:158": {
+    "video_filename": "3_rec_20251203_133512_trimmed.mp4",
+    "frame_index": 158,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:50:42.445038",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "3_rec_20251203_133512_trimmed.mp4:159": {
+    "video_filename": "3_rec_20251203_133512_trimmed.mp4",
+    "frame_index": 159,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:50:44.409262",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "3_rec_20251203_133512_trimmed.mp4:160": {
+    "video_filename": "3_rec_20251203_133512_trimmed.mp4",
+    "frame_index": 160,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:50:46.438206",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "3_rec_20251203_133512_trimmed.mp4:161": {
+    "video_filename": "3_rec_20251203_133512_trimmed.mp4",
+    "frame_index": 161,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:50:48.393751",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "3_rec_20251203_133512_trimmed.mp4:162": {
+    "video_filename": "3_rec_20251203_133512_trimmed.mp4",
+    "frame_index": 162,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:50:50.329125",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "3_rec_20251203_133512_trimmed.mp4:163": {
+    "video_filename": "3_rec_20251203_133512_trimmed.mp4",
+    "frame_index": 163,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:50:52.377243",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "3_rec_20251203_133512_trimmed.mp4:164": {
+    "video_filename": "3_rec_20251203_133512_trimmed.mp4",
+    "frame_index": 164,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:50:54.335834",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "3_rec_20251203_133512_trimmed.mp4:165": {
+    "video_filename": "3_rec_20251203_133512_trimmed.mp4",
+    "frame_index": 165,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:50:56.253232",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "3_rec_20251203_133512_trimmed.mp4:166": {
+    "video_filename": "3_rec_20251203_133512_trimmed.mp4",
+    "frame_index": 166,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:50:58.186954",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "3_rec_20251203_133512_trimmed.mp4:167": {
+    "video_filename": "3_rec_20251203_133512_trimmed.mp4",
+    "frame_index": 167,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:51:00.041562",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "3_rec_20251203_133512_trimmed.mp4:168": {
+    "video_filename": "3_rec_20251203_133512_trimmed.mp4",
+    "frame_index": 168,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:51:01.976933",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "3_rec_20251203_133512_trimmed.mp4:169": {
+    "video_filename": "3_rec_20251203_133512_trimmed.mp4",
+    "frame_index": 169,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:51:03.803586",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "3_rec_20251203_133512_trimmed.mp4:170": {
+    "video_filename": "3_rec_20251203_133512_trimmed.mp4",
+    "frame_index": 170,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:51:05.712452",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "3_rec_20251203_133512_trimmed.mp4:171": {
+    "video_filename": "3_rec_20251203_133512_trimmed.mp4",
+    "frame_index": 171,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:51:07.787371",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "3_rec_20251203_133512_trimmed.mp4:172": {
+    "video_filename": "3_rec_20251203_133512_trimmed.mp4",
+    "frame_index": 172,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:51:09.687124",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "3_rec_20251203_133512_trimmed.mp4:173": {
+    "video_filename": "3_rec_20251203_133512_trimmed.mp4",
+    "frame_index": 173,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:51:11.589441",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "3_rec_20251203_133512_trimmed.mp4:174": {
+    "video_filename": "3_rec_20251203_133512_trimmed.mp4",
+    "frame_index": 174,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:51:13.511796",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "3_rec_20251203_133512_trimmed.mp4:175": {
+    "video_filename": "3_rec_20251203_133512_trimmed.mp4",
+    "frame_index": 175,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:51:15.486555",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "3_rec_20251203_133512_trimmed.mp4:176": {
+    "video_filename": "3_rec_20251203_133512_trimmed.mp4",
+    "frame_index": 176,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:51:17.515388",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "3_rec_20251203_133512_trimmed.mp4:177": {
+    "video_filename": "3_rec_20251203_133512_trimmed.mp4",
+    "frame_index": 177,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:51:19.522831",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "3_rec_20251203_133512_trimmed.mp4:178": {
+    "video_filename": "3_rec_20251203_133512_trimmed.mp4",
+    "frame_index": 178,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:51:21.954257",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "3_rec_20251203_133512_trimmed.mp4:179": {
+    "video_filename": "3_rec_20251203_133512_trimmed.mp4",
+    "frame_index": 179,
+    "label": "ok",
+    "timestamp": "2026-01-07T14:51:24.421070",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "11_rec_20251203_135944_trimmed.mp4:110": {
+    "video_filename": "11_rec_20251203_135944_trimmed.mp4",
+    "frame_index": 110,
+    "label": "nok",
+    "timestamp": "2026-01-07T15:53:32.959342",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "11_rec_20251203_135944_trimmed.mp4:111": {
+    "video_filename": "11_rec_20251203_135944_trimmed.mp4",
+    "frame_index": 111,
+    "label": "nok",
+    "timestamp": "2026-01-07T15:53:37.093992",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "11_rec_20251203_135944_trimmed.mp4:112": {
+    "video_filename": "11_rec_20251203_135944_trimmed.mp4",
+    "frame_index": 112,
+    "label": "nok",
+    "timestamp": "2026-01-07T15:53:40.582025",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "11_rec_20251203_135944_trimmed.mp4:113": {
+    "video_filename": "11_rec_20251203_135944_trimmed.mp4",
+    "frame_index": 113,
+    "label": "nok",
+    "timestamp": "2026-01-07T15:53:44.086474",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "11_rec_20251203_135944_trimmed.mp4:114": {
+    "video_filename": "11_rec_20251203_135944_trimmed.mp4",
+    "frame_index": 114,
+    "label": "nok",
+    "timestamp": "2026-01-07T15:53:47.473660",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "11_rec_20251203_135944_trimmed.mp4:115": {
+    "video_filename": "11_rec_20251203_135944_trimmed.mp4",
+    "frame_index": 115,
+    "label": "nok",
+    "timestamp": "2026-01-07T15:53:50.774966",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "11_rec_20251203_135944_trimmed.mp4:116": {
+    "video_filename": "11_rec_20251203_135944_trimmed.mp4",
+    "frame_index": 116,
+    "label": "nok",
+    "timestamp": "2026-01-07T15:53:54.371720",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "11_rec_20251203_135944_trimmed.mp4:117": {
+    "video_filename": "11_rec_20251203_135944_trimmed.mp4",
+    "frame_index": 117,
+    "label": "nok",
+    "timestamp": "2026-01-07T15:53:58.289465",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "11_rec_20251203_135944_trimmed.mp4:118": {
+    "video_filename": "11_rec_20251203_135944_trimmed.mp4",
+    "frame_index": 118,
+    "label": "nok",
+    "timestamp": "2026-01-07T15:54:01.843723",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "11_rec_20251203_135944_trimmed.mp4:119": {
+    "video_filename": "11_rec_20251203_135944_trimmed.mp4",
+    "frame_index": 119,
+    "label": "nok",
+    "timestamp": "2026-01-07T15:54:05.294742",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "11_rec_20251203_135944_trimmed.mp4:120": {
+    "video_filename": "11_rec_20251203_135944_trimmed.mp4",
+    "frame_index": 120,
+    "label": "nok",
+    "timestamp": "2026-01-07T15:54:08.933945",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "11_rec_20251203_135944_trimmed.mp4:121": {
+    "video_filename": "11_rec_20251203_135944_trimmed.mp4",
+    "frame_index": 121,
+    "label": "nok",
+    "timestamp": "2026-01-07T15:54:12.703856",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "11_rec_20251203_135944_trimmed.mp4:122": {
+    "video_filename": "11_rec_20251203_135944_trimmed.mp4",
+    "frame_index": 122,
+    "label": "nok",
+    "timestamp": "2026-01-07T15:54:16.036329",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "11_rec_20251203_135944_trimmed.mp4:123": {
+    "video_filename": "11_rec_20251203_135944_trimmed.mp4",
+    "frame_index": 123,
+    "label": "nok",
+    "timestamp": "2026-01-07T15:54:19.818337",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "11_rec_20251203_135944_trimmed.mp4:124": {
+    "video_filename": "11_rec_20251203_135944_trimmed.mp4",
+    "frame_index": 124,
+    "label": "nok",
+    "timestamp": "2026-01-07T15:54:24.070226",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "11_rec_20251203_135944_trimmed.mp4:125": {
+    "video_filename": "11_rec_20251203_135944_trimmed.mp4",
+    "frame_index": 125,
+    "label": "nok",
+    "timestamp": "2026-01-07T15:54:28.104215",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "11_rec_20251203_135944_trimmed.mp4:126": {
+    "video_filename": "11_rec_20251203_135944_trimmed.mp4",
+    "frame_index": 126,
+    "label": "nok",
+    "timestamp": "2026-01-07T15:54:31.373701",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "11_rec_20251203_135944_trimmed.mp4:127": {
+    "video_filename": "11_rec_20251203_135944_trimmed.mp4",
+    "frame_index": 127,
+    "label": "nok",
+    "timestamp": "2026-01-07T15:54:35.107374",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "11_rec_20251203_135944_trimmed.mp4:128": {
+    "video_filename": "11_rec_20251203_135944_trimmed.mp4",
+    "frame_index": 128,
+    "label": "nok",
+    "timestamp": "2026-01-07T15:54:40.544009",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "11_rec_20251203_135944_trimmed.mp4:129": {
+    "video_filename": "11_rec_20251203_135944_trimmed.mp4",
+    "frame_index": 129,
+    "label": "nok",
+    "timestamp": "2026-01-07T15:54:44.272054",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "11_rec_20251203_135944_trimmed.mp4:130": {
+    "video_filename": "11_rec_20251203_135944_trimmed.mp4",
+    "frame_index": 130,
+    "label": "nok",
+    "timestamp": "2026-01-07T15:54:48.904862",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "11_rec_20251203_135944_trimmed.mp4:131": {
+    "video_filename": "11_rec_20251203_135944_trimmed.mp4",
+    "frame_index": 131,
+    "label": "nok",
+    "timestamp": "2026-01-07T15:54:52.922189",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "11_rec_20251203_135944_trimmed.mp4:132": {
+    "video_filename": "11_rec_20251203_135944_trimmed.mp4",
+    "frame_index": 132,
+    "label": "nok",
+    "timestamp": "2026-01-07T15:54:58.657004",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "11_rec_20251203_135944_trimmed.mp4:133": {
+    "video_filename": "11_rec_20251203_135944_trimmed.mp4",
+    "frame_index": 133,
+    "label": "nok",
+    "timestamp": "2026-01-07T15:55:02.649232",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "11_rec_20251203_135944_trimmed.mp4:134": {
+    "video_filename": "11_rec_20251203_135944_trimmed.mp4",
+    "frame_index": 134,
+    "label": "nok",
+    "timestamp": "2026-01-07T15:55:06.282665",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "11_rec_20251203_135944_trimmed.mp4:135": {
+    "video_filename": "11_rec_20251203_135944_trimmed.mp4",
+    "frame_index": 135,
+    "label": "nok",
+    "timestamp": "2026-01-07T15:55:10.401958",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "11_rec_20251203_135944_trimmed.mp4:136": {
+    "video_filename": "11_rec_20251203_135944_trimmed.mp4",
+    "frame_index": 136,
+    "label": "nok",
+    "timestamp": "2026-01-07T15:55:14.618043",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "11_rec_20251203_135944_trimmed.mp4:137": {
+    "video_filename": "11_rec_20251203_135944_trimmed.mp4",
+    "frame_index": 137,
+    "label": "nok",
+    "timestamp": "2026-01-07T15:55:19.335667",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "11_rec_20251203_135944_trimmed.mp4:138": {
+    "video_filename": "11_rec_20251203_135944_trimmed.mp4",
+    "frame_index": 138,
+    "label": "nok",
+    "timestamp": "2026-01-07T15:55:24.819052",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "11_rec_20251203_135944_trimmed.mp4:139": {
+    "video_filename": "11_rec_20251203_135944_trimmed.mp4",
+    "frame_index": 139,
+    "label": "nok",
+    "timestamp": "2026-01-07T15:55:28.333818",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "11_rec_20251203_135944_trimmed.mp4:140": {
+    "video_filename": "11_rec_20251203_135944_trimmed.mp4",
+    "frame_index": 140,
+    "label": "nok",
+    "timestamp": "2026-01-07T15:55:32.942888",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "11_rec_20251203_135944_trimmed.mp4:141": {
+    "video_filename": "11_rec_20251203_135944_trimmed.mp4",
+    "frame_index": 141,
+    "label": "nok",
+    "timestamp": "2026-01-07T15:55:37.025192",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "11_rec_20251203_135944_trimmed.mp4:142": {
+    "video_filename": "11_rec_20251203_135944_trimmed.mp4",
+    "frame_index": 142,
+    "label": "nok",
+    "timestamp": "2026-01-07T15:55:41.081234",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "11_rec_20251203_135944_trimmed.mp4:143": {
+    "video_filename": "11_rec_20251203_135944_trimmed.mp4",
+    "frame_index": 143,
+    "label": "nok",
+    "timestamp": "2026-01-07T15:55:44.895083",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "11_rec_20251203_135944_trimmed.mp4:144": {
+    "video_filename": "11_rec_20251203_135944_trimmed.mp4",
+    "frame_index": 144,
+    "label": "nok",
+    "timestamp": "2026-01-07T15:55:48.224765",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "11_rec_20251203_135944_trimmed.mp4:145": {
+    "video_filename": "11_rec_20251203_135944_trimmed.mp4",
+    "frame_index": 145,
+    "label": "nok",
+    "timestamp": "2026-01-07T15:55:51.544316",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "11_rec_20251203_135944_trimmed.mp4:146": {
+    "video_filename": "11_rec_20251203_135944_trimmed.mp4",
+    "frame_index": 146,
+    "label": "nok",
+    "timestamp": "2026-01-07T15:55:55.434567",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "11_rec_20251203_135944_trimmed.mp4:147": {
+    "video_filename": "11_rec_20251203_135944_trimmed.mp4",
+    "frame_index": 147,
+    "label": "nok",
+    "timestamp": "2026-01-07T15:55:59.111578",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "11_rec_20251203_135944_trimmed.mp4:148": {
+    "video_filename": "11_rec_20251203_135944_trimmed.mp4",
+    "frame_index": 148,
+    "label": "nok",
+    "timestamp": "2026-01-07T15:56:02.802862",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "11_rec_20251203_135944_trimmed.mp4:149": {
+    "video_filename": "11_rec_20251203_135944_trimmed.mp4",
+    "frame_index": 149,
+    "label": "nok",
+    "timestamp": "2026-01-07T15:56:06.358455",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "11_rec_20251203_135944_trimmed.mp4:150": {
+    "video_filename": "11_rec_20251203_135944_trimmed.mp4",
+    "frame_index": 150,
+    "label": "nok",
+    "timestamp": "2026-01-07T15:56:10.193077",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "11_rec_20251203_135944_trimmed.mp4:151": {
+    "video_filename": "11_rec_20251203_135944_trimmed.mp4",
+    "frame_index": 151,
+    "label": "nok",
+    "timestamp": "2026-01-07T15:56:13.819739",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "11_rec_20251203_135944_trimmed.mp4:152": {
+    "video_filename": "11_rec_20251203_135944_trimmed.mp4",
+    "frame_index": 152,
+    "label": "nok",
+    "timestamp": "2026-01-07T15:56:19.264694",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "11_rec_20251203_135944_trimmed.mp4:153": {
+    "video_filename": "11_rec_20251203_135944_trimmed.mp4",
+    "frame_index": 153,
+    "label": "nok",
+    "timestamp": "2026-01-07T15:56:32.223695",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "11_rec_20251203_135944_trimmed.mp4:154": {
+    "video_filename": "11_rec_20251203_135944_trimmed.mp4",
+    "frame_index": 154,
+    "label": "nok",
+    "timestamp": "2026-01-07T15:56:40.502036",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "11_rec_20251203_135944_trimmed.mp4:155": {
+    "video_filename": "11_rec_20251203_135944_trimmed.mp4",
+    "frame_index": 155,
+    "label": "nok",
+    "timestamp": "2026-01-07T15:56:48.737622",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "11_rec_20251203_135944_trimmed.mp4:156": {
+    "video_filename": "11_rec_20251203_135944_trimmed.mp4",
+    "frame_index": 156,
+    "label": "nok",
+    "timestamp": "2026-01-07T15:56:52.913581",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "11_rec_20251203_135944_trimmed.mp4:157": {
+    "video_filename": "11_rec_20251203_135944_trimmed.mp4",
+    "frame_index": 157,
+    "label": "nok",
+    "timestamp": "2026-01-07T15:56:56.327585",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "11_rec_20251203_135944_trimmed.mp4:158": {
+    "video_filename": "11_rec_20251203_135944_trimmed.mp4",
+    "frame_index": 158,
+    "label": "nok",
+    "timestamp": "2026-01-07T15:57:00.335741",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "11_rec_20251203_135944_trimmed.mp4:159": {
+    "video_filename": "11_rec_20251203_135944_trimmed.mp4",
+    "frame_index": 159,
+    "label": "nok",
+    "timestamp": "2026-01-07T15:57:04.103487",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "11_rec_20251203_135944_trimmed.mp4:160": {
+    "video_filename": "11_rec_20251203_135944_trimmed.mp4",
+    "frame_index": 160,
+    "label": "nok",
+    "timestamp": "2026-01-07T15:57:08.226465",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "11_rec_20251203_135944_trimmed.mp4:161": {
+    "video_filename": "11_rec_20251203_135944_trimmed.mp4",
+    "frame_index": 161,
+    "label": "nok",
+    "timestamp": "2026-01-07T15:57:11.671274",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "11_rec_20251203_135944_trimmed.mp4:162": {
+    "video_filename": "11_rec_20251203_135944_trimmed.mp4",
+    "frame_index": 162,
+    "label": "nok",
+    "timestamp": "2026-01-07T15:57:15.340517",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "11_rec_20251203_135944_trimmed.mp4:163": {
+    "video_filename": "11_rec_20251203_135944_trimmed.mp4",
+    "frame_index": 163,
+    "label": "nok",
+    "timestamp": "2026-01-07T15:57:18.539891",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "11_rec_20251203_135944_trimmed.mp4:164": {
+    "video_filename": "11_rec_20251203_135944_trimmed.mp4",
+    "frame_index": 164,
+    "label": "nok",
+    "timestamp": "2026-01-07T15:57:22.269542",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "11_rec_20251203_135944_trimmed.mp4:165": {
+    "video_filename": "11_rec_20251203_135944_trimmed.mp4",
+    "frame_index": 165,
+    "label": "nok",
+    "timestamp": "2026-01-07T15:57:25.841328",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "11_rec_20251203_135944_trimmed.mp4:166": {
+    "video_filename": "11_rec_20251203_135944_trimmed.mp4",
+    "frame_index": 166,
+    "label": "nok",
+    "timestamp": "2026-01-07T15:57:29.514658",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "11_rec_20251203_135944_trimmed.mp4:167": {
+    "video_filename": "11_rec_20251203_135944_trimmed.mp4",
+    "frame_index": 167,
+    "label": "nok",
+    "timestamp": "2026-01-07T15:57:33.147212",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "11_rec_20251203_135944_trimmed.mp4:168": {
+    "video_filename": "11_rec_20251203_135944_trimmed.mp4",
+    "frame_index": 168,
+    "label": "nok",
+    "timestamp": "2026-01-07T15:57:36.628366",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "11_rec_20251203_135944_trimmed.mp4:169": {
+    "video_filename": "11_rec_20251203_135944_trimmed.mp4",
+    "frame_index": 169,
+    "label": "nok",
+    "timestamp": "2026-01-07T15:57:39.889610",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "11_rec_20251203_135944_trimmed.mp4:170": {
+    "video_filename": "11_rec_20251203_135944_trimmed.mp4",
+    "frame_index": 170,
+    "label": "nok",
+    "timestamp": "2026-01-07T15:57:43.786908",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "11_rec_20251203_135944_trimmed.mp4:171": {
+    "video_filename": "11_rec_20251203_135944_trimmed.mp4",
+    "frame_index": 171,
+    "label": "nok",
+    "timestamp": "2026-01-07T15:57:47.055778",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "11_rec_20251203_135944_trimmed.mp4:172": {
+    "video_filename": "11_rec_20251203_135944_trimmed.mp4",
+    "frame_index": 172,
+    "label": "nok",
+    "timestamp": "2026-01-07T15:57:51.967712",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "11_rec_20251203_135944_trimmed.mp4:173": {
+    "video_filename": "11_rec_20251203_135944_trimmed.mp4",
+    "frame_index": 173,
+    "label": "nok",
+    "timestamp": "2026-01-07T15:57:55.693199",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "11_rec_20251203_135944_trimmed.mp4:174": {
+    "video_filename": "11_rec_20251203_135944_trimmed.mp4",
+    "frame_index": 174,
+    "label": "nok",
+    "timestamp": "2026-01-07T15:57:59.231421",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "11_rec_20251203_135944_trimmed.mp4:175": {
+    "video_filename": "11_rec_20251203_135944_trimmed.mp4",
+    "frame_index": 175,
+    "label": "nok",
+    "timestamp": "2026-01-07T15:58:03.291347",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "11_rec_20251203_135944_trimmed.mp4:176": {
+    "video_filename": "11_rec_20251203_135944_trimmed.mp4",
+    "frame_index": 176,
+    "label": "nok",
+    "timestamp": "2026-01-07T15:58:07.688207",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "12_rec_20251203_140059_trimmed.mp4:114": {
+    "video_filename": "12_rec_20251203_140059_trimmed.mp4",
+    "frame_index": 114,
+    "label": "nok",
+    "timestamp": "2026-01-07T15:59:26.159888",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "12_rec_20251203_140059_trimmed.mp4:115": {
+    "video_filename": "12_rec_20251203_140059_trimmed.mp4",
+    "frame_index": 115,
+    "label": "nok",
+    "timestamp": "2026-01-07T15:59:29.905567",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "12_rec_20251203_140059_trimmed.mp4:116": {
+    "video_filename": "12_rec_20251203_140059_trimmed.mp4",
+    "frame_index": 116,
+    "label": "nok",
+    "timestamp": "2026-01-07T15:59:35.950811",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "12_rec_20251203_140059_trimmed.mp4:117": {
+    "video_filename": "12_rec_20251203_140059_trimmed.mp4",
+    "frame_index": 117,
+    "label": "nok",
+    "timestamp": "2026-01-07T15:59:41.534224",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "12_rec_20251203_140059_trimmed.mp4:118": {
+    "video_filename": "12_rec_20251203_140059_trimmed.mp4",
+    "frame_index": 118,
+    "label": "nok",
+    "timestamp": "2026-01-07T15:59:44.552990",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "12_rec_20251203_140059_trimmed.mp4:119": {
+    "video_filename": "12_rec_20251203_140059_trimmed.mp4",
+    "frame_index": 119,
+    "label": "nok",
+    "timestamp": "2026-01-07T15:59:47.804122",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "12_rec_20251203_140059_trimmed.mp4:120": {
+    "video_filename": "12_rec_20251203_140059_trimmed.mp4",
+    "frame_index": 120,
+    "label": "nok",
+    "timestamp": "2026-01-07T15:59:50.391207",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "12_rec_20251203_140059_trimmed.mp4:121": {
+    "video_filename": "12_rec_20251203_140059_trimmed.mp4",
+    "frame_index": 121,
+    "label": "nok",
+    "timestamp": "2026-01-07T15:59:53.351935",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "12_rec_20251203_140059_trimmed.mp4:122": {
+    "video_filename": "12_rec_20251203_140059_trimmed.mp4",
+    "frame_index": 122,
+    "label": "nok",
+    "timestamp": "2026-01-07T15:59:58.563481",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "12_rec_20251203_140059_trimmed.mp4:123": {
+    "video_filename": "12_rec_20251203_140059_trimmed.mp4",
+    "frame_index": 123,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:00:01.715384",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "12_rec_20251203_140059_trimmed.mp4:124": {
+    "video_filename": "12_rec_20251203_140059_trimmed.mp4",
+    "frame_index": 124,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:00:04.748463",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "12_rec_20251203_140059_trimmed.mp4:125": {
+    "video_filename": "12_rec_20251203_140059_trimmed.mp4",
+    "frame_index": 125,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:00:07.367858",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "12_rec_20251203_140059_trimmed.mp4:126": {
+    "video_filename": "12_rec_20251203_140059_trimmed.mp4",
+    "frame_index": 126,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:00:10.324891",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "12_rec_20251203_140059_trimmed.mp4:127": {
+    "video_filename": "12_rec_20251203_140059_trimmed.mp4",
+    "frame_index": 127,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:00:14.141126",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "12_rec_20251203_140059_trimmed.mp4:128": {
+    "video_filename": "12_rec_20251203_140059_trimmed.mp4",
+    "frame_index": 128,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:00:16.968484",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "12_rec_20251203_140059_trimmed.mp4:129": {
+    "video_filename": "12_rec_20251203_140059_trimmed.mp4",
+    "frame_index": 129,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:00:20.254073",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "12_rec_20251203_140059_trimmed.mp4:130": {
+    "video_filename": "12_rec_20251203_140059_trimmed.mp4",
+    "frame_index": 130,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:00:26.489436",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "12_rec_20251203_140059_trimmed.mp4:131": {
+    "video_filename": "12_rec_20251203_140059_trimmed.mp4",
+    "frame_index": 131,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:03:40.220565",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "12_rec_20251203_140059_trimmed.mp4:132": {
+    "video_filename": "12_rec_20251203_140059_trimmed.mp4",
+    "frame_index": 132,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:04:00.583223",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "12_rec_20251203_140059_trimmed.mp4:133": {
+    "video_filename": "12_rec_20251203_140059_trimmed.mp4",
+    "frame_index": 133,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:04:09.519876",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "12_rec_20251203_140059_trimmed.mp4:134": {
+    "video_filename": "12_rec_20251203_140059_trimmed.mp4",
+    "frame_index": 134,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:04:13.613574",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "12_rec_20251203_140059_trimmed.mp4:135": {
+    "video_filename": "12_rec_20251203_140059_trimmed.mp4",
+    "frame_index": 135,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:06:56.989349",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "12_rec_20251203_140059_trimmed.mp4:136": {
+    "video_filename": "12_rec_20251203_140059_trimmed.mp4",
+    "frame_index": 136,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:07:00.536262",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "12_rec_20251203_140059_trimmed.mp4:137": {
+    "video_filename": "12_rec_20251203_140059_trimmed.mp4",
+    "frame_index": 137,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:07:04.531469",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "12_rec_20251203_140059_trimmed.mp4:138": {
+    "video_filename": "12_rec_20251203_140059_trimmed.mp4",
+    "frame_index": 138,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:07:08.007496",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "12_rec_20251203_140059_trimmed.mp4:139": {
+    "video_filename": "12_rec_20251203_140059_trimmed.mp4",
+    "frame_index": 139,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:07:11.670989",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "12_rec_20251203_140059_trimmed.mp4:140": {
+    "video_filename": "12_rec_20251203_140059_trimmed.mp4",
+    "frame_index": 140,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:07:15.196029",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "12_rec_20251203_140059_trimmed.mp4:141": {
+    "video_filename": "12_rec_20251203_140059_trimmed.mp4",
+    "frame_index": 141,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:07:18.877336",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "12_rec_20251203_140059_trimmed.mp4:142": {
+    "video_filename": "12_rec_20251203_140059_trimmed.mp4",
+    "frame_index": 142,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:07:22.216187",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "12_rec_20251203_140059_trimmed.mp4:143": {
+    "video_filename": "12_rec_20251203_140059_trimmed.mp4",
+    "frame_index": 143,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:07:25.471545",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "12_rec_20251203_140059_trimmed.mp4:144": {
+    "video_filename": "12_rec_20251203_140059_trimmed.mp4",
+    "frame_index": 144,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:07:28.797518",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "12_rec_20251203_140059_trimmed.mp4:145": {
+    "video_filename": "12_rec_20251203_140059_trimmed.mp4",
+    "frame_index": 145,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:07:32.836975",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "12_rec_20251203_140059_trimmed.mp4:146": {
+    "video_filename": "12_rec_20251203_140059_trimmed.mp4",
+    "frame_index": 146,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:07:36.733466",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "12_rec_20251203_140059_trimmed.mp4:147": {
+    "video_filename": "12_rec_20251203_140059_trimmed.mp4",
+    "frame_index": 147,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:07:40.793637",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "12_rec_20251203_140059_trimmed.mp4:148": {
+    "video_filename": "12_rec_20251203_140059_trimmed.mp4",
+    "frame_index": 148,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:07:45.089336",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "12_rec_20251203_140059_trimmed.mp4:149": {
+    "video_filename": "12_rec_20251203_140059_trimmed.mp4",
+    "frame_index": 149,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:07:48.591763",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "12_rec_20251203_140059_trimmed.mp4:150": {
+    "video_filename": "12_rec_20251203_140059_trimmed.mp4",
+    "frame_index": 150,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:07:52.233842",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "12_rec_20251203_140059_trimmed.mp4:151": {
+    "video_filename": "12_rec_20251203_140059_trimmed.mp4",
+    "frame_index": 151,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:07:55.610752",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "12_rec_20251203_140059_trimmed.mp4:152": {
+    "video_filename": "12_rec_20251203_140059_trimmed.mp4",
+    "frame_index": 152,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:07:59.906960",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "12_rec_20251203_140059_trimmed.mp4:153": {
+    "video_filename": "12_rec_20251203_140059_trimmed.mp4",
+    "frame_index": 153,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:08:04.347411",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "12_rec_20251203_140059_trimmed.mp4:154": {
+    "video_filename": "12_rec_20251203_140059_trimmed.mp4",
+    "frame_index": 154,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:08:08.121709",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "12_rec_20251203_140059_trimmed.mp4:155": {
+    "video_filename": "12_rec_20251203_140059_trimmed.mp4",
+    "frame_index": 155,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:08:11.900815",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "12_rec_20251203_140059_trimmed.mp4:156": {
+    "video_filename": "12_rec_20251203_140059_trimmed.mp4",
+    "frame_index": 156,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:08:15.517566",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "12_rec_20251203_140059_trimmed.mp4:157": {
+    "video_filename": "12_rec_20251203_140059_trimmed.mp4",
+    "frame_index": 157,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:08:20.930265",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "12_rec_20251203_140059_trimmed.mp4:158": {
+    "video_filename": "12_rec_20251203_140059_trimmed.mp4",
+    "frame_index": 158,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:08:25.410401",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "12_rec_20251203_140059_trimmed.mp4:159": {
+    "video_filename": "12_rec_20251203_140059_trimmed.mp4",
+    "frame_index": 159,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:08:29.721331",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "12_rec_20251203_140059_trimmed.mp4:160": {
+    "video_filename": "12_rec_20251203_140059_trimmed.mp4",
+    "frame_index": 160,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:08:33.606456",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "12_rec_20251203_140059_trimmed.mp4:161": {
+    "video_filename": "12_rec_20251203_140059_trimmed.mp4",
+    "frame_index": 161,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:08:37.584384",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "12_rec_20251203_140059_trimmed.mp4:162": {
+    "video_filename": "12_rec_20251203_140059_trimmed.mp4",
+    "frame_index": 162,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:08:42.589074",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "12_rec_20251203_140059_trimmed.mp4:163": {
+    "video_filename": "12_rec_20251203_140059_trimmed.mp4",
+    "frame_index": 163,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:08:46.158939",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "12_rec_20251203_140059_trimmed.mp4:164": {
+    "video_filename": "12_rec_20251203_140059_trimmed.mp4",
+    "frame_index": 164,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:08:49.718833",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "12_rec_20251203_140059_trimmed.mp4:165": {
+    "video_filename": "12_rec_20251203_140059_trimmed.mp4",
+    "frame_index": 165,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:08:53.328341",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "12_rec_20251203_140059_trimmed.mp4:166": {
+    "video_filename": "12_rec_20251203_140059_trimmed.mp4",
+    "frame_index": 166,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:08:58.845233",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "12_rec_20251203_140059_trimmed.mp4:167": {
+    "video_filename": "12_rec_20251203_140059_trimmed.mp4",
+    "frame_index": 167,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:09:02.377516",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "12_rec_20251203_140059_trimmed.mp4:168": {
+    "video_filename": "12_rec_20251203_140059_trimmed.mp4",
+    "frame_index": 168,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:09:05.945356",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "12_rec_20251203_140059_trimmed.mp4:169": {
+    "video_filename": "12_rec_20251203_140059_trimmed.mp4",
+    "frame_index": 169,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:09:49.236701",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "12_rec_20251203_140059_trimmed.mp4:170": {
+    "video_filename": "12_rec_20251203_140059_trimmed.mp4",
+    "frame_index": 170,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:09:52.370172",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "12_rec_20251203_140059_trimmed.mp4:171": {
+    "video_filename": "12_rec_20251203_140059_trimmed.mp4",
+    "frame_index": 171,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:09:56.233340",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "12_rec_20251203_140059_trimmed.mp4:172": {
+    "video_filename": "12_rec_20251203_140059_trimmed.mp4",
+    "frame_index": 172,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:10:00.013980",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "12_rec_20251203_140059_trimmed.mp4:173": {
+    "video_filename": "12_rec_20251203_140059_trimmed.mp4",
+    "frame_index": 173,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:10:04.254883",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "12_rec_20251203_140059_trimmed.mp4:174": {
+    "video_filename": "12_rec_20251203_140059_trimmed.mp4",
+    "frame_index": 174,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:11:13.598038",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "12_rec_20251203_140059_trimmed.mp4:175": {
+    "video_filename": "12_rec_20251203_140059_trimmed.mp4",
+    "frame_index": 175,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:11:18.024451",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "12_rec_20251203_140059_trimmed.mp4:176": {
+    "video_filename": "12_rec_20251203_140059_trimmed.mp4",
+    "frame_index": 176,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:11:21.087427",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "12_rec_20251203_140059_trimmed.mp4:177": {
+    "video_filename": "12_rec_20251203_140059_trimmed.mp4",
+    "frame_index": 177,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:11:24.256392",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "12_rec_20251203_140059_trimmed.mp4:178": {
+    "video_filename": "12_rec_20251203_140059_trimmed.mp4",
+    "frame_index": 178,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:11:27.513362",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "12_rec_20251203_140059_trimmed.mp4:179": {
+    "video_filename": "12_rec_20251203_140059_trimmed.mp4",
+    "frame_index": 179,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:11:30.390287",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "12_rec_20251203_140059_trimmed.mp4:180": {
+    "video_filename": "12_rec_20251203_140059_trimmed.mp4",
+    "frame_index": 180,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:11:33.351521",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "12_rec_20251203_140059_trimmed.mp4:181": {
+    "video_filename": "12_rec_20251203_140059_trimmed.mp4",
+    "frame_index": 181,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:11:37.898385",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "12_rec_20251203_140059_trimmed.mp4:182": {
+    "video_filename": "12_rec_20251203_140059_trimmed.mp4",
+    "frame_index": 182,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:11:41.346117",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "12_rec_20251203_140059_trimmed.mp4:183": {
+    "video_filename": "12_rec_20251203_140059_trimmed.mp4",
+    "frame_index": 183,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:11:45.361919",
+    "defect_type": "contamination",
+    "notes": "",
+    "filters_used": null
+  },
+  "7_rec_20251203_135017_trimmed.mp4:101": {
+    "video_filename": "7_rec_20251203_135017_trimmed.mp4",
+    "frame_index": 101,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:16:11.070571",
+    "defect_type": "burn_through",
+    "notes": "",
+    "filters_used": null
+  },
+  "7_rec_20251203_135017_trimmed.mp4:102": {
+    "video_filename": "7_rec_20251203_135017_trimmed.mp4",
+    "frame_index": 102,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:16:15.341468",
+    "defect_type": "burn_through",
+    "notes": "",
+    "filters_used": null
+  },
+  "7_rec_20251203_135017_trimmed.mp4:104": {
+    "video_filename": "7_rec_20251203_135017_trimmed.mp4",
+    "frame_index": 104,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:16:18.398019",
+    "defect_type": "burn_through",
+    "notes": "",
+    "filters_used": null
+  },
+  "7_rec_20251203_135017_trimmed.mp4:105": {
+    "video_filename": "7_rec_20251203_135017_trimmed.mp4",
+    "frame_index": 105,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:16:21.455793",
+    "defect_type": "burn_through",
+    "notes": "",
+    "filters_used": null
+  },
+  "7_rec_20251203_135017_trimmed.mp4:106": {
+    "video_filename": "7_rec_20251203_135017_trimmed.mp4",
+    "frame_index": 106,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:16:24.985874",
+    "defect_type": "burn_through",
+    "notes": "",
+    "filters_used": null
+  },
+  "7_rec_20251203_135017_trimmed.mp4:107": {
+    "video_filename": "7_rec_20251203_135017_trimmed.mp4",
+    "frame_index": 107,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:16:28.869015",
+    "defect_type": "burn_through",
+    "notes": "",
+    "filters_used": null
+  },
+  "7_rec_20251203_135017_trimmed.mp4:108": {
+    "video_filename": "7_rec_20251203_135017_trimmed.mp4",
+    "frame_index": 108,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:16:32.030621",
+    "defect_type": "burn_through",
+    "notes": "",
+    "filters_used": null
+  },
+  "7_rec_20251203_135017_trimmed.mp4:109": {
+    "video_filename": "7_rec_20251203_135017_trimmed.mp4",
+    "frame_index": 109,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:16:35.388477",
+    "defect_type": "burn_through",
+    "notes": "",
+    "filters_used": null
+  },
+  "7_rec_20251203_135017_trimmed.mp4:110": {
+    "video_filename": "7_rec_20251203_135017_trimmed.mp4",
+    "frame_index": 110,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:16:39.993569",
+    "defect_type": "burn_through",
+    "notes": "",
+    "filters_used": null
+  },
+  "7_rec_20251203_135017_trimmed.mp4:111": {
+    "video_filename": "7_rec_20251203_135017_trimmed.mp4",
+    "frame_index": 111,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:16:43.406797",
+    "defect_type": "burn_through",
+    "notes": "",
+    "filters_used": null
+  },
+  "7_rec_20251203_135017_trimmed.mp4:112": {
+    "video_filename": "7_rec_20251203_135017_trimmed.mp4",
+    "frame_index": 112,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:16:46.608489",
+    "defect_type": "burn_through",
+    "notes": "",
+    "filters_used": null
+  },
+  "7_rec_20251203_135017_trimmed.mp4:113": {
+    "video_filename": "7_rec_20251203_135017_trimmed.mp4",
+    "frame_index": 113,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:16:49.605125",
+    "defect_type": "burn_through",
+    "notes": "",
+    "filters_used": null
+  },
+  "7_rec_20251203_135017_trimmed.mp4:114": {
+    "video_filename": "7_rec_20251203_135017_trimmed.mp4",
+    "frame_index": 114,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:16:52.634590",
+    "defect_type": "burn_through",
+    "notes": "",
+    "filters_used": null
+  },
+  "7_rec_20251203_135017_trimmed.mp4:115": {
+    "video_filename": "7_rec_20251203_135017_trimmed.mp4",
+    "frame_index": 115,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:16:55.552725",
+    "defect_type": "burn_through",
+    "notes": "",
+    "filters_used": null
+  },
+  "7_rec_20251203_135017_trimmed.mp4:116": {
+    "video_filename": "7_rec_20251203_135017_trimmed.mp4",
+    "frame_index": 116,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:16:58.621310",
+    "defect_type": "burn_through",
+    "notes": "",
+    "filters_used": null
+  },
+  "7_rec_20251203_135017_trimmed.mp4:117": {
+    "video_filename": "7_rec_20251203_135017_trimmed.mp4",
+    "frame_index": 117,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:17:01.799744",
+    "defect_type": "burn_through",
+    "notes": "",
+    "filters_used": null
+  },
+  "7_rec_20251203_135017_trimmed.mp4:118": {
+    "video_filename": "7_rec_20251203_135017_trimmed.mp4",
+    "frame_index": 118,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:17:05.329467",
+    "defect_type": "burn_through",
+    "notes": "",
+    "filters_used": null
+  },
+  "7_rec_20251203_135017_trimmed.mp4:119": {
+    "video_filename": "7_rec_20251203_135017_trimmed.mp4",
+    "frame_index": 119,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:17:08.494440",
+    "defect_type": "burn_through",
+    "notes": "",
+    "filters_used": null
+  },
+  "7_rec_20251203_135017_trimmed.mp4:120": {
+    "video_filename": "7_rec_20251203_135017_trimmed.mp4",
+    "frame_index": 120,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:17:11.442395",
+    "defect_type": "burn_through",
+    "notes": "",
+    "filters_used": null
+  },
+  "7_rec_20251203_135017_trimmed.mp4:121": {
+    "video_filename": "7_rec_20251203_135017_trimmed.mp4",
+    "frame_index": 121,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:17:14.401626",
+    "defect_type": "burn_through",
+    "notes": "",
+    "filters_used": null
+  },
+  "7_rec_20251203_135017_trimmed.mp4:122": {
+    "video_filename": "7_rec_20251203_135017_trimmed.mp4",
+    "frame_index": 122,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:17:17.190508",
+    "defect_type": "burn_through",
+    "notes": "",
+    "filters_used": null
+  },
+  "7_rec_20251203_135017_trimmed.mp4:123": {
+    "video_filename": "7_rec_20251203_135017_trimmed.mp4",
+    "frame_index": 123,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:17:20.338449",
+    "defect_type": "burn_through",
+    "notes": "",
+    "filters_used": null
+  },
+  "7_rec_20251203_135017_trimmed.mp4:124": {
+    "video_filename": "7_rec_20251203_135017_trimmed.mp4",
+    "frame_index": 124,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:17:23.718966",
+    "defect_type": "burn_through",
+    "notes": "",
+    "filters_used": null
+  },
+  "7_rec_20251203_135017_trimmed.mp4:125": {
+    "video_filename": "7_rec_20251203_135017_trimmed.mp4",
+    "frame_index": 125,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:17:26.985246",
+    "defect_type": "burn_through",
+    "notes": "",
+    "filters_used": null
+  },
+  "7_rec_20251203_135017_trimmed.mp4:126": {
+    "video_filename": "7_rec_20251203_135017_trimmed.mp4",
+    "frame_index": 126,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:17:29.752297",
+    "defect_type": "burn_through",
+    "notes": "",
+    "filters_used": null
+  },
+  "7_rec_20251203_135017_trimmed.mp4:127": {
+    "video_filename": "7_rec_20251203_135017_trimmed.mp4",
+    "frame_index": 127,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:17:32.576810",
+    "defect_type": "burn_through",
+    "notes": "",
+    "filters_used": null
+  },
+  "7_rec_20251203_135017_trimmed.mp4:128": {
+    "video_filename": "7_rec_20251203_135017_trimmed.mp4",
+    "frame_index": 128,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:17:35.338885",
+    "defect_type": "burn_through",
+    "notes": "",
+    "filters_used": null
+  },
+  "7_rec_20251203_135017_trimmed.mp4:129": {
+    "video_filename": "7_rec_20251203_135017_trimmed.mp4",
+    "frame_index": 129,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:17:38.390386",
+    "defect_type": "burn_through",
+    "notes": "",
+    "filters_used": null
+  },
+  "7_rec_20251203_135017_trimmed.mp4:130": {
+    "video_filename": "7_rec_20251203_135017_trimmed.mp4",
+    "frame_index": 130,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:17:41.469509",
+    "defect_type": "burn_through",
+    "notes": "",
+    "filters_used": null
+  },
+  "7_rec_20251203_135017_trimmed.mp4:131": {
+    "video_filename": "7_rec_20251203_135017_trimmed.mp4",
+    "frame_index": 131,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:17:44.513416",
+    "defect_type": "burn_through",
+    "notes": "",
+    "filters_used": null
+  },
+  "7_rec_20251203_135017_trimmed.mp4:132": {
+    "video_filename": "7_rec_20251203_135017_trimmed.mp4",
+    "frame_index": 132,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:17:47.366546",
+    "defect_type": "burn_through",
+    "notes": "",
+    "filters_used": null
+  },
+  "7_rec_20251203_135017_trimmed.mp4:133": {
+    "video_filename": "7_rec_20251203_135017_trimmed.mp4",
+    "frame_index": 133,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:17:50.201884",
+    "defect_type": "burn_through",
+    "notes": "",
+    "filters_used": null
+  },
+  "7_rec_20251203_135017_trimmed.mp4:134": {
+    "video_filename": "7_rec_20251203_135017_trimmed.mp4",
+    "frame_index": 134,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:17:58.340366",
+    "defect_type": "burn_through",
+    "notes": "",
+    "filters_used": null
+  },
+  "7_rec_20251203_135017_trimmed.mp4:135": {
+    "video_filename": "7_rec_20251203_135017_trimmed.mp4",
+    "frame_index": 135,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:18:01.383403",
+    "defect_type": "burn_through",
+    "notes": "",
+    "filters_used": null
+  },
+  "7_rec_20251203_135017_trimmed.mp4:136": {
+    "video_filename": "7_rec_20251203_135017_trimmed.mp4",
+    "frame_index": 136,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:18:04.251182",
+    "defect_type": "burn_through",
+    "notes": "",
+    "filters_used": null
+  },
+  "7_rec_20251203_135017_trimmed.mp4:137": {
+    "video_filename": "7_rec_20251203_135017_trimmed.mp4",
+    "frame_index": 137,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:18:07.692937",
+    "defect_type": "burn_through",
+    "notes": "",
+    "filters_used": null
+  },
+  "7_rec_20251203_135017_trimmed.mp4:138": {
+    "video_filename": "7_rec_20251203_135017_trimmed.mp4",
+    "frame_index": 138,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:18:11.143051",
+    "defect_type": "burn_through",
+    "notes": "",
+    "filters_used": null
+  },
+  "7_rec_20251203_135017_trimmed.mp4:139": {
+    "video_filename": "7_rec_20251203_135017_trimmed.mp4",
+    "frame_index": 139,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:18:14.539478",
+    "defect_type": "burn_through",
+    "notes": "",
+    "filters_used": null
+  },
+  "7_rec_20251203_135017_trimmed.mp4:140": {
+    "video_filename": "7_rec_20251203_135017_trimmed.mp4",
+    "frame_index": 140,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:18:17.575861",
+    "defect_type": "burn_through",
+    "notes": "",
+    "filters_used": null
+  },
+  "7_rec_20251203_135017_trimmed.mp4:141": {
+    "video_filename": "7_rec_20251203_135017_trimmed.mp4",
+    "frame_index": 141,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:18:21.467064",
+    "defect_type": "burn_through",
+    "notes": "",
+    "filters_used": null
+  },
+  "7_rec_20251203_135017_trimmed.mp4:142": {
+    "video_filename": "7_rec_20251203_135017_trimmed.mp4",
+    "frame_index": 142,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:18:24.446163",
+    "defect_type": "burn_through",
+    "notes": "",
+    "filters_used": null
+  },
+  "7_rec_20251203_135017_trimmed.mp4:143": {
+    "video_filename": "7_rec_20251203_135017_trimmed.mp4",
+    "frame_index": 143,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:18:27.509819",
+    "defect_type": "burn_through",
+    "notes": "",
+    "filters_used": null
+  },
+  "7_rec_20251203_135017_trimmed.mp4:144": {
+    "video_filename": "7_rec_20251203_135017_trimmed.mp4",
+    "frame_index": 144,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:18:31.409484",
+    "defect_type": "burn_through",
+    "notes": "",
+    "filters_used": null
+  },
+  "7_rec_20251203_135017_trimmed.mp4:145": {
+    "video_filename": "7_rec_20251203_135017_trimmed.mp4",
+    "frame_index": 145,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:18:35.489434",
+    "defect_type": "burn_through",
+    "notes": "",
+    "filters_used": null
+  },
+  "7_rec_20251203_135017_trimmed.mp4:146": {
+    "video_filename": "7_rec_20251203_135017_trimmed.mp4",
+    "frame_index": 146,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:18:39.136765",
+    "defect_type": "burn_through",
+    "notes": "",
+    "filters_used": null
+  },
+  "7_rec_20251203_135017_trimmed.mp4:147": {
+    "video_filename": "7_rec_20251203_135017_trimmed.mp4",
+    "frame_index": 147,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:18:43.473628",
+    "defect_type": "burn_through",
+    "notes": "",
+    "filters_used": null
+  },
+  "7_rec_20251203_135017_trimmed.mp4:148": {
+    "video_filename": "7_rec_20251203_135017_trimmed.mp4",
+    "frame_index": 148,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:18:54.792266",
+    "defect_type": "burn_through",
+    "notes": "",
+    "filters_used": null
+  },
+  "7_rec_20251203_135017_trimmed.mp4:149": {
+    "video_filename": "7_rec_20251203_135017_trimmed.mp4",
+    "frame_index": 149,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:19:04.535817",
+    "defect_type": "burn_through",
+    "notes": "",
+    "filters_used": null
+  },
+  "7_rec_20251203_135017_trimmed.mp4:150": {
+    "video_filename": "7_rec_20251203_135017_trimmed.mp4",
+    "frame_index": 150,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:19:07.375470",
+    "defect_type": "burn_through",
+    "notes": "",
+    "filters_used": null
+  },
+  "7_rec_20251203_135017_trimmed.mp4:151": {
+    "video_filename": "7_rec_20251203_135017_trimmed.mp4",
+    "frame_index": 151,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:19:10.247868",
+    "defect_type": "burn_through",
+    "notes": "",
+    "filters_used": null
+  },
+  "7_rec_20251203_135017_trimmed.mp4:152": {
+    "video_filename": "7_rec_20251203_135017_trimmed.mp4",
+    "frame_index": 152,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:19:17.114360",
+    "defect_type": "burn_through",
+    "notes": "",
+    "filters_used": null
+  },
+  "7_rec_20251203_135017_trimmed.mp4:153": {
+    "video_filename": "7_rec_20251203_135017_trimmed.mp4",
+    "frame_index": 153,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:19:20.322292",
+    "defect_type": "burn_through",
+    "notes": "",
+    "filters_used": null
+  },
+  "7_rec_20251203_135017_trimmed.mp4:154": {
+    "video_filename": "7_rec_20251203_135017_trimmed.mp4",
+    "frame_index": 154,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:19:23.571638",
+    "defect_type": "burn_through",
+    "notes": "",
+    "filters_used": null
+  },
+  "7_rec_20251203_135017_trimmed.mp4:155": {
+    "video_filename": "7_rec_20251203_135017_trimmed.mp4",
+    "frame_index": 155,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:19:26.973312",
+    "defect_type": "burn_through",
+    "notes": "",
+    "filters_used": null
+  },
+  "7_rec_20251203_135017_trimmed.mp4:156": {
+    "video_filename": "7_rec_20251203_135017_trimmed.mp4",
+    "frame_index": 156,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:19:39.953966",
+    "defect_type": "burn_through",
+    "notes": "",
+    "filters_used": null
+  },
+  "7_rec_20251203_135017_trimmed.mp4:157": {
+    "video_filename": "7_rec_20251203_135017_trimmed.mp4",
+    "frame_index": 157,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:19:44.297804",
+    "defect_type": "burn_through",
+    "notes": "",
+    "filters_used": null
+  },
+  "6_rec_20251203_134711_trimmed.mp4:86": {
+    "video_filename": "6_rec_20251203_134711_trimmed.mp4",
+    "frame_index": 86,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:23:39.831000",
+    "defect_type": "lack_of_fusion",
+    "notes": "",
+    "filters_used": null
+  },
+  "6_rec_20251203_134711_trimmed.mp4:87": {
+    "video_filename": "6_rec_20251203_134711_trimmed.mp4",
+    "frame_index": 87,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:23:48.984059",
+    "defect_type": "lack_of_fusion",
+    "notes": "",
+    "filters_used": null
+  },
+  "6_rec_20251203_134711_trimmed.mp4:88": {
+    "video_filename": "6_rec_20251203_134711_trimmed.mp4",
+    "frame_index": 88,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:23:52.722513",
+    "defect_type": "lack_of_fusion",
+    "notes": "",
+    "filters_used": null
+  },
+  "6_rec_20251203_134711_trimmed.mp4:89": {
+    "video_filename": "6_rec_20251203_134711_trimmed.mp4",
+    "frame_index": 89,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:23:56.544445",
+    "defect_type": "lack_of_fusion",
+    "notes": "",
+    "filters_used": null
+  },
+  "6_rec_20251203_134711_trimmed.mp4:90": {
+    "video_filename": "6_rec_20251203_134711_trimmed.mp4",
+    "frame_index": 90,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:24:00.160312",
+    "defect_type": "lack_of_fusion",
+    "notes": "",
+    "filters_used": null
+  },
+  "6_rec_20251203_134711_trimmed.mp4:91": {
+    "video_filename": "6_rec_20251203_134711_trimmed.mp4",
+    "frame_index": 91,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:24:04.778193",
+    "defect_type": "lack_of_fusion",
+    "notes": "",
+    "filters_used": null
+  },
+  "6_rec_20251203_134711_trimmed.mp4:92": {
+    "video_filename": "6_rec_20251203_134711_trimmed.mp4",
+    "frame_index": 92,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:24:08.219225",
+    "defect_type": "lack_of_fusion",
+    "notes": "",
+    "filters_used": null
+  },
+  "6_rec_20251203_134711_trimmed.mp4:93": {
+    "video_filename": "6_rec_20251203_134711_trimmed.mp4",
+    "frame_index": 93,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:24:11.936270",
+    "defect_type": "lack_of_fusion",
+    "notes": "",
+    "filters_used": null
+  },
+  "6_rec_20251203_134711_trimmed.mp4:94": {
+    "video_filename": "6_rec_20251203_134711_trimmed.mp4",
+    "frame_index": 94,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:24:15.517186",
+    "defect_type": "lack_of_fusion",
+    "notes": "",
+    "filters_used": null
+  },
+  "6_rec_20251203_134711_trimmed.mp4:95": {
+    "video_filename": "6_rec_20251203_134711_trimmed.mp4",
+    "frame_index": 95,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:24:18.972895",
+    "defect_type": "lack_of_fusion",
+    "notes": "",
+    "filters_used": null
+  },
+  "6_rec_20251203_134711_trimmed.mp4:96": {
+    "video_filename": "6_rec_20251203_134711_trimmed.mp4",
+    "frame_index": 96,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:24:22.522399",
+    "defect_type": "lack_of_fusion",
+    "notes": "",
+    "filters_used": null
+  },
+  "6_rec_20251203_134711_trimmed.mp4:97": {
+    "video_filename": "6_rec_20251203_134711_trimmed.mp4",
+    "frame_index": 97,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:24:26.258867",
+    "defect_type": "lack_of_fusion",
+    "notes": "",
+    "filters_used": null
+  },
+  "6_rec_20251203_134711_trimmed.mp4:98": {
+    "video_filename": "6_rec_20251203_134711_trimmed.mp4",
+    "frame_index": 98,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:24:30.095009",
+    "defect_type": "lack_of_fusion",
+    "notes": "",
+    "filters_used": null
+  },
+  "6_rec_20251203_134711_trimmed.mp4:99": {
+    "video_filename": "6_rec_20251203_134711_trimmed.mp4",
+    "frame_index": 99,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:24:33.464370",
+    "defect_type": "lack_of_fusion",
+    "notes": "",
+    "filters_used": null
+  },
+  "6_rec_20251203_134711_trimmed.mp4:100": {
+    "video_filename": "6_rec_20251203_134711_trimmed.mp4",
+    "frame_index": 100,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:24:37.220299",
+    "defect_type": "lack_of_fusion",
+    "notes": "",
+    "filters_used": null
+  },
+  "6_rec_20251203_134711_trimmed.mp4:101": {
+    "video_filename": "6_rec_20251203_134711_trimmed.mp4",
+    "frame_index": 101,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:24:40.711335",
+    "defect_type": "lack_of_fusion",
+    "notes": "",
+    "filters_used": null
+  },
+  "6_rec_20251203_134711_trimmed.mp4:102": {
+    "video_filename": "6_rec_20251203_134711_trimmed.mp4",
+    "frame_index": 102,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:24:44.270329",
+    "defect_type": "lack_of_fusion",
+    "notes": "",
+    "filters_used": null
+  },
+  "6_rec_20251203_134711_trimmed.mp4:103": {
+    "video_filename": "6_rec_20251203_134711_trimmed.mp4",
+    "frame_index": 103,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:24:48.031676",
+    "defect_type": "lack_of_fusion",
+    "notes": "",
+    "filters_used": null
+  },
+  "6_rec_20251203_134711_trimmed.mp4:104": {
+    "video_filename": "6_rec_20251203_134711_trimmed.mp4",
+    "frame_index": 104,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:24:51.640901",
+    "defect_type": "lack_of_fusion",
+    "notes": "",
+    "filters_used": null
+  },
+  "6_rec_20251203_134711_trimmed.mp4:105": {
+    "video_filename": "6_rec_20251203_134711_trimmed.mp4",
+    "frame_index": 105,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:24:55.392261",
+    "defect_type": "lack_of_fusion",
+    "notes": "",
+    "filters_used": null
+  },
+  "6_rec_20251203_134711_trimmed.mp4:106": {
+    "video_filename": "6_rec_20251203_134711_trimmed.mp4",
+    "frame_index": 106,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:24:59.393097",
+    "defect_type": "lack_of_fusion",
+    "notes": "",
+    "filters_used": null
+  },
+  "6_rec_20251203_134711_trimmed.mp4:107": {
+    "video_filename": "6_rec_20251203_134711_trimmed.mp4",
+    "frame_index": 107,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:25:03.132191",
+    "defect_type": "lack_of_fusion",
+    "notes": "",
+    "filters_used": null
+  },
+  "6_rec_20251203_134711_trimmed.mp4:108": {
+    "video_filename": "6_rec_20251203_134711_trimmed.mp4",
+    "frame_index": 108,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:25:06.528358",
+    "defect_type": "lack_of_fusion",
+    "notes": "",
+    "filters_used": null
+  },
+  "6_rec_20251203_134711_trimmed.mp4:109": {
+    "video_filename": "6_rec_20251203_134711_trimmed.mp4",
+    "frame_index": 109,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:25:09.909807",
+    "defect_type": "lack_of_fusion",
+    "notes": "",
+    "filters_used": null
+  },
+  "6_rec_20251203_134711_trimmed.mp4:110": {
+    "video_filename": "6_rec_20251203_134711_trimmed.mp4",
+    "frame_index": 110,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:25:13.556715",
+    "defect_type": "lack_of_fusion",
+    "notes": "",
+    "filters_used": null
+  },
+  "6_rec_20251203_134711_trimmed.mp4:111": {
+    "video_filename": "6_rec_20251203_134711_trimmed.mp4",
+    "frame_index": 111,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:25:17.059267",
+    "defect_type": "lack_of_fusion",
+    "notes": "",
+    "filters_used": null
+  },
+  "6_rec_20251203_134711_trimmed.mp4:112": {
+    "video_filename": "6_rec_20251203_134711_trimmed.mp4",
+    "frame_index": 112,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:25:21.005269",
+    "defect_type": "lack_of_fusion",
+    "notes": "",
+    "filters_used": null
+  },
+  "6_rec_20251203_134711_trimmed.mp4:113": {
+    "video_filename": "6_rec_20251203_134711_trimmed.mp4",
+    "frame_index": 113,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:25:24.625669",
+    "defect_type": "lack_of_fusion",
+    "notes": "",
+    "filters_used": null
+  },
+  "6_rec_20251203_134711_trimmed.mp4:114": {
+    "video_filename": "6_rec_20251203_134711_trimmed.mp4",
+    "frame_index": 114,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:25:28.860949",
+    "defect_type": "lack_of_fusion",
+    "notes": "",
+    "filters_used": null
+  },
+  "6_rec_20251203_134711_trimmed.mp4:115": {
+    "video_filename": "6_rec_20251203_134711_trimmed.mp4",
+    "frame_index": 115,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:25:32.211141",
+    "defect_type": "lack_of_fusion",
+    "notes": "",
+    "filters_used": null
+  },
+  "6_rec_20251203_134711_trimmed.mp4:116": {
+    "video_filename": "6_rec_20251203_134711_trimmed.mp4",
+    "frame_index": 116,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:25:35.866008",
+    "defect_type": "lack_of_fusion",
+    "notes": "",
+    "filters_used": null
+  },
+  "6_rec_20251203_134711_trimmed.mp4:117": {
+    "video_filename": "6_rec_20251203_134711_trimmed.mp4",
+    "frame_index": 117,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:25:39.735000",
+    "defect_type": "lack_of_fusion",
+    "notes": "",
+    "filters_used": null
+  },
+  "6_rec_20251203_134711_trimmed.mp4:118": {
+    "video_filename": "6_rec_20251203_134711_trimmed.mp4",
+    "frame_index": 118,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:25:43.341609",
+    "defect_type": "lack_of_fusion",
+    "notes": "",
+    "filters_used": null
+  },
+  "6_rec_20251203_134711_trimmed.mp4:119": {
+    "video_filename": "6_rec_20251203_134711_trimmed.mp4",
+    "frame_index": 119,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:25:47.186623",
+    "defect_type": "lack_of_fusion",
+    "notes": "",
+    "filters_used": null
+  },
+  "6_rec_20251203_134711_trimmed.mp4:120": {
+    "video_filename": "6_rec_20251203_134711_trimmed.mp4",
+    "frame_index": 120,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:25:50.646018",
+    "defect_type": "lack_of_fusion",
+    "notes": "",
+    "filters_used": null
+  },
+  "6_rec_20251203_134711_trimmed.mp4:121": {
+    "video_filename": "6_rec_20251203_134711_trimmed.mp4",
+    "frame_index": 121,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:25:54.346259",
+    "defect_type": "lack_of_fusion",
+    "notes": "",
+    "filters_used": null
+  },
+  "6_rec_20251203_134711_trimmed.mp4:122": {
+    "video_filename": "6_rec_20251203_134711_trimmed.mp4",
+    "frame_index": 122,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:25:58.255793",
+    "defect_type": "lack_of_fusion",
+    "notes": "",
+    "filters_used": null
+  },
+  "6_rec_20251203_134711_trimmed.mp4:123": {
+    "video_filename": "6_rec_20251203_134711_trimmed.mp4",
+    "frame_index": 123,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:26:01.900040",
+    "defect_type": "lack_of_fusion",
+    "notes": "",
+    "filters_used": null
+  },
+  "6_rec_20251203_134711_trimmed.mp4:124": {
+    "video_filename": "6_rec_20251203_134711_trimmed.mp4",
+    "frame_index": 124,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:26:07.641664",
+    "defect_type": "lack_of_fusion",
+    "notes": "",
+    "filters_used": null
+  },
+  "6_rec_20251203_134711_trimmed.mp4:125": {
+    "video_filename": "6_rec_20251203_134711_trimmed.mp4",
+    "frame_index": 125,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:26:11.190894",
+    "defect_type": "lack_of_fusion",
+    "notes": "",
+    "filters_used": null
+  },
+  "6_rec_20251203_134711_trimmed.mp4:126": {
+    "video_filename": "6_rec_20251203_134711_trimmed.mp4",
+    "frame_index": 126,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:26:15.376803",
+    "defect_type": "lack_of_fusion",
+    "notes": "",
+    "filters_used": null
+  },
+  "6_rec_20251203_134711_trimmed.mp4:127": {
+    "video_filename": "6_rec_20251203_134711_trimmed.mp4",
+    "frame_index": 127,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:26:19.289892",
+    "defect_type": "lack_of_fusion",
+    "notes": "",
+    "filters_used": null
+  },
+  "6_rec_20251203_134711_trimmed.mp4:128": {
+    "video_filename": "6_rec_20251203_134711_trimmed.mp4",
+    "frame_index": 128,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:26:24.803057",
+    "defect_type": "lack_of_fusion",
+    "notes": "",
+    "filters_used": null
+  },
+  "6_rec_20251203_134711_trimmed.mp4:129": {
+    "video_filename": "6_rec_20251203_134711_trimmed.mp4",
+    "frame_index": 129,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:26:33.048347",
+    "defect_type": "lack_of_fusion",
+    "notes": "",
+    "filters_used": null
+  },
+  "6_rec_20251203_134711_trimmed.mp4:130": {
+    "video_filename": "6_rec_20251203_134711_trimmed.mp4",
+    "frame_index": 130,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:26:36.188909",
+    "defect_type": "lack_of_fusion",
+    "notes": "",
+    "filters_used": null
+  },
+  "6_rec_20251203_134711_trimmed.mp4:131": {
+    "video_filename": "6_rec_20251203_134711_trimmed.mp4",
+    "frame_index": 131,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:26:40.321552",
+    "defect_type": "lack_of_fusion",
+    "notes": "",
+    "filters_used": null
+  },
+  "6_rec_20251203_134711_trimmed.mp4:132": {
+    "video_filename": "6_rec_20251203_134711_trimmed.mp4",
+    "frame_index": 132,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:26:43.919072",
+    "defect_type": "lack_of_fusion",
+    "notes": "",
+    "filters_used": null
+  },
+  "6_rec_20251203_134711_trimmed.mp4:133": {
+    "video_filename": "6_rec_20251203_134711_trimmed.mp4",
+    "frame_index": 133,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:26:47.970803",
+    "defect_type": "lack_of_fusion",
+    "notes": "",
+    "filters_used": null
+  },
+  "6_rec_20251203_134711_trimmed.mp4:134": {
+    "video_filename": "6_rec_20251203_134711_trimmed.mp4",
+    "frame_index": 134,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:26:51.762437",
+    "defect_type": "lack_of_fusion",
+    "notes": "",
+    "filters_used": null
+  },
+  "6_rec_20251203_134711_trimmed.mp4:135": {
+    "video_filename": "6_rec_20251203_134711_trimmed.mp4",
+    "frame_index": 135,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:26:55.151836",
+    "defect_type": "lack_of_fusion",
+    "notes": "",
+    "filters_used": null
+  },
+  "6_rec_20251203_134711_trimmed.mp4:136": {
+    "video_filename": "6_rec_20251203_134711_trimmed.mp4",
+    "frame_index": 136,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:26:59.047909",
+    "defect_type": "lack_of_fusion",
+    "notes": "",
+    "filters_used": null
+  },
+  "6_rec_20251203_134711_trimmed.mp4:137": {
+    "video_filename": "6_rec_20251203_134711_trimmed.mp4",
+    "frame_index": 137,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:27:03.462497",
+    "defect_type": "lack_of_fusion",
+    "notes": "",
+    "filters_used": null
+  },
+  "6_rec_20251203_134711_trimmed.mp4:138": {
+    "video_filename": "6_rec_20251203_134711_trimmed.mp4",
+    "frame_index": 138,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:27:07.657263",
+    "defect_type": "lack_of_fusion",
+    "notes": "",
+    "filters_used": null
+  },
+  "6_rec_20251203_134711_trimmed.mp4:139": {
+    "video_filename": "6_rec_20251203_134711_trimmed.mp4",
+    "frame_index": 139,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:27:12.286415",
+    "defect_type": "lack_of_fusion",
+    "notes": "",
+    "filters_used": null
+  },
+  "6_rec_20251203_134711_trimmed.mp4:140": {
+    "video_filename": "6_rec_20251203_134711_trimmed.mp4",
+    "frame_index": 140,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:27:16.646632",
+    "defect_type": "lack_of_fusion",
+    "notes": "",
+    "filters_used": null
+  },
+  "6_rec_20251203_134711_trimmed.mp4:141": {
+    "video_filename": "6_rec_20251203_134711_trimmed.mp4",
+    "frame_index": 141,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:27:20.745186",
+    "defect_type": "lack_of_fusion",
+    "notes": "",
+    "filters_used": null
+  },
+  "6_rec_20251203_134711_trimmed.mp4:142": {
+    "video_filename": "6_rec_20251203_134711_trimmed.mp4",
+    "frame_index": 142,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:27:24.525837",
+    "defect_type": "lack_of_fusion",
+    "notes": "",
+    "filters_used": null
+  },
+  "6_rec_20251203_134711_trimmed.mp4:143": {
+    "video_filename": "6_rec_20251203_134711_trimmed.mp4",
+    "frame_index": 143,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:27:28.835217",
+    "defect_type": "lack_of_fusion",
+    "notes": "",
+    "filters_used": null
+  },
+  "6_rec_20251203_134711_trimmed.mp4:144": {
+    "video_filename": "6_rec_20251203_134711_trimmed.mp4",
+    "frame_index": 144,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:27:32.765444",
+    "defect_type": "lack_of_fusion",
+    "notes": "",
+    "filters_used": null
+  },
+  "6_rec_20251203_134711_trimmed.mp4:145": {
+    "video_filename": "6_rec_20251203_134711_trimmed.mp4",
+    "frame_index": 145,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:27:36.446534",
+    "defect_type": "lack_of_fusion",
+    "notes": "",
+    "filters_used": null
+  },
+  "6_rec_20251203_134711_trimmed.mp4:146": {
+    "video_filename": "6_rec_20251203_134711_trimmed.mp4",
+    "frame_index": 146,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:27:40.913606",
+    "defect_type": "lack_of_fusion",
+    "notes": "",
+    "filters_used": null
+  },
+  "6_rec_20251203_134711_trimmed.mp4:147": {
+    "video_filename": "6_rec_20251203_134711_trimmed.mp4",
+    "frame_index": 147,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:27:46.546463",
+    "defect_type": "lack_of_fusion",
+    "notes": "",
+    "filters_used": null
+  },
+  "6_rec_20251203_134711_trimmed.mp4:148": {
+    "video_filename": "6_rec_20251203_134711_trimmed.mp4",
+    "frame_index": 148,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:27:59.144764",
+    "defect_type": "lack_of_fusion",
+    "notes": "",
+    "filters_used": null
+  },
+  "9_rec_20251203_135652_trimmed.mp4:111": {
+    "video_filename": "9_rec_20251203_135652_trimmed.mp4",
+    "frame_index": 111,
+    "label": "ok",
+    "timestamp": "2026-01-07T16:31:01.293432",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "9_rec_20251203_135652_trimmed.mp4:112": {
+    "video_filename": "9_rec_20251203_135652_trimmed.mp4",
+    "frame_index": 112,
+    "label": "ok",
+    "timestamp": "2026-01-07T16:31:03.509185",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "9_rec_20251203_135652_trimmed.mp4:113": {
+    "video_filename": "9_rec_20251203_135652_trimmed.mp4",
+    "frame_index": 113,
+    "label": "ok",
+    "timestamp": "2026-01-07T16:31:05.455647",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "9_rec_20251203_135652_trimmed.mp4:114": {
+    "video_filename": "9_rec_20251203_135652_trimmed.mp4",
+    "frame_index": 114,
+    "label": "ok",
+    "timestamp": "2026-01-07T16:31:07.454950",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "9_rec_20251203_135652_trimmed.mp4:115": {
+    "video_filename": "9_rec_20251203_135652_trimmed.mp4",
+    "frame_index": 115,
+    "label": "ok",
+    "timestamp": "2026-01-07T16:31:09.350186",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "9_rec_20251203_135652_trimmed.mp4:116": {
+    "video_filename": "9_rec_20251203_135652_trimmed.mp4",
+    "frame_index": 116,
+    "label": "ok",
+    "timestamp": "2026-01-07T16:31:11.213265",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "9_rec_20251203_135652_trimmed.mp4:117": {
+    "video_filename": "9_rec_20251203_135652_trimmed.mp4",
+    "frame_index": 117,
+    "label": "ok",
+    "timestamp": "2026-01-07T16:31:13.115355",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "9_rec_20251203_135652_trimmed.mp4:118": {
+    "video_filename": "9_rec_20251203_135652_trimmed.mp4",
+    "frame_index": 118,
+    "label": "ok",
+    "timestamp": "2026-01-07T16:31:15.127943",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "9_rec_20251203_135652_trimmed.mp4:119": {
+    "video_filename": "9_rec_20251203_135652_trimmed.mp4",
+    "frame_index": 119,
+    "label": "ok",
+    "timestamp": "2026-01-07T16:31:16.934763",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "9_rec_20251203_135652_trimmed.mp4:120": {
+    "video_filename": "9_rec_20251203_135652_trimmed.mp4",
+    "frame_index": 120,
+    "label": "ok",
+    "timestamp": "2026-01-07T16:31:18.921810",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "9_rec_20251203_135652_trimmed.mp4:121": {
+    "video_filename": "9_rec_20251203_135652_trimmed.mp4",
+    "frame_index": 121,
+    "label": "ok",
+    "timestamp": "2026-01-07T16:31:25.664747",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "9_rec_20251203_135652_trimmed.mp4:123": {
+    "video_filename": "9_rec_20251203_135652_trimmed.mp4",
+    "frame_index": 123,
+    "label": "ok",
+    "timestamp": "2026-01-07T16:31:27.479139",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "9_rec_20251203_135652_trimmed.mp4:125": {
+    "video_filename": "9_rec_20251203_135652_trimmed.mp4",
+    "frame_index": 125,
+    "label": "ok",
+    "timestamp": "2026-01-07T16:31:29.536074",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "9_rec_20251203_135652_trimmed.mp4:126": {
+    "video_filename": "9_rec_20251203_135652_trimmed.mp4",
+    "frame_index": 126,
+    "label": "ok",
+    "timestamp": "2026-01-07T16:31:31.471364",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "9_rec_20251203_135652_trimmed.mp4:128": {
+    "video_filename": "9_rec_20251203_135652_trimmed.mp4",
+    "frame_index": 128,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:31:51.956664",
+    "defect_type": "irregular_bead",
+    "notes": "",
+    "filters_used": null
+  },
+  "9_rec_20251203_135652_trimmed.mp4:129": {
+    "video_filename": "9_rec_20251203_135652_trimmed.mp4",
+    "frame_index": 129,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:31:55.866152",
+    "defect_type": "irregular_bead",
+    "notes": "",
+    "filters_used": null
+  },
+  "9_rec_20251203_135652_trimmed.mp4:130": {
+    "video_filename": "9_rec_20251203_135652_trimmed.mp4",
+    "frame_index": 130,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:31:59.176966",
+    "defect_type": "irregular_bead",
+    "notes": "",
+    "filters_used": null
+  },
+  "9_rec_20251203_135652_trimmed.mp4:131": {
+    "video_filename": "9_rec_20251203_135652_trimmed.mp4",
+    "frame_index": 131,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:32:02.444984",
+    "defect_type": "irregular_bead",
+    "notes": "",
+    "filters_used": null
+  },
+  "9_rec_20251203_135652_trimmed.mp4:132": {
+    "video_filename": "9_rec_20251203_135652_trimmed.mp4",
+    "frame_index": 132,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:32:05.588348",
+    "defect_type": "irregular_bead",
+    "notes": "",
+    "filters_used": null
+  },
+  "9_rec_20251203_135652_trimmed.mp4:133": {
+    "video_filename": "9_rec_20251203_135652_trimmed.mp4",
+    "frame_index": 133,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:32:08.962123",
+    "defect_type": "irregular_bead",
+    "notes": "",
+    "filters_used": null
+  },
+  "9_rec_20251203_135652_trimmed.mp4:134": {
+    "video_filename": "9_rec_20251203_135652_trimmed.mp4",
+    "frame_index": 134,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:32:11.843968",
+    "defect_type": "irregular_bead",
+    "notes": "",
+    "filters_used": null
+  },
+  "9_rec_20251203_135652_trimmed.mp4:135": {
+    "video_filename": "9_rec_20251203_135652_trimmed.mp4",
+    "frame_index": 135,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:32:15.641926",
+    "defect_type": "irregular_bead",
+    "notes": "",
+    "filters_used": null
+  },
+  "9_rec_20251203_135652_trimmed.mp4:136": {
+    "video_filename": "9_rec_20251203_135652_trimmed.mp4",
+    "frame_index": 136,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:32:20.008318",
+    "defect_type": "irregular_bead",
+    "notes": "",
+    "filters_used": null
+  },
+  "9_rec_20251203_135652_trimmed.mp4:138": {
+    "video_filename": "9_rec_20251203_135652_trimmed.mp4",
+    "frame_index": 138,
+    "label": "ok",
+    "timestamp": "2026-01-07T16:32:22.834760",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "9_rec_20251203_135652_trimmed.mp4:139": {
+    "video_filename": "9_rec_20251203_135652_trimmed.mp4",
+    "frame_index": 139,
+    "label": "ok",
+    "timestamp": "2026-01-07T16:32:24.855238",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "9_rec_20251203_135652_trimmed.mp4:140": {
+    "video_filename": "9_rec_20251203_135652_trimmed.mp4",
+    "frame_index": 140,
+    "label": "ok",
+    "timestamp": "2026-01-07T16:32:26.718896",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "9_rec_20251203_135652_trimmed.mp4:141": {
+    "video_filename": "9_rec_20251203_135652_trimmed.mp4",
+    "frame_index": 141,
+    "label": "ok",
+    "timestamp": "2026-01-07T16:32:28.916672",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "9_rec_20251203_135652_trimmed.mp4:142": {
+    "video_filename": "9_rec_20251203_135652_trimmed.mp4",
+    "frame_index": 142,
+    "label": "ok",
+    "timestamp": "2026-01-07T16:32:30.763283",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "9_rec_20251203_135652_trimmed.mp4:143": {
+    "video_filename": "9_rec_20251203_135652_trimmed.mp4",
+    "frame_index": 143,
+    "label": "ok",
+    "timestamp": "2026-01-07T16:32:32.627762",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "9_rec_20251203_135652_trimmed.mp4:144": {
+    "video_filename": "9_rec_20251203_135652_trimmed.mp4",
+    "frame_index": 144,
+    "label": "ok",
+    "timestamp": "2026-01-07T16:32:34.445089",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "9_rec_20251203_135652_trimmed.mp4:145": {
+    "video_filename": "9_rec_20251203_135652_trimmed.mp4",
+    "frame_index": 145,
+    "label": "ok",
+    "timestamp": "2026-01-07T16:32:36.643859",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "9_rec_20251203_135652_trimmed.mp4:146": {
+    "video_filename": "9_rec_20251203_135652_trimmed.mp4",
+    "frame_index": 146,
+    "label": "ok",
+    "timestamp": "2026-01-07T16:32:38.728758",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "9_rec_20251203_135652_trimmed.mp4:147": {
+    "video_filename": "9_rec_20251203_135652_trimmed.mp4",
+    "frame_index": 147,
+    "label": "ok",
+    "timestamp": "2026-01-07T16:32:40.691275",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "9_rec_20251203_135652_trimmed.mp4:148": {
+    "video_filename": "9_rec_20251203_135652_trimmed.mp4",
+    "frame_index": 148,
+    "label": "ok",
+    "timestamp": "2026-01-07T16:32:42.534186",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "9_rec_20251203_135652_trimmed.mp4:149": {
+    "video_filename": "9_rec_20251203_135652_trimmed.mp4",
+    "frame_index": 149,
+    "label": "ok",
+    "timestamp": "2026-01-07T16:32:44.509026",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "9_rec_20251203_135652_trimmed.mp4:150": {
+    "video_filename": "9_rec_20251203_135652_trimmed.mp4",
+    "frame_index": 150,
+    "label": "ok",
+    "timestamp": "2026-01-07T16:32:46.342140",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "9_rec_20251203_135652_trimmed.mp4:151": {
+    "video_filename": "9_rec_20251203_135652_trimmed.mp4",
+    "frame_index": 151,
+    "label": "ok",
+    "timestamp": "2026-01-07T16:32:48.170435",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "9_rec_20251203_135652_trimmed.mp4:152": {
+    "video_filename": "9_rec_20251203_135652_trimmed.mp4",
+    "frame_index": 152,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:32:53.531381",
+    "defect_type": "irregular_bead",
+    "notes": "",
+    "filters_used": null
+  },
+  "9_rec_20251203_135652_trimmed.mp4:153": {
+    "video_filename": "9_rec_20251203_135652_trimmed.mp4",
+    "frame_index": 153,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:32:56.321697",
+    "defect_type": "irregular_bead",
+    "notes": "",
+    "filters_used": null
+  },
+  "9_rec_20251203_135652_trimmed.mp4:154": {
+    "video_filename": "9_rec_20251203_135652_trimmed.mp4",
+    "frame_index": 154,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:32:59.059288",
+    "defect_type": "irregular_bead",
+    "notes": "",
+    "filters_used": null
+  },
+  "9_rec_20251203_135652_trimmed.mp4:155": {
+    "video_filename": "9_rec_20251203_135652_trimmed.mp4",
+    "frame_index": 155,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:33:01.883660",
+    "defect_type": "irregular_bead",
+    "notes": "",
+    "filters_used": null
+  },
+  "9_rec_20251203_135652_trimmed.mp4:156": {
+    "video_filename": "9_rec_20251203_135652_trimmed.mp4",
+    "frame_index": 156,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:33:04.623870",
+    "defect_type": "irregular_bead",
+    "notes": "",
+    "filters_used": null
+  },
+  "9_rec_20251203_135652_trimmed.mp4:157": {
+    "video_filename": "9_rec_20251203_135652_trimmed.mp4",
+    "frame_index": 157,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:33:07.826755",
+    "defect_type": "irregular_bead",
+    "notes": "",
+    "filters_used": null
+  },
+  "9_rec_20251203_135652_trimmed.mp4:158": {
+    "video_filename": "9_rec_20251203_135652_trimmed.mp4",
+    "frame_index": 158,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:33:10.782571",
+    "defect_type": "irregular_bead",
+    "notes": "",
+    "filters_used": null
+  },
+  "9_rec_20251203_135652_trimmed.mp4:159": {
+    "video_filename": "9_rec_20251203_135652_trimmed.mp4",
+    "frame_index": 159,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:33:14.069391",
+    "defect_type": "irregular_bead",
+    "notes": "",
+    "filters_used": null
+  },
+  "9_rec_20251203_135652_trimmed.mp4:161": {
+    "video_filename": "9_rec_20251203_135652_trimmed.mp4",
+    "frame_index": 161,
+    "label": "ok",
+    "timestamp": "2026-01-07T16:33:16.949586",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "9_rec_20251203_135652_trimmed.mp4:162": {
+    "video_filename": "9_rec_20251203_135652_trimmed.mp4",
+    "frame_index": 162,
+    "label": "ok",
+    "timestamp": "2026-01-07T16:33:18.709416",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "9_rec_20251203_135652_trimmed.mp4:163": {
+    "video_filename": "9_rec_20251203_135652_trimmed.mp4",
+    "frame_index": 163,
+    "label": "ok",
+    "timestamp": "2026-01-07T16:33:20.529917",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "9_rec_20251203_135652_trimmed.mp4:164": {
+    "video_filename": "9_rec_20251203_135652_trimmed.mp4",
+    "frame_index": 164,
+    "label": "ok",
+    "timestamp": "2026-01-07T16:33:22.326368",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "9_rec_20251203_135652_trimmed.mp4:165": {
+    "video_filename": "9_rec_20251203_135652_trimmed.mp4",
+    "frame_index": 165,
+    "label": "ok",
+    "timestamp": "2026-01-07T16:33:24.187436",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "9_rec_20251203_135652_trimmed.mp4:166": {
+    "video_filename": "9_rec_20251203_135652_trimmed.mp4",
+    "frame_index": 166,
+    "label": "ok",
+    "timestamp": "2026-01-07T16:33:25.989935",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "9_rec_20251203_135652_trimmed.mp4:167": {
+    "video_filename": "9_rec_20251203_135652_trimmed.mp4",
+    "frame_index": 167,
+    "label": "ok",
+    "timestamp": "2026-01-07T16:33:27.826731",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "9_rec_20251203_135652_trimmed.mp4:168": {
+    "video_filename": "9_rec_20251203_135652_trimmed.mp4",
+    "frame_index": 168,
+    "label": "ok",
+    "timestamp": "2026-01-07T16:33:29.800966",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "9_rec_20251203_135652_trimmed.mp4:169": {
+    "video_filename": "9_rec_20251203_135652_trimmed.mp4",
+    "frame_index": 169,
+    "label": "ok",
+    "timestamp": "2026-01-07T16:33:31.773349",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "8_rec_20251203_135124_trimmed.mp4:102": {
+    "video_filename": "8_rec_20251203_135124_trimmed.mp4",
+    "frame_index": 102,
+    "label": "ok",
+    "timestamp": "2026-01-07T16:46:09.362329",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "8_rec_20251203_135124_trimmed.mp4:103": {
+    "video_filename": "8_rec_20251203_135124_trimmed.mp4",
+    "frame_index": 103,
+    "label": "ok",
+    "timestamp": "2026-01-07T16:46:11.792482",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "8_rec_20251203_135124_trimmed.mp4:104": {
+    "video_filename": "8_rec_20251203_135124_trimmed.mp4",
+    "frame_index": 104,
+    "label": "ok",
+    "timestamp": "2026-01-07T16:46:13.829929",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "8_rec_20251203_135124_trimmed.mp4:105": {
+    "video_filename": "8_rec_20251203_135124_trimmed.mp4",
+    "frame_index": 105,
+    "label": "ok",
+    "timestamp": "2026-01-07T16:46:15.859639",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "8_rec_20251203_135124_trimmed.mp4:106": {
+    "video_filename": "8_rec_20251203_135124_trimmed.mp4",
+    "frame_index": 106,
+    "label": "ok",
+    "timestamp": "2026-01-07T16:46:18.251376",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "8_rec_20251203_135124_trimmed.mp4:107": {
+    "video_filename": "8_rec_20251203_135124_trimmed.mp4",
+    "frame_index": 107,
+    "label": "ok",
+    "timestamp": "2026-01-07T16:46:20.215004",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "8_rec_20251203_135124_trimmed.mp4:108": {
+    "video_filename": "8_rec_20251203_135124_trimmed.mp4",
+    "frame_index": 108,
+    "label": "ok",
+    "timestamp": "2026-01-07T16:46:22.421807",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "8_rec_20251203_135124_trimmed.mp4:109": {
+    "video_filename": "8_rec_20251203_135124_trimmed.mp4",
+    "frame_index": 109,
+    "label": "ok",
+    "timestamp": "2026-01-07T16:46:27.065888",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "8_rec_20251203_135124_trimmed.mp4:110": {
+    "video_filename": "8_rec_20251203_135124_trimmed.mp4",
+    "frame_index": 110,
+    "label": "ok",
+    "timestamp": "2026-01-07T16:46:29.156273",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "8_rec_20251203_135124_trimmed.mp4:111": {
+    "video_filename": "8_rec_20251203_135124_trimmed.mp4",
+    "frame_index": 111,
+    "label": "ok",
+    "timestamp": "2026-01-07T16:46:31.297541",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "8_rec_20251203_135124_trimmed.mp4:112": {
+    "video_filename": "8_rec_20251203_135124_trimmed.mp4",
+    "frame_index": 112,
+    "label": "ok",
+    "timestamp": "2026-01-07T16:46:33.468424",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "8_rec_20251203_135124_trimmed.mp4:113": {
+    "video_filename": "8_rec_20251203_135124_trimmed.mp4",
+    "frame_index": 113,
+    "label": "ok",
+    "timestamp": "2026-01-07T16:46:35.675546",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "8_rec_20251203_135124_trimmed.mp4:114": {
+    "video_filename": "8_rec_20251203_135124_trimmed.mp4",
+    "frame_index": 114,
+    "label": "ok",
+    "timestamp": "2026-01-07T16:46:38.013287",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "8_rec_20251203_135124_trimmed.mp4:115": {
+    "video_filename": "8_rec_20251203_135124_trimmed.mp4",
+    "frame_index": 115,
+    "label": "ok",
+    "timestamp": "2026-01-07T16:46:40.094957",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "8_rec_20251203_135124_trimmed.mp4:116": {
+    "video_filename": "8_rec_20251203_135124_trimmed.mp4",
+    "frame_index": 116,
+    "label": "ok",
+    "timestamp": "2026-01-07T16:46:42.177078",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "8_rec_20251203_135124_trimmed.mp4:117": {
+    "video_filename": "8_rec_20251203_135124_trimmed.mp4",
+    "frame_index": 117,
+    "label": "ok",
+    "timestamp": "2026-01-07T16:46:44.157751",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "8_rec_20251203_135124_trimmed.mp4:118": {
+    "video_filename": "8_rec_20251203_135124_trimmed.mp4",
+    "frame_index": 118,
+    "label": "ok",
+    "timestamp": "2026-01-07T16:46:46.110508",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "8_rec_20251203_135124_trimmed.mp4:119": {
+    "video_filename": "8_rec_20251203_135124_trimmed.mp4",
+    "frame_index": 119,
+    "label": "ok",
+    "timestamp": "2026-01-07T16:46:47.973463",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "8_rec_20251203_135124_trimmed.mp4:120": {
+    "video_filename": "8_rec_20251203_135124_trimmed.mp4",
+    "frame_index": 120,
+    "label": "ok",
+    "timestamp": "2026-01-07T16:46:50.310343",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "8_rec_20251203_135124_trimmed.mp4:121": {
+    "video_filename": "8_rec_20251203_135124_trimmed.mp4",
+    "frame_index": 121,
+    "label": "ok",
+    "timestamp": "2026-01-07T16:46:52.517266",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "8_rec_20251203_135124_trimmed.mp4:122": {
+    "video_filename": "8_rec_20251203_135124_trimmed.mp4",
+    "frame_index": 122,
+    "label": "ok",
+    "timestamp": "2026-01-07T16:46:54.640594",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "8_rec_20251203_135124_trimmed.mp4:123": {
+    "video_filename": "8_rec_20251203_135124_trimmed.mp4",
+    "frame_index": 123,
+    "label": "ok",
+    "timestamp": "2026-01-07T16:47:03.200323",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "8_rec_20251203_135124_trimmed.mp4:124": {
+    "video_filename": "8_rec_20251203_135124_trimmed.mp4",
+    "frame_index": 124,
+    "label": "ok",
+    "timestamp": "2026-01-07T16:47:05.748263",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "8_rec_20251203_135124_trimmed.mp4:125": {
+    "video_filename": "8_rec_20251203_135124_trimmed.mp4",
+    "frame_index": 125,
+    "label": "ok",
+    "timestamp": "2026-01-07T16:47:08.103078",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "8_rec_20251203_135124_trimmed.mp4:126": {
+    "video_filename": "8_rec_20251203_135124_trimmed.mp4",
+    "frame_index": 126,
+    "label": "ok",
+    "timestamp": "2026-01-07T16:47:10.879103",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "8_rec_20251203_135124_trimmed.mp4:127": {
+    "video_filename": "8_rec_20251203_135124_trimmed.mp4",
+    "frame_index": 127,
+    "label": "ok",
+    "timestamp": "2026-01-07T16:47:13.557130",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "8_rec_20251203_135124_trimmed.mp4:128": {
+    "video_filename": "8_rec_20251203_135124_trimmed.mp4",
+    "frame_index": 128,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:47:19.507774",
+    "defect_type": "irregular_bead",
+    "notes": "",
+    "filters_used": null
+  },
+  "8_rec_20251203_135124_trimmed.mp4:129": {
+    "video_filename": "8_rec_20251203_135124_trimmed.mp4",
+    "frame_index": 129,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:47:24.552039",
+    "defect_type": "irregular_bead",
+    "notes": "",
+    "filters_used": null
+  },
+  "8_rec_20251203_135124_trimmed.mp4:130": {
+    "video_filename": "8_rec_20251203_135124_trimmed.mp4",
+    "frame_index": 130,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:47:29.042049",
+    "defect_type": "irregular_bead",
+    "notes": "",
+    "filters_used": null
+  },
+  "8_rec_20251203_135124_trimmed.mp4:131": {
+    "video_filename": "8_rec_20251203_135124_trimmed.mp4",
+    "frame_index": 131,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:47:32.950017",
+    "defect_type": "irregular_bead",
+    "notes": "",
+    "filters_used": null
+  },
+  "8_rec_20251203_135124_trimmed.mp4:132": {
+    "video_filename": "8_rec_20251203_135124_trimmed.mp4",
+    "frame_index": 132,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:47:36.853836",
+    "defect_type": "irregular_bead",
+    "notes": "",
+    "filters_used": null
+  },
+  "8_rec_20251203_135124_trimmed.mp4:133": {
+    "video_filename": "8_rec_20251203_135124_trimmed.mp4",
+    "frame_index": 133,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:47:40.988490",
+    "defect_type": "irregular_bead",
+    "notes": "",
+    "filters_used": null
+  },
+  "8_rec_20251203_135124_trimmed.mp4:134": {
+    "video_filename": "8_rec_20251203_135124_trimmed.mp4",
+    "frame_index": 134,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:47:45.018087",
+    "defect_type": "irregular_bead",
+    "notes": "",
+    "filters_used": null
+  },
+  "8_rec_20251203_135124_trimmed.mp4:135": {
+    "video_filename": "8_rec_20251203_135124_trimmed.mp4",
+    "frame_index": 135,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:47:49.437027",
+    "defect_type": "irregular_bead",
+    "notes": "",
+    "filters_used": null
+  },
+  "8_rec_20251203_135124_trimmed.mp4:136": {
+    "video_filename": "8_rec_20251203_135124_trimmed.mp4",
+    "frame_index": 136,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:47:53.930430",
+    "defect_type": "irregular_bead",
+    "notes": "",
+    "filters_used": null
+  },
+  "8_rec_20251203_135124_trimmed.mp4:137": {
+    "video_filename": "8_rec_20251203_135124_trimmed.mp4",
+    "frame_index": 137,
+    "label": "ok",
+    "timestamp": "2026-01-07T16:47:56.481767",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "8_rec_20251203_135124_trimmed.mp4:138": {
+    "video_filename": "8_rec_20251203_135124_trimmed.mp4",
+    "frame_index": 138,
+    "label": "ok",
+    "timestamp": "2026-01-07T16:47:58.310004",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "8_rec_20251203_135124_trimmed.mp4:139": {
+    "video_filename": "8_rec_20251203_135124_trimmed.mp4",
+    "frame_index": 139,
+    "label": "ok",
+    "timestamp": "2026-01-07T16:48:00.372359",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "8_rec_20251203_135124_trimmed.mp4:140": {
+    "video_filename": "8_rec_20251203_135124_trimmed.mp4",
+    "frame_index": 140,
+    "label": "ok",
+    "timestamp": "2026-01-07T16:48:02.383649",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "8_rec_20251203_135124_trimmed.mp4:141": {
+    "video_filename": "8_rec_20251203_135124_trimmed.mp4",
+    "frame_index": 141,
+    "label": "ok",
+    "timestamp": "2026-01-07T16:48:04.389408",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "8_rec_20251203_135124_trimmed.mp4:142": {
+    "video_filename": "8_rec_20251203_135124_trimmed.mp4",
+    "frame_index": 142,
+    "label": "ok",
+    "timestamp": "2026-01-07T16:48:06.242516",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "8_rec_20251203_135124_trimmed.mp4:143": {
+    "video_filename": "8_rec_20251203_135124_trimmed.mp4",
+    "frame_index": 143,
+    "label": "ok",
+    "timestamp": "2026-01-07T16:48:08.258910",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "8_rec_20251203_135124_trimmed.mp4:144": {
+    "video_filename": "8_rec_20251203_135124_trimmed.mp4",
+    "frame_index": 144,
+    "label": "ok",
+    "timestamp": "2026-01-07T16:48:10.226878",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "8_rec_20251203_135124_trimmed.mp4:145": {
+    "video_filename": "8_rec_20251203_135124_trimmed.mp4",
+    "frame_index": 145,
+    "label": "ok",
+    "timestamp": "2026-01-07T16:48:12.447818",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "8_rec_20251203_135124_trimmed.mp4:146": {
+    "video_filename": "8_rec_20251203_135124_trimmed.mp4",
+    "frame_index": 146,
+    "label": "ok",
+    "timestamp": "2026-01-07T16:48:14.439674",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "8_rec_20251203_135124_trimmed.mp4:147": {
+    "video_filename": "8_rec_20251203_135124_trimmed.mp4",
+    "frame_index": 147,
+    "label": "ok",
+    "timestamp": "2026-01-07T16:48:16.568839",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "8_rec_20251203_135124_trimmed.mp4:148": {
+    "video_filename": "8_rec_20251203_135124_trimmed.mp4",
+    "frame_index": 148,
+    "label": "ok",
+    "timestamp": "2026-01-07T16:48:18.725470",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "8_rec_20251203_135124_trimmed.mp4:149": {
+    "video_filename": "8_rec_20251203_135124_trimmed.mp4",
+    "frame_index": 149,
+    "label": "ok",
+    "timestamp": "2026-01-07T16:48:20.803582",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "8_rec_20251203_135124_trimmed.mp4:150": {
+    "video_filename": "8_rec_20251203_135124_trimmed.mp4",
+    "frame_index": 150,
+    "label": "ok",
+    "timestamp": "2026-01-07T16:48:22.998516",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "8_rec_20251203_135124_trimmed.mp4:151": {
+    "video_filename": "8_rec_20251203_135124_trimmed.mp4",
+    "frame_index": 151,
+    "label": "ok",
+    "timestamp": "2026-01-07T16:48:25.007734",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "8_rec_20251203_135124_trimmed.mp4:152": {
+    "video_filename": "8_rec_20251203_135124_trimmed.mp4",
+    "frame_index": 152,
+    "label": "ok",
+    "timestamp": "2026-01-07T16:48:27.107896",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "8_rec_20251203_135124_trimmed.mp4:153": {
+    "video_filename": "8_rec_20251203_135124_trimmed.mp4",
+    "frame_index": 153,
+    "label": "ok",
+    "timestamp": "2026-01-07T16:48:29.258957",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "8_rec_20251203_135124_trimmed.mp4:154": {
+    "video_filename": "8_rec_20251203_135124_trimmed.mp4",
+    "frame_index": 154,
+    "label": "ok",
+    "timestamp": "2026-01-07T16:48:31.425630",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "8_rec_20251203_135124_trimmed.mp4:155": {
+    "video_filename": "8_rec_20251203_135124_trimmed.mp4",
+    "frame_index": 155,
+    "label": "ok",
+    "timestamp": "2026-01-07T16:48:33.556451",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "8_rec_20251203_135124_trimmed.mp4:156": {
+    "video_filename": "8_rec_20251203_135124_trimmed.mp4",
+    "frame_index": 156,
+    "label": "ok",
+    "timestamp": "2026-01-07T16:48:36.048133",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "8_rec_20251203_135124_trimmed.mp4:157": {
+    "video_filename": "8_rec_20251203_135124_trimmed.mp4",
+    "frame_index": 157,
+    "label": "ok",
+    "timestamp": "2026-01-07T16:48:40.827660",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "8_rec_20251203_135124_trimmed.mp4:158": {
+    "video_filename": "8_rec_20251203_135124_trimmed.mp4",
+    "frame_index": 158,
+    "label": "ok",
+    "timestamp": "2026-01-07T16:48:43.028677",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "8_rec_20251203_135124_trimmed.mp4:159": {
+    "video_filename": "8_rec_20251203_135124_trimmed.mp4",
+    "frame_index": 159,
+    "label": "ok",
+    "timestamp": "2026-01-07T16:48:45.085329",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "8_rec_20251203_135124_trimmed.mp4:160": {
+    "video_filename": "8_rec_20251203_135124_trimmed.mp4",
+    "frame_index": 160,
+    "label": "ok",
+    "timestamp": "2026-01-07T16:48:47.683035",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "8_rec_20251203_135124_trimmed.mp4:161": {
+    "video_filename": "8_rec_20251203_135124_trimmed.mp4",
+    "frame_index": 161,
+    "label": "ok",
+    "timestamp": "2026-01-07T16:48:50.097387",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "8_rec_20251203_135124_trimmed.mp4:162": {
+    "video_filename": "8_rec_20251203_135124_trimmed.mp4",
+    "frame_index": 162,
+    "label": "ok",
+    "timestamp": "2026-01-07T16:48:52.644040",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "5_rec_20251203_133814_trimmed.mp4:0": {
+    "video_filename": "5_rec_20251203_133814_trimmed.mp4",
+    "frame_index": 0,
+    "label": "skip",
+    "timestamp": "2026-01-07T16:49:27.994323",
+    "defect_type": null,
+    "notes": "",
+    "filters_used": null
+  },
+  "5_rec_20251203_133814_trimmed.mp4:99": {
+    "video_filename": "5_rec_20251203_133814_trimmed.mp4",
+    "frame_index": 99,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:50:16.219180",
+    "defect_type": "other",
+    "notes": "",
+    "filters_used": null
+  },
+  "5_rec_20251203_133814_trimmed.mp4:100": {
+    "video_filename": "5_rec_20251203_133814_trimmed.mp4",
+    "frame_index": 100,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:50:20.724375",
+    "defect_type": "other",
+    "notes": "",
+    "filters_used": null
+  },
+  "5_rec_20251203_133814_trimmed.mp4:101": {
+    "video_filename": "5_rec_20251203_133814_trimmed.mp4",
+    "frame_index": 101,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:50:24.556866",
+    "defect_type": "other",
+    "notes": "",
+    "filters_used": null
+  },
+  "5_rec_20251203_133814_trimmed.mp4:102": {
+    "video_filename": "5_rec_20251203_133814_trimmed.mp4",
+    "frame_index": 102,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:50:28.505022",
+    "defect_type": "other",
+    "notes": "",
+    "filters_used": null
+  },
+  "5_rec_20251203_133814_trimmed.mp4:103": {
+    "video_filename": "5_rec_20251203_133814_trimmed.mp4",
+    "frame_index": 103,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:50:32.663067",
+    "defect_type": "other",
+    "notes": "",
+    "filters_used": null
+  },
+  "5_rec_20251203_133814_trimmed.mp4:104": {
+    "video_filename": "5_rec_20251203_133814_trimmed.mp4",
+    "frame_index": 104,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:50:36.534165",
+    "defect_type": "other",
+    "notes": "",
+    "filters_used": null
+  },
+  "5_rec_20251203_133814_trimmed.mp4:105": {
+    "video_filename": "5_rec_20251203_133814_trimmed.mp4",
+    "frame_index": 105,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:50:40.572984",
+    "defect_type": "other",
+    "notes": "",
+    "filters_used": null
+  },
+  "5_rec_20251203_133814_trimmed.mp4:106": {
+    "video_filename": "5_rec_20251203_133814_trimmed.mp4",
+    "frame_index": 106,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:50:44.189743",
+    "defect_type": "other",
+    "notes": "",
+    "filters_used": null
+  },
+  "5_rec_20251203_133814_trimmed.mp4:107": {
+    "video_filename": "5_rec_20251203_133814_trimmed.mp4",
+    "frame_index": 107,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:50:48.120622",
+    "defect_type": "other",
+    "notes": "",
+    "filters_used": null
+  },
+  "5_rec_20251203_133814_trimmed.mp4:108": {
+    "video_filename": "5_rec_20251203_133814_trimmed.mp4",
+    "frame_index": 108,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:50:51.974050",
+    "defect_type": "other",
+    "notes": "",
+    "filters_used": null
+  },
+  "5_rec_20251203_133814_trimmed.mp4:109": {
+    "video_filename": "5_rec_20251203_133814_trimmed.mp4",
+    "frame_index": 109,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:51:01.587787",
+    "defect_type": "other",
+    "notes": "",
+    "filters_used": null
+  },
+  "5_rec_20251203_133814_trimmed.mp4:110": {
+    "video_filename": "5_rec_20251203_133814_trimmed.mp4",
+    "frame_index": 110,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:51:06.207528",
+    "defect_type": "other",
+    "notes": "",
+    "filters_used": null
+  },
+  "5_rec_20251203_133814_trimmed.mp4:111": {
+    "video_filename": "5_rec_20251203_133814_trimmed.mp4",
+    "frame_index": 111,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:51:10.096964",
+    "defect_type": "other",
+    "notes": "",
+    "filters_used": null
+  },
+  "5_rec_20251203_133814_trimmed.mp4:112": {
+    "video_filename": "5_rec_20251203_133814_trimmed.mp4",
+    "frame_index": 112,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:51:14.092890",
+    "defect_type": "other",
+    "notes": "",
+    "filters_used": null
+  },
+  "5_rec_20251203_133814_trimmed.mp4:113": {
+    "video_filename": "5_rec_20251203_133814_trimmed.mp4",
+    "frame_index": 113,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:51:18.228712",
+    "defect_type": "other",
+    "notes": "",
+    "filters_used": null
+  },
+  "5_rec_20251203_133814_trimmed.mp4:114": {
+    "video_filename": "5_rec_20251203_133814_trimmed.mp4",
+    "frame_index": 114,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:51:22.893917",
+    "defect_type": "other",
+    "notes": "",
+    "filters_used": null
+  },
+  "5_rec_20251203_133814_trimmed.mp4:115": {
+    "video_filename": "5_rec_20251203_133814_trimmed.mp4",
+    "frame_index": 115,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:51:27.056257",
+    "defect_type": "other",
+    "notes": "",
+    "filters_used": null
+  },
+  "5_rec_20251203_133814_trimmed.mp4:116": {
+    "video_filename": "5_rec_20251203_133814_trimmed.mp4",
+    "frame_index": 116,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:51:38.216021",
+    "defect_type": "other",
+    "notes": "",
+    "filters_used": null
+  },
+  "5_rec_20251203_133814_trimmed.mp4:117": {
+    "video_filename": "5_rec_20251203_133814_trimmed.mp4",
+    "frame_index": 117,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:51:42.252294",
+    "defect_type": "other",
+    "notes": "",
+    "filters_used": null
+  },
+  "5_rec_20251203_133814_trimmed.mp4:118": {
+    "video_filename": "5_rec_20251203_133814_trimmed.mp4",
+    "frame_index": 118,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:51:46.372889",
+    "defect_type": "other",
+    "notes": "",
+    "filters_used": null
+  },
+  "5_rec_20251203_133814_trimmed.mp4:119": {
+    "video_filename": "5_rec_20251203_133814_trimmed.mp4",
+    "frame_index": 119,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:51:51.122526",
+    "defect_type": "other",
+    "notes": "",
+    "filters_used": null
+  },
+  "5_rec_20251203_133814_trimmed.mp4:120": {
+    "video_filename": "5_rec_20251203_133814_trimmed.mp4",
+    "frame_index": 120,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:51:55.051850",
+    "defect_type": "other",
+    "notes": "",
+    "filters_used": null
+  },
+  "5_rec_20251203_133814_trimmed.mp4:121": {
+    "video_filename": "5_rec_20251203_133814_trimmed.mp4",
+    "frame_index": 121,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:51:58.994660",
+    "defect_type": "other",
+    "notes": "",
+    "filters_used": null
+  },
+  "5_rec_20251203_133814_trimmed.mp4:122": {
+    "video_filename": "5_rec_20251203_133814_trimmed.mp4",
+    "frame_index": 122,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:52:02.509888",
+    "defect_type": "other",
+    "notes": "",
+    "filters_used": null
+  },
+  "5_rec_20251203_133814_trimmed.mp4:123": {
+    "video_filename": "5_rec_20251203_133814_trimmed.mp4",
+    "frame_index": 123,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:52:05.914805",
+    "defect_type": "other",
+    "notes": "",
+    "filters_used": null
+  },
+  "5_rec_20251203_133814_trimmed.mp4:124": {
+    "video_filename": "5_rec_20251203_133814_trimmed.mp4",
+    "frame_index": 124,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:52:09.218906",
+    "defect_type": "other",
+    "notes": "",
+    "filters_used": null
+  },
+  "5_rec_20251203_133814_trimmed.mp4:125": {
+    "video_filename": "5_rec_20251203_133814_trimmed.mp4",
+    "frame_index": 125,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:52:12.667584",
+    "defect_type": "other",
+    "notes": "",
+    "filters_used": null
+  },
+  "5_rec_20251203_133814_trimmed.mp4:126": {
+    "video_filename": "5_rec_20251203_133814_trimmed.mp4",
+    "frame_index": 126,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:52:16.441917",
+    "defect_type": "other",
+    "notes": "",
+    "filters_used": null
+  },
+  "5_rec_20251203_133814_trimmed.mp4:127": {
+    "video_filename": "5_rec_20251203_133814_trimmed.mp4",
+    "frame_index": 127,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:52:20.376553",
+    "defect_type": "other",
+    "notes": "",
+    "filters_used": null
+  },
+  "5_rec_20251203_133814_trimmed.mp4:128": {
+    "video_filename": "5_rec_20251203_133814_trimmed.mp4",
+    "frame_index": 128,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:52:25.085422",
+    "defect_type": "other",
+    "notes": "",
+    "filters_used": null
+  },
+  "5_rec_20251203_133814_trimmed.mp4:129": {
+    "video_filename": "5_rec_20251203_133814_trimmed.mp4",
+    "frame_index": 129,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:52:29.160118",
+    "defect_type": "other",
+    "notes": "",
+    "filters_used": null
+  },
+  "5_rec_20251203_133814_trimmed.mp4:130": {
+    "video_filename": "5_rec_20251203_133814_trimmed.mp4",
+    "frame_index": 130,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:52:34.684509",
+    "defect_type": "other",
+    "notes": "",
+    "filters_used": null
+  },
+  "5_rec_20251203_133814_trimmed.mp4:131": {
+    "video_filename": "5_rec_20251203_133814_trimmed.mp4",
+    "frame_index": 131,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:52:38.113338",
+    "defect_type": "other",
+    "notes": "",
+    "filters_used": null
+  },
+  "5_rec_20251203_133814_trimmed.mp4:132": {
+    "video_filename": "5_rec_20251203_133814_trimmed.mp4",
+    "frame_index": 132,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:52:42.856864",
+    "defect_type": "other",
+    "notes": "",
+    "filters_used": null
+  },
+  "5_rec_20251203_133814_trimmed.mp4:133": {
+    "video_filename": "5_rec_20251203_133814_trimmed.mp4",
+    "frame_index": 133,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:52:46.979833",
+    "defect_type": "other",
+    "notes": "",
+    "filters_used": null
+  },
+  "5_rec_20251203_133814_trimmed.mp4:134": {
+    "video_filename": "5_rec_20251203_133814_trimmed.mp4",
+    "frame_index": 134,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:52:54.175826",
+    "defect_type": "other",
+    "notes": "",
+    "filters_used": null
+  },
+  "5_rec_20251203_133814_trimmed.mp4:135": {
+    "video_filename": "5_rec_20251203_133814_trimmed.mp4",
+    "frame_index": 135,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:53:05.180448",
+    "defect_type": "other",
+    "notes": "",
+    "filters_used": null
+  },
+  "5_rec_20251203_133814_trimmed.mp4:136": {
+    "video_filename": "5_rec_20251203_133814_trimmed.mp4",
+    "frame_index": 136,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:53:09.831526",
+    "defect_type": "other",
+    "notes": "",
+    "filters_used": null
+  },
+  "5_rec_20251203_133814_trimmed.mp4:137": {
+    "video_filename": "5_rec_20251203_133814_trimmed.mp4",
+    "frame_index": 137,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:53:15.076527",
+    "defect_type": "other",
+    "notes": "",
+    "filters_used": null
+  },
+  "5_rec_20251203_133814_trimmed.mp4:138": {
+    "video_filename": "5_rec_20251203_133814_trimmed.mp4",
+    "frame_index": 138,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:53:23.401865",
+    "defect_type": "other",
+    "notes": "",
+    "filters_used": null
+  },
+  "5_rec_20251203_133814_trimmed.mp4:139": {
+    "video_filename": "5_rec_20251203_133814_trimmed.mp4",
+    "frame_index": 139,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:53:27.757890",
+    "defect_type": "other",
+    "notes": "",
+    "filters_used": null
+  },
+  "5_rec_20251203_133814_trimmed.mp4:140": {
+    "video_filename": "5_rec_20251203_133814_trimmed.mp4",
+    "frame_index": 140,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:53:33.070563",
+    "defect_type": "other",
+    "notes": "",
+    "filters_used": null
+  },
+  "5_rec_20251203_133814_trimmed.mp4:141": {
+    "video_filename": "5_rec_20251203_133814_trimmed.mp4",
+    "frame_index": 141,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:53:37.524121",
+    "defect_type": "other",
+    "notes": "",
+    "filters_used": null
+  },
+  "5_rec_20251203_133814_trimmed.mp4:142": {
+    "video_filename": "5_rec_20251203_133814_trimmed.mp4",
+    "frame_index": 142,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:53:42.887518",
+    "defect_type": "other",
+    "notes": "",
+    "filters_used": null
+  },
+  "5_rec_20251203_133814_trimmed.mp4:143": {
+    "video_filename": "5_rec_20251203_133814_trimmed.mp4",
+    "frame_index": 143,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:53:48.368969",
+    "defect_type": "other",
+    "notes": "",
+    "filters_used": null
+  },
+  "5_rec_20251203_133814_trimmed.mp4:144": {
+    "video_filename": "5_rec_20251203_133814_trimmed.mp4",
+    "frame_index": 144,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:53:52.387346",
+    "defect_type": "other",
+    "notes": "",
+    "filters_used": null
+  },
+  "5_rec_20251203_133814_trimmed.mp4:145": {
+    "video_filename": "5_rec_20251203_133814_trimmed.mp4",
+    "frame_index": 145,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:53:56.170044",
+    "defect_type": "other",
+    "notes": "",
+    "filters_used": null
+  },
+  "5_rec_20251203_133814_trimmed.mp4:146": {
+    "video_filename": "5_rec_20251203_133814_trimmed.mp4",
+    "frame_index": 146,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:54:01.116821",
+    "defect_type": "other",
+    "notes": "",
+    "filters_used": null
+  },
+  "5_rec_20251203_133814_trimmed.mp4:147": {
+    "video_filename": "5_rec_20251203_133814_trimmed.mp4",
+    "frame_index": 147,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:54:06.201032",
+    "defect_type": "other",
+    "notes": "",
+    "filters_used": null
+  },
+  "5_rec_20251203_133814_trimmed.mp4:148": {
+    "video_filename": "5_rec_20251203_133814_trimmed.mp4",
+    "frame_index": 148,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:54:10.062229",
+    "defect_type": "other",
+    "notes": "",
+    "filters_used": null
+  },
+  "5_rec_20251203_133814_trimmed.mp4:149": {
+    "video_filename": "5_rec_20251203_133814_trimmed.mp4",
+    "frame_index": 149,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:54:14.300111",
+    "defect_type": "other",
+    "notes": "",
+    "filters_used": null
+  },
+  "5_rec_20251203_133814_trimmed.mp4:150": {
+    "video_filename": "5_rec_20251203_133814_trimmed.mp4",
+    "frame_index": 150,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:54:32.405209",
+    "defect_type": "other",
+    "notes": "",
+    "filters_used": null
+  },
+  "5_rec_20251203_133814_trimmed.mp4:151": {
+    "video_filename": "5_rec_20251203_133814_trimmed.mp4",
+    "frame_index": 151,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:54:49.032975",
+    "defect_type": "other",
+    "notes": "",
+    "filters_used": null
+  },
+  "5_rec_20251203_133814_trimmed.mp4:152": {
+    "video_filename": "5_rec_20251203_133814_trimmed.mp4",
+    "frame_index": 152,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:54:53.517524",
+    "defect_type": "other",
+    "notes": "",
+    "filters_used": null
+  },
+  "5_rec_20251203_133814_trimmed.mp4:153": {
+    "video_filename": "5_rec_20251203_133814_trimmed.mp4",
+    "frame_index": 153,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:54:57.874378",
+    "defect_type": "other",
+    "notes": "",
+    "filters_used": null
+  },
+  "5_rec_20251203_133814_trimmed.mp4:154": {
+    "video_filename": "5_rec_20251203_133814_trimmed.mp4",
+    "frame_index": 154,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:55:02.567273",
+    "defect_type": "other",
+    "notes": "",
+    "filters_used": null
+  },
+  "5_rec_20251203_133814_trimmed.mp4:155": {
+    "video_filename": "5_rec_20251203_133814_trimmed.mp4",
+    "frame_index": 155,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:55:06.613717",
+    "defect_type": "other",
+    "notes": "",
+    "filters_used": null
+  },
+  "5_rec_20251203_133814_trimmed.mp4:156": {
+    "video_filename": "5_rec_20251203_133814_trimmed.mp4",
+    "frame_index": 156,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:55:11.098120",
+    "defect_type": "other",
+    "notes": "",
+    "filters_used": null
+  },
+  "5_rec_20251203_133814_trimmed.mp4:157": {
+    "video_filename": "5_rec_20251203_133814_trimmed.mp4",
+    "frame_index": 157,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:55:15.730298",
+    "defect_type": "other",
+    "notes": "",
+    "filters_used": null
+  },
+  "5_rec_20251203_133814_trimmed.mp4:158": {
+    "video_filename": "5_rec_20251203_133814_trimmed.mp4",
+    "frame_index": 158,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:55:19.634776",
+    "defect_type": "other",
+    "notes": "",
+    "filters_used": null
+  },
+  "5_rec_20251203_133814_trimmed.mp4:159": {
+    "video_filename": "5_rec_20251203_133814_trimmed.mp4",
+    "frame_index": 159,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:55:24.560209",
+    "defect_type": "other",
+    "notes": "",
+    "filters_used": null
+  },
+  "5_rec_20251203_133814_trimmed.mp4:160": {
+    "video_filename": "5_rec_20251203_133814_trimmed.mp4",
+    "frame_index": 160,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:55:28.927864",
+    "defect_type": "other",
+    "notes": "",
+    "filters_used": null
+  },
+  "5_rec_20251203_133814_trimmed.mp4:161": {
+    "video_filename": "5_rec_20251203_133814_trimmed.mp4",
+    "frame_index": 161,
+    "label": "nok",
+    "timestamp": "2026-01-07T16:55:34.584468",
+    "defect_type": "other",
+    "notes": "",
+    "filters_used": null
+  }
+}

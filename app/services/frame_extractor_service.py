@@ -103,6 +103,39 @@ class FrameExtractorService:
         finally:
             cap.release()
     
+    def get_frame(self, filename: str, frame_index: int) -> Optional[np.ndarray]:
+        """
+        Pobierz pojedynczą klatkę z wideo.
+        
+        Args:
+            filename: Nazwa pliku wideo
+            frame_index: Indeks klatki
+            
+        Returns:
+            Klatka jako numpy array (BGR) lub None jeśli nie znaleziono
+        """
+        video_path = self.recordings_dir / filename
+        if not video_path.exists():
+            logger.error(f"Video not found: {video_path}")
+            return None
+        
+        cap = cv2.VideoCapture(str(video_path))
+        if not cap.isOpened():
+            logger.error(f"Cannot open video: {video_path}")
+            return None
+        
+        try:
+            cap.set(cv2.CAP_PROP_POS_FRAMES, frame_index)
+            ret, frame = cap.read()
+            
+            if not ret:
+                logger.error(f"Cannot read frame {frame_index} from {filename}")
+                return None
+            
+            return frame
+        finally:
+            cap.release()
+    
     def extract_frames_generator(
         self, 
         video_path: str | Path,

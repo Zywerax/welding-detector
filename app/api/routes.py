@@ -1,6 +1,6 @@
 """API Routes - Camera, Recording, Edge Detection."""
 
-from fastapi import APIRouter, Depends, HTTPException, Query
+from fastapi import APIRouter, Depends, HTTPException, Query, BackgroundTasks
 from fastapi.responses import StreamingResponse, Response, FileResponse
 from datetime import datetime
 from typing import Optional
@@ -15,18 +15,23 @@ from app.services.image_enhancement_service import (
     ImageEnhancementService, get_enhancement_service,
     EnhancementPreset, EnhancementParams
 )
+from app.services.labeling_service import LabelingService, get_labeling_service
+from app.services.ml_classification_service import MLClassificationService, get_ml_service
 from app.api.models import (
     CameraHealthResponse, HealthStatus,
     RecordingStatusResponse, RecordingStartResponse, RecordingStopResponse, RecordingListResponse,
     CameraSettingsRequest,
     VideoInfoResponse, ExtractFramesRequest, ExtractFramesResponse, FrameResponse,
     MotionAnalysisResponse, MotionSegmentResponse, TrimToMotionRequest, TrimToMotionResponse,
-    EnhancementPresetEnum, ImageEnhancementParams, EnhancementPresetsResponse
+    EnhancementPresetEnum, ImageEnhancementParams, EnhancementPresetsResponse,
+    LabelType, AddLabelRequest, FrameLabelResponse, LabelingStatsResponse, TrainingDataResponse
 )
 
 camera_router = APIRouter(prefix="/camera", tags=["Camera"])
 edge_router = APIRouter(prefix="/edge", tags=["Edge Detection"])
 recording_router = APIRouter(prefix="/recording", tags=["Recording"])
+labeling_router = APIRouter(prefix="/labeling", tags=["Labeling"])
+ml_router = APIRouter(prefix="/ml", tags=["Machine Learning"])
 
 
 # ============== CAMERA ==============
@@ -399,4 +404,321 @@ async def trim_to_motion(
         return TrimToMotionResponse(**result)
     except Exception as e:
         raise HTTPException(500, f"Trim failed: {e}")
+
+
+# ============== LABELING ==============
+
+@labeling_router.post("/{filename}/frame/{frame_index}", response_model=FrameLabelResponse)
+async def add_label(
+    filename: str,
+    frame_index: int,
+    req: AddLabelRequest,
+    camera: CameraService = Depends(get_camera_service),
+    labeling: LabelingService = Depends(get_labeling_service)
+):
+    """
+    Dodaje etykietę OK/NOK/SKIP do klatki.
+    
+    Automatycznie zapisuje klatkę do folderu treningowego (labels/training_data/ok lub nok).
+    Dla NOK można podać defect_type określający typ wady.
+    """
+    path = camera.get_recording_path(filename)
+    if not path:
+        raise HTTPException(404, "File not found")
+    
+    try:
+        label = labeling.add_label(
+            video_filename=filename,
+            frame_index=frame_index,
+            label=req.label.value,
+            defect_type=req.defect_type.value if req.defect_type else None,
+            notes=req.notes,
+            filters_used=req.filters_used
+        )
+        return FrameLabelResponse(
+            video_filename=label.video_filename,
+            frame_index=label.frame_index,
+            label=label.label,
+            defect_type=label.defect_type,
+            timestamp=label.timestamp,
+            notes=label.notes
+        )
+    except Exception as e:
+        raise HTTPException(500, f"Failed to add label: {e}")
+
+
+@labeling_router.get("/{filename}/frame/{frame_index}", response_model=Optional[FrameLabelResponse])
+async def get_label(
+    filename: str,
+    frame_index: int,
+    labeling: LabelingService = Depends(get_labeling_service)
+):
+    """Pobiera etykietę dla klatki (lub null jeśli nie ma)."""
+    label = labeling.get_label(filename, frame_index)
+    if not label:
+        return None
+    return FrameLabelResponse(
+        video_filename=label.video_filename,
+        frame_index=label.frame_index,
+        label=label.label,
+        defect_type=label.defect_type,
+        timestamp=label.timestamp,
+        notes=label.notes
+    )
+
+
+@labeling_router.delete("/{filename}/frame/{frame_index}")
+async def remove_label(
+    filename: str,
+    frame_index: int,
+    labeling: LabelingService = Depends(get_labeling_service)
+):
+    """Usuwa etykietę z klatki."""
+    if labeling.remove_label(filename, frame_index):
+        return {"status": "deleted"}
+    raise HTTPException(404, "Label not found")
+
+
+@labeling_router.get("/{filename}/labels")
+async def get_video_labels(
+    filename: str,
+    labeling: LabelingService = Depends(get_labeling_service)
+):
+    """Pobiera wszystkie etykiety dla danego wideo."""
+    labels = labeling.get_labels_for_video(filename)
+    return {
+        "filename": filename,
+        "labels": [
+            {
+                "frame_index": l.frame_index,
+                "label": l.label,
+                "defect_type": l.defect_type,
+                "timestamp": l.timestamp,
+                "notes": l.notes
+            }
+            for l in labels
+        ],
+        "count": len(labels)
+    }
+
+
+@labeling_router.get("/stats", response_model=LabelingStatsResponse)
+async def get_labeling_stats(labeling: LabelingService = Depends(get_labeling_service)):
+    """Zwraca statystyki etykietowania."""
+    stats = labeling.get_stats()
+    return LabelingStatsResponse(
+        total_labeled=stats.total_labeled,
+        ok_count=stats.ok_count,
+        nok_count=stats.nok_count,
+        skip_count=stats.skip_count,
+        videos_labeled=stats.videos_labeled,
+        defect_counts=stats.defect_counts
+    )
+
+
+@labeling_router.get("/training-data", response_model=TrainingDataResponse)
+async def get_training_data_info(labeling: LabelingService = Depends(get_labeling_service)):
+    """Zwraca informacje o danych treningowych."""
+    return TrainingDataResponse(**labeling.export_for_training())
+
+
+# ============== ML CLASSIFICATION ==============
+
+# Zmienna do śledzenia statusu treningu
+_training_status = {
+    "in_progress": False,
+    "progress": 0,
+    "current_epoch": 0,
+    "total_epochs": 0,
+    "history": None,
+    "error": None
+}
+
+
+@ml_router.get("/info")
+async def get_ml_info(ml: MLClassificationService = Depends(get_ml_service)):
+    """Informacje o modelu ML i statusie."""
+    info = ml.get_model_info()
+    info["training_status"] = _training_status
+    info["training_data_stats"] = ml.get_training_data_stats()
+    return info
+
+
+@ml_router.post("/train")
+async def train_model(
+    background_tasks: BackgroundTasks,
+    epochs: int = Query(20, ge=5, le=100),
+    batch_size: int = Query(16, ge=4, le=64),
+    learning_rate: float = Query(0.001, ge=0.00001, le=0.1),
+    ml: MLClassificationService = Depends(get_ml_service)
+):
+    """
+    Rozpocznij trening modelu w tle.
+    Wymaga minimum 20 próbek OK i 20 próbek NOK.
+    """
+    global _training_status
+    
+    if _training_status["in_progress"]:
+        raise HTTPException(400, "Training already in progress")
+    
+    # Sprawdź dane treningowe
+    stats = ml.get_training_data_stats()
+    if not stats["ready_for_training"]:
+        raise HTTPException(
+            400, 
+            f"Insufficient training data. Need 20+ samples per class. "
+            f"Current: OK={stats['ok_samples']}, NOK={stats['nok_samples']}"
+        )
+    
+    # Reset status
+    _training_status = {
+        "in_progress": True,
+        "progress": 0,
+        "current_epoch": 0,
+        "total_epochs": epochs,
+        "history": None,
+        "error": None
+    }
+    
+    # Trenuj w tle
+    def train_in_background():
+        global _training_status
+        try:
+            history = ml.train(
+                epochs=epochs,
+                batch_size=batch_size,
+                learning_rate=learning_rate
+            )
+            _training_status["history"] = history
+            _training_status["progress"] = 100
+        except Exception as e:
+            _training_status["error"] = str(e)
+        finally:
+            _training_status["in_progress"] = False
+    
+    background_tasks.add_task(train_in_background)
+    
+    return {
+        "status": "training_started",
+        "epochs": epochs,
+        "batch_size": batch_size,
+        "learning_rate": learning_rate,
+        "training_data": stats
+    }
+
+
+@ml_router.get("/training-status")
+async def get_training_status():
+    """Status treningu modelu."""
+    return _training_status
+
+
+@ml_router.post("/predict/{filename}/frame/{frame_index}")
+async def predict_frame(
+    filename: str,
+    frame_index: int,
+    with_gradcam: bool = Query(True, description="Include Grad-CAM heatmap"),
+    extractor: FrameExtractorService = Depends(get_frame_extractor_service),
+    ml: MLClassificationService = Depends(get_ml_service)
+):
+    """
+    Klasyfikuj klatkę wideo jako OK/NOK.
+    Zwraca predykcję, pewność i opcjonalnie Grad-CAM.
+    """
+    try:
+        # Pobierz klatkę
+        frame = extractor.get_frame(filename, frame_index)
+        if frame is None:
+            raise HTTPException(404, "Frame not found")
+        
+        # Predykcja
+        result = ml.predict(frame, with_gradcam=with_gradcam)
+        
+        return {
+            "filename": filename,
+            "frame_index": frame_index,
+            "prediction": result["prediction"],
+            "confidence": result["confidence"],
+            "probabilities": result["class_probabilities"],
+            "has_gradcam": result["gradcam_heatmap"] is not None
+        }
+    except RuntimeError as e:
+        raise HTTPException(400, str(e))
+    except Exception as e:
+        raise HTTPException(500, f"Prediction failed: {e}")
+
+
+@ml_router.get("/predict/{filename}/frame/{frame_index}/gradcam")
+async def get_gradcam_overlay(
+    filename: str,
+    frame_index: int,
+    alpha: float = Query(0.4, ge=0.0, le=1.0),
+    extractor: FrameExtractorService = Depends(get_frame_extractor_service),
+    ml: MLClassificationService = Depends(get_ml_service)
+):
+    """
+    Pobierz obraz z nałożoną heatmapą Grad-CAM.
+    Pokazuje obszary, na które model zwraca uwagę.
+    """
+    import cv2
+    
+    try:
+        # Pobierz klatkę
+        frame = extractor.get_frame(filename, frame_index)
+        if frame is None:
+            raise HTTPException(404, "Frame not found")
+        
+        # Predykcja z Grad-CAM
+        result = ml.predict(frame, with_gradcam=True)
+        
+        if result["gradcam_heatmap"] is None:
+            raise HTTPException(400, "Grad-CAM not available")
+        
+        # Stwórz overlay
+        overlay = ml.create_gradcam_overlay(frame, result["gradcam_heatmap"], alpha=alpha)
+        
+        # Dodaj tekst z predykcją
+        label = result["prediction"].upper()
+        confidence = result["confidence"]
+        color = (0, 255, 0) if label == "OK" else (0, 0, 255)
+        cv2.putText(overlay, f"{label}: {confidence}%", (10, 30), 
+                   cv2.FONT_HERSHEY_SIMPLEX, 1, color, 2)
+        
+        # Enkoduj do JPEG
+        _, buffer = cv2.imencode('.jpg', overlay, [cv2.IMWRITE_JPEG_QUALITY, 90])
+        
+        return Response(
+            content=buffer.tobytes(),
+            media_type="image/jpeg",
+            headers={"X-Prediction": label, "X-Confidence": str(confidence)}
+        )
+    except RuntimeError as e:
+        raise HTTPException(400, str(e))
+    except Exception as e:
+        raise HTTPException(500, f"Grad-CAM failed: {e}")
+
+
+@ml_router.post("/load")
+async def load_model(
+    model_name: str = Query("best_model.pth", description="Model filename"),
+    ml: MLClassificationService = Depends(get_ml_service)
+):
+    """Wczytaj zapisany model."""
+    if ml.load_model(model_name):
+        return {"status": "loaded", "model": model_name}
+    raise HTTPException(404, f"Model not found: {model_name}")
+
+
+@ml_router.post("/export-onnx")
+async def export_onnx_model(
+    filename: str = Query("model.onnx"),
+    ml: MLClassificationService = Depends(get_ml_service)
+):
+    """Eksportuj model do formatu ONNX dla szybszego inference."""
+    try:
+        path = ml.export_onnx(filename)
+        return {"status": "exported", "path": path}
+    except RuntimeError as e:
+        raise HTTPException(400, str(e))
+
 

@@ -187,3 +187,63 @@ class EnhancementPresetsResponse(BaseModel):
     presets: List[str]
     colormaps: List[str]
     edge_colors: List[str]
+
+
+# ============== LABELING ==============
+
+class LabelType(str, Enum):
+    """Typ etykiety."""
+    OK = "ok"
+    NOK = "nok"
+    SKIP = "skip"
+
+
+class DefectType(str, Enum):
+    """Typ wady spawu (gdy etykieta = NOK)."""
+    POROSITY = "porosity"           # Porowatość - pęcherzyki gazu
+    CRACK = "crack"                 # Pęknięcia
+    LACK_OF_FUSION = "lack_of_fusion"  # Brak przetopu
+    UNDERCUT = "undercut"           # Podtopienia przy krawędzi
+    BURN_THROUGH = "burn_through"   # Przepalenie
+    SPATTER = "spatter"             # Rozpryski
+    IRREGULAR_BEAD = "irregular_bead"  # Nierówna spoina
+    CONTAMINATION = "contamination" # Zanieczyszczenia
+    OTHER = "other"                 # Inna wada
+
+
+class AddLabelRequest(BaseModel):
+    """Request do dodania etykiety."""
+    label: LabelType
+    defect_type: Optional[DefectType] = None  # Wymagane gdy label=nok
+    notes: str = ""
+    filters_used: Optional[dict] = None
+
+
+class FrameLabelResponse(BaseModel):
+    """Odpowiedź z etykietą klatki."""
+    video_filename: str
+    frame_index: int
+    label: str
+    defect_type: Optional[str] = None
+    timestamp: str
+    notes: str = ""
+
+
+class LabelingStatsResponse(BaseModel):
+    """Statystyki etykietowania."""
+    total_labeled: int
+    ok_count: int
+    nok_count: int
+    skip_count: int
+    videos_labeled: int
+    defect_counts: Optional[dict] = None  # Liczba każdego typu wady
+
+
+class TrainingDataResponse(BaseModel):
+    """Informacje o danych treningowych."""
+    training_data_path: str
+    ok_count: int
+    nok_count: int
+    total: int
+    ready_for_training: bool
+    defect_counts: Optional[dict] = None

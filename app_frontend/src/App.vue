@@ -421,6 +421,168 @@
             >
               💾 Pobierz klatkę
             </button>
+
+            <!-- Labeling Section -->
+            <hr class="my-4">
+            <h4 class="font-bold text-sm mb-3">🏷️ Etykietowanie</h4>
+            
+            <!-- Current label display -->
+            <div v-if="frameViewer.currentLabel" class="mb-3 p-2 rounded text-center text-sm font-bold"
+              :class="{
+                'bg-green-200 text-green-800': frameViewer.currentLabel === 'ok',
+                'bg-red-200 text-red-800': frameViewer.currentLabel === 'nok',
+                'bg-gray-200 text-gray-600': frameViewer.currentLabel === 'skip'
+              }">
+              {{ frameViewer.currentLabel === 'ok' ? '✅ OK' : frameViewer.currentLabel === 'nok' ? '❌ NOK' : '⏭️ SKIP' }}
+            </div>
+            
+            <!-- Label buttons -->
+            <div class="grid grid-cols-3 gap-2 mb-3">
+              <button 
+                @click="labelFrame('ok')"
+                class="px-3 py-3 bg-green-500 hover:bg-green-600 text-white rounded font-bold text-lg"
+                :class="{ 'ring-4 ring-green-300': frameViewer.currentLabel === 'ok' }"
+              >
+                ✅ OK
+              </button>
+              <button 
+                @click="showDefectSelector = true"
+                class="px-3 py-3 bg-red-500 hover:bg-red-600 text-white rounded font-bold text-lg"
+                :class="{ 'ring-4 ring-red-300': frameViewer.currentLabel === 'nok' }"
+              >
+                ❌ NOK
+              </button>
+              <button 
+                @click="labelFrame('skip')"
+                class="px-3 py-3 bg-gray-400 hover:bg-gray-500 text-white rounded font-bold text-lg"
+                :class="{ 'ring-4 ring-gray-300': frameViewer.currentLabel === 'skip' }"
+              >
+                ⏭️
+              </button>
+            </div>
+            
+            <!-- Defect type selector (shown after clicking NOK) -->
+            <div v-if="showDefectSelector" class="mb-3 p-3 bg-red-50 rounded border-2 border-red-200">
+              <h5 class="font-bold text-sm mb-2 text-red-800">🔍 Wybierz typ wady:</h5>
+              <div class="grid grid-cols-2 gap-1">
+                <button 
+                  v-for="defect in defectTypes" :key="defect.value"
+                  @click="labelFrameWithDefect(defect.value)"
+                  class="px-2 py-2 bg-red-100 hover:bg-red-200 text-red-800 rounded text-xs font-medium text-left"
+                >
+                  {{ defect.icon }} {{ defect.label }}
+                </button>
+              </div>
+              <button 
+                @click="showDefectSelector = false"
+                class="w-full mt-2 px-2 py-1 bg-gray-300 hover:bg-gray-400 text-gray-700 rounded text-xs"
+              >
+                ❌ Anuluj
+              </button>
+            </div>
+            
+            <!-- Current defect type display -->
+            <div v-if="frameViewer.currentDefectType && frameViewer.currentLabel === 'nok'" 
+              class="mb-3 p-2 bg-red-100 rounded text-center text-sm">
+              <span class="text-red-800">Typ wady: <strong>{{ getDefectLabel(frameViewer.currentDefectType) }}</strong></span>
+            </div>
+            
+            <!-- Auto-advance -->
+            <label class="flex items-center gap-2 text-sm mb-3">
+              <input type="checkbox" v-model="frameViewer.autoAdvance">
+              <span>Auto-przejdź do następnej</span>
+            </label>
+            
+            <!-- Stats -->
+            <div v-if="labelingStats" class="text-xs text-gray-500 bg-white p-2 rounded">
+              <div class="flex justify-between">
+                <span>✅ OK:</span>
+                <span class="font-mono">{{ labelingStats.ok_count }}</span>
+              </div>
+              <div class="flex justify-between">
+                <span>❌ NOK:</span>
+                <span class="font-mono">{{ labelingStats.nok_count }}</span>
+              </div>
+              
+              <!-- Defect types breakdown -->
+              <div v-if="labelingStats.defect_counts && Object.keys(labelingStats.defect_counts).length > 0" 
+                class="mt-2 pt-2 border-t border-gray-200">
+                <div class="text-gray-600 mb-1 font-medium">Typy wad:</div>
+                <div v-for="(count, type) in labelingStats.defect_counts" :key="type" 
+                  class="flex justify-between text-gray-500 pl-2">
+                  <span>{{ getDefectLabel(type) }}</span>
+                  <span class="font-mono">{{ count }}</span>
+                </div>
+              </div>
+              
+              <div class="flex justify-between font-bold border-t mt-1 pt-1">
+                <span>Razem:</span>
+                <span class="font-mono">{{ labelingStats.total_labeled }}</span>
+              </div>
+              <div v-if="labelingStats.ok_count >= 20 && labelingStats.nok_count >= 20" 
+                class="mt-2 text-green-600 font-bold text-center">
+                🎉 Gotowe do treningu!
+              </div>
+            </div>
+            
+            <!-- ML Section -->
+            <hr class="my-4">
+            <h4 class="font-bold text-sm mb-3">🤖 AI Klasyfikacja</h4>
+            
+            <!-- Prediction result -->
+            <div v-if="mlPrediction" class="mb-3 p-2 rounded text-center"
+              :class="{
+                'bg-green-200 text-green-800': mlPrediction.prediction === 'ok',
+                'bg-red-200 text-red-800': mlPrediction.prediction === 'nok'
+              }">
+              <div class="font-bold text-lg">
+                {{ mlPrediction.prediction === 'ok' ? '✅ OK' : '❌ NOK' }}
+              </div>
+              <div class="text-sm">
+                Pewność: {{ mlPrediction.confidence }}%
+              </div>
+            </div>
+            
+            <!-- ML buttons -->
+            <div class="space-y-2">
+              <button 
+                @click="predictFrame"
+                :disabled="!mlInfo?.model_loaded || mlPredicting"
+                class="w-full px-3 py-2 bg-indigo-500 hover:bg-indigo-600 text-white rounded text-sm disabled:opacity-50"
+              >
+                {{ mlPredicting ? '⏳ Analizuję...' : '🔍 Klasyfikuj AI' }}
+              </button>
+              
+              <button 
+                @click="showGradCAM"
+                :disabled="!mlInfo?.model_loaded || !mlInfo?.gradcam_available"
+                class="w-full px-3 py-2 bg-orange-500 hover:bg-orange-600 text-white rounded text-sm disabled:opacity-50"
+              >
+                🔥 Pokaż Grad-CAM
+              </button>
+            </div>
+            
+            <!-- ML model info -->
+            <div v-if="mlInfo" class="mt-3 text-xs text-gray-500 bg-white p-2 rounded">
+              <div class="flex justify-between">
+                <span>Model:</span>
+                <span :class="mlInfo.model_loaded ? 'text-green-600' : 'text-red-600'">
+                  {{ mlInfo.model_loaded ? '✅ Załadowany' : '❌ Brak' }}
+                </span>
+              </div>
+              <div v-if="mlInfo.training_data_stats" class="flex justify-between">
+                <span>Dane treningowe:</span>
+                <span>{{ mlInfo.training_data_stats.total_samples }}</span>
+              </div>
+              <button 
+                v-if="mlInfo.training_data_stats?.ready_for_training && !mlInfo.model_loaded"
+                @click="startTraining"
+                :disabled="trainingInProgress"
+                class="w-full mt-2 px-2 py-1 bg-purple-500 hover:bg-purple-600 text-white rounded text-xs"
+              >
+                {{ trainingInProgress ? '⏳ Trening...' : '🚀 Trenuj model' }}
+              </button>
+            </div>
           </div>
         </div>
         
@@ -497,8 +659,34 @@ const frameViewer = ref({
     denoise: 0,
     edges: false,
     heatmap: ''
-  }
+  },
+  currentLabel: null,  // 'ok' | 'nok' | 'skip' | null
+  currentDefectType: null,  // typ wady dla NOK
+  autoAdvance: true    // Auto-przejdź po etykietowaniu
 })
+const labelingStats = ref(null)  // Statystyki etykietowania
+const showDefectSelector = ref(false)  // Pokazuje popup wyboru typu wady
+
+// Dostępne typy wad
+const defectTypes = [
+  { value: 'porosity', label: 'Porowatość', icon: '🫧' },
+  { value: 'crack', label: 'Pęknięcie', icon: '💔' },
+  { value: 'lack_of_fusion', label: 'Brak przetopu', icon: '🔗' },
+  { value: 'undercut', label: 'Podtopienie', icon: '📉' },
+  { value: 'burn_through', label: 'Przepalenie', icon: '🔥' },
+  { value: 'spatter', label: 'Rozpryski', icon: '💦' },
+  { value: 'irregular_bead', label: 'Nierówna spoina', icon: '〰️' },
+  { value: 'contamination', label: 'Zanieczyszczenie', icon: '🦠' },
+  { value: 'other', label: 'Inna wada', icon: '❓' }
+]
+
+// ML state
+const mlInfo = ref(null)
+const mlPrediction = ref(null)
+const mlPredicting = ref(false)
+const trainingInProgress = ref(false)
+const showingGradCAM = ref(false)
+
 const streamUrl = ref(`/camera/stream`)  // Domyślnie płynny stream
 const toast = ref({ show: false, message: '', type: 'success' })
 const showSettings = ref(false)
@@ -778,6 +966,9 @@ async function openFrameViewer(filename) {
   frameViewer.value.currentFrame = 0
   frameViewer.value.loading = true
   frameViewer.value.show = true
+  frameViewer.value.currentLabel = null
+  mlPrediction.value = null  // Reset ML prediction
+  showingGradCAM.value = false
   resetFilters()
   
   try {
@@ -786,6 +977,13 @@ async function openFrameViewer(filename) {
     const info = await response.json()
     frameViewer.value.totalFrames = info.frame_count
     updateFrameImage()
+    
+    // Pobierz statystyki etykietowania, etykietę bieżącej klatki i info ML
+    await Promise.all([
+      fetchLabelingStats(),
+      fetchCurrentLabel(),
+      fetchMLInfo()
+    ])
   } catch (e) {
     showToast('❌ ' + e.message, 'error')
     frameViewer.value.show = false
@@ -835,14 +1033,20 @@ function resetFilters() {
 function prevFrame() {
   if (frameViewer.value.currentFrame > 0) {
     frameViewer.value.currentFrame--
+    mlPrediction.value = null  // Reset prediction on frame change
+    showingGradCAM.value = false
     updateFrameImage()
+    fetchCurrentLabel()
   }
 }
 
 function nextFrame() {
   if (frameViewer.value.currentFrame < frameViewer.value.totalFrames - 1) {
     frameViewer.value.currentFrame++
+    mlPrediction.value = null  // Reset prediction on frame change
+    showingGradCAM.value = false
     updateFrameImage()
+    fetchCurrentLabel()
   }
 }
 
@@ -851,6 +1055,232 @@ function downloadCurrentFrame() {
   a.href = frameViewer.value.imageUrl
   a.download = `${frameViewer.value.filename}_frame${frameViewer.value.currentFrame}.jpg`
   a.click()
+}
+
+// ============== LABELING ==============
+
+async function labelFrame(label) {
+  console.log('labelFrame called with:', label)
+  const filename = frameViewer.value.filename
+  const frameIndex = frameViewer.value.currentFrame
+  console.log('filename:', filename, 'frameIndex:', frameIndex)
+  
+  try {
+    const response = await fetch(`${API}/labeling/${filename}/frame/${frameIndex}`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ 
+        label: label,
+        save_image: true  // Zapisz obraz do folderu treningowego
+      })
+    })
+    
+    if (!response.ok) throw new Error('Błąd zapisywania etykiety')
+    
+    frameViewer.value.currentLabel = label
+    frameViewer.value.currentDefectType = null
+    await fetchLabelingStats()
+    
+    // Auto-przejdź do następnej klatki
+    if (frameViewer.value.autoAdvance && frameViewer.value.currentFrame < frameViewer.value.totalFrames - 1) {
+      frameViewer.value.currentFrame++
+      updateFrameImage()
+      await fetchCurrentLabel()
+    }
+    
+    const icons = { ok: '✅', nok: '❌', skip: '⏭️' }
+    showToast(`${icons[label]} Klatka ${frameIndex} → ${label.toUpperCase()}`)
+  } catch (e) {
+    showToast('❌ ' + e.message, 'error')
+  }
+}
+
+// Labelowanie NOK z typem wady
+async function labelFrameWithDefect(defectType) {
+  console.log('labelFrameWithDefect called with:', defectType)
+  const filename = frameViewer.value.filename
+  const frameIndex = frameViewer.value.currentFrame
+  
+  try {
+    const response = await fetch(`${API}/labeling/${filename}/frame/${frameIndex}`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ 
+        label: 'nok',
+        defect_type: defectType,
+        save_image: true
+      })
+    })
+    
+    if (!response.ok) throw new Error('Błąd zapisywania etykiety')
+    
+    frameViewer.value.currentLabel = 'nok'
+    frameViewer.value.currentDefectType = defectType
+    showDefectSelector.value = false
+    await fetchLabelingStats()
+    
+    // Auto-przejdź do następnej klatki
+    if (frameViewer.value.autoAdvance && frameViewer.value.currentFrame < frameViewer.value.totalFrames - 1) {
+      frameViewer.value.currentFrame++
+      updateFrameImage()
+      await fetchCurrentLabel()
+    }
+    
+    const defect = defectTypes.find(d => d.value === defectType)
+    showToast(`❌ NOK - ${defect?.icon} ${defect?.label}`)
+  } catch (e) {
+    showToast('❌ ' + e.message, 'error')
+  }
+}
+
+// Pomocnik do wyświetlania nazwy wady
+function getDefectLabel(defectType) {
+  const defect = defectTypes.find(d => d.value === defectType)
+  return defect ? `${defect.icon} ${defect.label}` : defectType
+}
+
+async function fetchLabelingStats() {
+  try {
+    const response = await fetch(`${API}/labeling/stats`)
+    if (response.ok) {
+      labelingStats.value = await response.json()
+    }
+  } catch (e) {
+    console.error('Failed to fetch labeling stats:', e)
+  }
+}
+
+async function fetchCurrentLabel() {
+  const filename = frameViewer.value.filename
+  const frameIndex = frameViewer.value.currentFrame
+  
+  try {
+    const response = await fetch(`${API}/labeling/${filename}/frame/${frameIndex}`)
+    if (response.ok) {
+      const data = await response.json()
+      frameViewer.value.currentLabel = data.label
+      frameViewer.value.currentDefectType = data.defect_type || null
+    } else {
+      frameViewer.value.currentLabel = null
+      frameViewer.value.currentDefectType = null
+    }
+  } catch (e) {
+    frameViewer.value.currentLabel = null
+    frameViewer.value.currentDefectType = null
+  }
+}
+
+async function removeLabel() {
+  const filename = frameViewer.value.filename
+  const frameIndex = frameViewer.value.currentFrame
+  
+  try {
+    const response = await fetch(`${API}/labeling/${filename}/frame/${frameIndex}`, {
+      method: 'DELETE'
+    })
+    
+    if (!response.ok) throw new Error('Błąd usuwania etykiety')
+    
+    frameViewer.value.currentLabel = null
+    await fetchLabelingStats()
+    showToast('🗑️ Etykieta usunięta')
+  } catch (e) {
+    showToast('❌ ' + e.message, 'error')
+  }
+}
+
+// ============== ML CLASSIFICATION ==============
+
+async function fetchMLInfo() {
+  try {
+    const response = await fetch(`${API}/ml/info`)
+    if (response.ok) {
+      mlInfo.value = await response.json()
+    }
+  } catch (e) {
+    console.error('Failed to fetch ML info:', e)
+  }
+}
+
+async function predictFrame() {
+  const filename = frameViewer.value.filename
+  const frameIndex = frameViewer.value.currentFrame
+  
+  mlPredicting.value = true
+  mlPrediction.value = null
+  
+  try {
+    const response = await fetch(`${API}/ml/predict/${filename}/frame/${frameIndex}?with_gradcam=false`, {
+      method: 'POST'
+    })
+    
+    if (!response.ok) {
+      const error = await response.json()
+      throw new Error(error.detail || 'Błąd predykcji')
+    }
+    
+    mlPrediction.value = await response.json()
+    
+    const icon = mlPrediction.value.prediction === 'ok' ? '✅' : '❌'
+    showToast(`${icon} ${mlPrediction.value.prediction.toUpperCase()}: ${mlPrediction.value.confidence}%`)
+  } catch (e) {
+    showToast('❌ ' + e.message, 'error')
+  } finally {
+    mlPredicting.value = false
+  }
+}
+
+async function showGradCAM() {
+  const filename = frameViewer.value.filename
+  const frameIndex = frameViewer.value.currentFrame
+  
+  showingGradCAM.value = true
+  
+  // Zamień URL obrazu na Grad-CAM overlay
+  frameViewer.value.imageUrl = `${API}/ml/predict/${filename}/frame/${frameIndex}/gradcam?alpha=0.5&_t=${Date.now()}`
+  
+  showToast('🔥 Pokazuję Grad-CAM - obszary uwagi AI')
+}
+
+async function startTraining() {
+  trainingInProgress.value = true
+  
+  try {
+    const response = await fetch(`${API}/ml/train?epochs=20&batch_size=16`, {
+      method: 'POST'
+    })
+    
+    if (!response.ok) {
+      const error = await response.json()
+      throw new Error(error.detail || 'Błąd rozpoczęcia treningu')
+    }
+    
+    showToast('🚀 Trening rozpoczęty w tle!')
+    
+    // Poll status treningu
+    const pollTraining = setInterval(async () => {
+      const statusResponse = await fetch(`${API}/ml/training-status`)
+      if (statusResponse.ok) {
+        const status = await statusResponse.json()
+        
+        if (!status.in_progress) {
+          clearInterval(pollTraining)
+          trainingInProgress.value = false
+          
+          if (status.error) {
+            showToast('❌ Trening nieudany: ' + status.error, 'error')
+          } else {
+            showToast(`🎉 Trening zakończony! Dokładność: ${status.history?.best_val_acc?.toFixed(1)}%`)
+            await fetchMLInfo()
+          }
+        }
+      }
+    }, 3000)
+    
+  } catch (e) {
+    showToast('❌ ' + e.message, 'error')
+    trainingInProgress.value = false
+  }
 }
 
 // Lifecycle
