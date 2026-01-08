@@ -1,6 +1,7 @@
 """API Routes - Camera, Recording, Edge Detection."""
 
 import logging
+import time
 from fastapi import APIRouter, Depends, HTTPException, Query, BackgroundTasks
 from fastapi.responses import StreamingResponse, Response, FileResponse
 from datetime import datetime
@@ -89,6 +90,38 @@ async def get_settings(camera: CameraService = Depends(get_camera_service)):
 @camera_router.put("/settings")
 async def update_settings(req: CameraSettingsRequest, camera: CameraService = Depends(get_camera_service)):
     return camera.apply_settings(**req.model_dump(exclude_none=True))
+
+
+@camera_router.post("/start")
+async def start_camera(camera: CameraService = Depends(get_camera_service)):
+    """Włącz kamerę"""
+    if camera._running:
+        return {"status": "already_running", "running": True}
+    
+    camera._start_capture()
+    return {"status": "started", "running": True}
+
+
+@camera_router.post("/stop")
+async def stop_camera(camera: CameraService = Depends(get_camera_service)):
+    """Wyłącz kamerę"""
+    if not camera._running:
+        return {"status": "already_stopped", "running": False}
+    
+    camera._running = False
+    time.sleep(0.2)  # Wait for capture loop to stop
+    
+    if camera.cap:
+        camera.cap.release()
+        camera.cap = None
+    
+    return {"status": "stopped", "running": False}
+
+
+@camera_router.get("/running")
+async def get_camera_status(camera: CameraService = Depends(get_camera_service)):
+    """Sprawdź czy kamera jest włączona"""
+    return {"running": camera._running}
 
 
 # ============== EDGE ==============

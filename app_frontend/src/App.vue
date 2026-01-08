@@ -28,14 +28,22 @@
     <!-- Buttons -->
     <div class="flex flex-wrap gap-3 mb-4">
       <button 
+        @click="toggleCamera" 
+        :class="cameraRunning ? 'bg-orange-500 hover:bg-orange-600' : 'bg-green-500 hover:bg-green-600'"
+        class="text-white px-4 py-2 rounded transition"
+      >
+        {{ cameraRunning ? '⏸️ Wyłącz kamerę' : '▶️ Włącz kamerę' }}
+      </button>
+      <button 
         @click="capture" 
-        class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition"
+        :disabled="!cameraRunning"
+        class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition disabled:opacity-50 disabled:cursor-not-allowed"
       >
         📸 Capture
       </button>
       <button 
         @click="startRecording" 
-        :disabled="isRecording"
+        :disabled="isRecording || !cameraRunning"
         class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600 transition disabled:opacity-50 disabled:cursor-not-allowed"
       >
         🔴 Start REC
@@ -857,6 +865,7 @@ const overlayStatus = ref({})  // filename -> status
 const trimStatus = ref({})  // filename -> 'trimming' | 'trimmed'
 const analysisPolling = ref(null)  // interval ID for polling analysis status
 const streamError = ref(false)
+const cameraRunning = ref(true)  // Camera running state
 
 // Frame Viewer state
 const frameViewer = ref({
@@ -955,6 +964,28 @@ async function capture() {
     URL.revokeObjectURL(url)
     
     showToast('📸 Zdjęcie zapisane')
+  } catch (e) {
+    showToast('❌ ' + e.message, 'error')
+  }
+}
+
+async function toggleCamera() {
+  try {
+    if (cameraRunning.value) {
+      // Stop camera
+      const response = await fetch(`${API}/camera/stop`, { method: 'POST' })
+      if (!response.ok) throw new Error('Nie można wyłączyć kamery')
+      
+      cameraRunning.value = false
+      showToast('⏸️ Kamera wyłączona')
+    } else {
+      // Start camera
+      const response = await fetch(`${API}/camera/start`, { method: 'POST' })
+      if (!response.ok) throw new Error('Nie można włączyć kamery')
+      
+      cameraRunning.value = true
+      showToast('▶️ Kamera włączona')
+    }
   } catch (e) {
     showToast('❌ ' + e.message, 'error')
   }
@@ -1748,12 +1779,25 @@ onMounted(() => {
   pollRecordingStatus()
   fetchCameraSettings()
   fetchMonochrome()
+  checkCameraStatus()
   
   // Polling co 2s gdy nagrywamy, co 5s gdy nie
   statusInterval = setInterval(() => {
     pollRecordingStatus()
   }, isRecording.value ? 2000 : 5000)
 })
+
+async function checkCameraStatus() {
+  try {
+    const response = await fetch(`${API}/camera/running`)
+    if (response.ok) {
+      const data = await response.json()
+      cameraRunning.value = data.running
+    }
+  } catch (e) {
+    console.error('Failed to check camera status:', e)
+  }
+}
 
 onUnmounted(() => {
   if (statusInterval) clearInterval(statusInterval)
