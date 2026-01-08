@@ -1,5 +1,6 @@
 """API Routes - Camera, Recording, Edge Detection."""
 
+import logging
 from fastapi import APIRouter, Depends, HTTPException, Query, BackgroundTasks
 from fastapi.responses import StreamingResponse, Response, FileResponse
 from datetime import datetime
@@ -18,6 +19,7 @@ from app.services.image_enhancement_service import (
 from app.services.labeling_service import LabelingService, get_labeling_service
 from app.services.ml_classification_service import MLClassificationService, get_ml_service
 from app.services.defect_classifier_service import DefectClassifierService, get_defect_classifier_service
+from app.services.video_analysis_service import VideoAnalysisService, get_video_analysis_service
 from app.api.models import (
     CameraHealthResponse, HealthStatus,
     RecordingStatusResponse, RecordingStartResponse, RecordingStopResponse, RecordingListResponse,
@@ -27,6 +29,8 @@ from app.api.models import (
     EnhancementPresetEnum, ImageEnhancementParams, EnhancementPresetsResponse,
     LabelType, AddLabelRequest, FrameLabelResponse, LabelingStatsResponse, TrainingDataResponse
 )
+
+logger = logging.getLogger(__name__)
 
 camera_router = APIRouter(prefix="/camera", tags=["Camera"])
 edge_router = APIRouter(prefix="/edge", tags=["Edge Detection"])
@@ -717,11 +721,7 @@ async def export_onnx_model(
     ml: MLClassificationService = Depends(get_ml_service)
 ):
     """Eksportuj model do formatu ONNX dla szybszego inference."""
-    try:
-        path = ml.export_onnx(filename)
-        return {"status": "exported", "path": path}
-    except RuntimeError as e:
-        raise HTTPException(400, str(e))
+    raise HTTPException(501, "ONNX export not implemented yet")
 
 
 # ============== DEFECT CLASSIFICATION ==============
@@ -858,3 +858,124 @@ async def get_defect_gradcam(
     except Exception as e:
         raise HTTPException(500, f"Grad-CAM failed: {e}")
 
+
+# ============== VIDEO ANALYSIS ==============
+
+_video_analysis_status = {}  # filename -> status dict
+
+
+@ml_router.post("/analyze-video/{filename}")
+async def analyze_video(
+    filename: str,
+    background_tasks: BackgroundTasks,
+    skip_frames: int = Query(1, ge=1, le=10, description="Analizuj co N-tą klatkę"),
+    analyze_defects: bool = Query(True, description="Czy klasyfikować typy defektów"),
+    analysis: VideoAnalysisService = Depends(get_video_analysis_service)
+):
+    """
+    Analizuje całe wideo klatka po klatce: OK/NOK + typ defektu.
+    Wykonuje się w tle, zwraca natychmiastowy status.
+    """
+    global _video_analysis_status
+    
+    if filename in _video_analysis_status and _video_analysis_status[filename]["in_progress"]:
+        raise HTTPException(400, f"Analysis already in progress for {filename}")
+    
+    _video_analysis_status[filename] = {
+        "in_progress": True,
+        "progress": 0,
+        "current_frame": 0,
+        "total_frames": 0,
+        "results": None,
+        "error": None
+    }
+    
+    def analyze_in_background():
+        global _video_analysis_status
+        try:
+            def progress_callback(current, total, frame_result):
+                _video_analysis_status[filename]["progress"] = int((current / total) * 100)
+                _video_analysis_status[filename]["current_frame"] = current
+                _video_analysis_status[filename]["total_frames"] = total
+            
+            results = analysis.analyze_video(
+                filename=filename,
+                analyze_defects=analyze_defects,
+                skip_frames=skip_frames,
+                progress_callback=progress_callback
+            )
+            _video_analysis_status[filename]["results"] = results
+            _video_analysis_status[filename]["progress"] = 100
+        except Exception as e:
+            logger.error(f"Video analysis failed for {filename}: {e}")
+            _video_analysis_status[filename]["error"] = str(e)
+        finally:
+            _video_analysis_status[filename]["in_progress"] = False
+    
+    background_tasks.add_task(analyze_in_background)
+    
+    return {
+        "status": "started",
+        "filename": filename,
+        "skip_frames": skip_frames,
+        "analyze_defects": analyze_defects
+    }
+
+
+@ml_router.get("/analyze-video/{filename}/status")
+async def get_analysis_status(filename: str):
+    """Pobierz status analizy wideo"""
+    if filename not in _video_analysis_status:
+        return {"status": "not_started"}
+    
+    state = _video_analysis_status[filename]
+    
+    # Format response for frontend
+    if state["error"]:
+        return {
+            "status": "error",
+            "error": state["error"],
+            "progress": state.get("progress", 0)
+        }
+    elif state["in_progress"]:
+        return {
+            "status": "in_progress",
+            "progress": state.get("progress", 0),
+            "current_frame": state.get("current_frame", 0),
+            "total_frames": state.get("total_frames", 0)
+        }
+    else:
+        # Completed
+        return {
+            "status": "completed",
+            "progress": 100
+        }
+
+
+@ml_router.get("/analyze-video/{filename}/results")
+async def get_analysis_results(
+    filename: str,
+    analysis: VideoAnalysisService = Depends(get_video_analysis_service)
+):
+    """Pobierz wyniki analizy wideo"""
+    results = analysis.get_analysis_results(filename)
+    if not results:
+        raise HTTPException(404, "Analysis results not found")
+    
+    return results
+
+
+@ml_router.get("/analyze-video/{filename}/defect-frames")
+async def get_defect_frames(
+    filename: str,
+    defect_type: Optional[str] = Query(None, description="Filtruj po typie defektu"),
+    analysis: VideoAnalysisService = Depends(get_video_analysis_service)
+):
+    """Pobierz listę klatek z defektami"""
+    frames = analysis.get_defect_frames(filename, defect_type)
+    return {
+        "filename": filename,
+        "defect_type": defect_type,
+        "frames": frames,
+        "count": len(frames)
+    }

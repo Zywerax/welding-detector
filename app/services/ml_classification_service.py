@@ -341,7 +341,23 @@ class MLClassificationService:
     def _setup_gradcam(self):
         """Zainicjuj Grad-CAM z ostatnią warstwą konwolucyjną"""
         if self.model:
-            target_layer = self.model.conv_head if hasattr(self.model, 'conv_head') else self.model.features[-1]
+            if hasattr(self.model, 'conv_head') and isinstance(self.model.conv_head, nn.Module):
+                target_layer = self.model.conv_head
+            elif hasattr(self.model, 'features') and isinstance(self.model.features, nn.Module):
+                # Get the last layer from features
+                features_children = list(self.model.features.children())
+                if features_children:
+                    target_layer = features_children[-1]
+                    if not isinstance(target_layer, nn.Module):
+                        logger.warning("Could not find valid target layer for Grad-CAM")
+                        return
+                else:
+                    logger.warning("Could not find valid target layer for Grad-CAM")
+                    return
+            else:
+                logger.warning("Could not find valid target layer for Grad-CAM")
+                return
+            
             self.grad_cam = GradCAM(self.model, target_layer)
             logger.info("Grad-CAM initialized")
     
@@ -360,7 +376,10 @@ class MLClassificationService:
         else:
             image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
         
-        input_tensor = self.transform(image).unsqueeze(0).to(self.device)
+        input_tensor = self.transform(image)
+        if not isinstance(input_tensor, torch.Tensor):
+            input_tensor = torch.tensor(input_tensor)
+        input_tensor = input_tensor.unsqueeze(0).to(self.device)
         
         self.model.eval()
         with torch.set_grad_enabled(with_gradcam):

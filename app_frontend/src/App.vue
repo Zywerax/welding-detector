@@ -206,6 +206,24 @@
                   ? `⏳ ${overlayStatus[rec.filename].progress || 0}%` 
                   : overlayStatus[rec.filename].status === 'completed' ? '✅ Overlay' : '❌ Błąd' }}
               </span>
+              
+              <!-- Analysis status badge -->
+              <span 
+                v-if="rec.analysis"
+                class="text-xs ml-2 px-2 py-0.5 rounded"
+                :class="{
+                  'bg-blue-200 text-blue-800': rec.analysis.in_progress,
+                  'bg-green-200 text-green-800': rec.analysis.results && !rec.analysis.in_progress,
+                  'bg-red-200 text-red-800': rec.analysis.error
+                }"
+                :title="getAnalysisSummary(rec)"
+              >
+                {{ rec.analysis.in_progress 
+                  ? `🔍 ${rec.analysis.progress}%` 
+                  : rec.analysis.results 
+                    ? `✅ OK:${rec.analysis.results.summary.ok} NOK:${rec.analysis.results.summary.nok}`
+                    : '❌ Błąd' }}
+              </span>
             </td>
             <td class="py-2 text-gray-500 text-sm">{{ rec.size_mb }} MB</td>
             <td class="py-2">
@@ -248,6 +266,23 @@
                   title="Nałóż timestamp"
                 >
                   🎨
+                </button>
+                <button 
+                  @click="startVideoAnalysis(rec.filename)" 
+                  :disabled="rec.analysis?.in_progress"
+                  class="px-2 py-1 text-sm"
+                  :class="rec.analysis?.in_progress ? 'text-gray-400 cursor-not-allowed' : 'text-blue-500 hover:text-blue-700'"
+                  title="Analizuj wideo"
+                >
+                  🔬
+                </button>
+                <button 
+                  v-if="rec.analysis?.results && !rec.analysis.in_progress"
+                  @click="viewAnalysisResults(rec.filename)" 
+                  class="text-green-500 hover:text-green-700 px-2 py-1 text-sm"
+                  title="Zobacz wyniki analizy"
+                >
+                  📊
                 </button>
                 <button 
                   @click="downloadRecording(rec.filename)" 
@@ -692,6 +727,120 @@
       </div>
     </div>
   </div>
+
+  <!-- Analysis Results Modal -->
+  <div 
+    v-if="analysisResults.show" 
+    class="fixed inset-0 bg-black bg-opacity-75 z-50 flex items-center justify-center p-4"
+    @click.self="analysisResults.show = false"
+  >
+    <div class="bg-white rounded-lg shadow-2xl w-full max-w-4xl max-h-[90vh] overflow-hidden flex flex-col">
+      <!-- Header -->
+      <div class="flex justify-between items-center p-4 border-b bg-gray-50">
+        <h2 class="text-xl font-bold">📊 Wyniki analizy: {{ analysisResults.filename }}</h2>
+        <button 
+          @click="analysisResults.show = false"
+          class="text-gray-600 hover:text-gray-800 text-2xl leading-none"
+        >
+          ×
+        </button>
+      </div>
+
+      <!-- Results Content -->
+      <div v-if="analysisResults.results" class="p-6 overflow-y-auto flex-1">
+        <!-- Summary -->
+        <div class="mb-6">
+          <h3 class="text-lg font-semibold mb-3">Podsumowanie</h3>
+          <div class="grid grid-cols-2 gap-4">
+            <div class="bg-green-100 border border-green-300 rounded-lg p-4">
+              <div class="text-3xl font-bold text-green-700">
+                {{ analysisResults.results.summary.ok }}
+              </div>
+              <div class="text-sm text-green-600">Klatki OK ✅</div>
+            </div>
+            <div class="bg-red-100 border border-red-300 rounded-lg p-4">
+              <div class="text-3xl font-bold text-red-700">
+                {{ analysisResults.results.summary.nok }}
+              </div>
+              <div class="text-sm text-red-600">Klatki NOK ❌</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Defect Summary -->
+        <div v-if="analysisResults.results.defect_summary && Object.keys(analysisResults.results.defect_summary).length > 0" class="mb-6">
+          <h3 class="text-lg font-semibold mb-3">Wykryte wady</h3>
+          <div class="grid grid-cols-2 gap-3">
+            <div 
+              v-for="(count, defectType) in analysisResults.results.defect_summary" 
+              :key="defectType"
+              class="bg-orange-100 border border-orange-300 rounded-lg p-3 flex items-center justify-between"
+            >
+              <span class="font-medium">
+                {{ defectTypes.find(d => d.value === defectType)?.icon || '❓' }}
+                {{ defectTypes.find(d => d.value === defectType)?.label || defectType }}
+              </span>
+              <span class="text-xl font-bold text-orange-700">{{ count }}</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Frame List -->
+        <div>
+          <h3 class="text-lg font-semibold mb-3">Szczegóły klatek NOK ({{ analysisResults.results.frames.filter(f => f.prediction === 'nok').length }})</h3>
+          <div class="space-y-2 max-h-96 overflow-y-auto">
+            <div 
+              v-for="frame in analysisResults.results.frames.filter(f => f.prediction === 'nok')" 
+              :key="frame.frame_number"
+              class="bg-gray-50 border rounded p-3 hover:bg-gray-100"
+            >
+              <div class="flex gap-3">
+                <!-- Thumbnail -->
+                <div class="flex-shrink-0">
+                  <img 
+                    :src="`${API}/frames/${analysisResults.filename}/frame/${frame.frame}?size=thumbnail`"
+                    :alt="`Frame ${frame.frame}`"
+                    class="w-32 h-24 object-cover rounded border-2 border-red-300 cursor-pointer hover:border-red-500"
+                    @click="openFrameInViewer(analysisResults.filename, frame.frame)"
+                    title="Kliknij aby otworzyć w przeglądarce klatek"
+                  />
+                </div>
+                
+                <!-- Frame info -->
+                <div class="flex-1 flex flex-col justify-between">
+                  <div>
+                    <div class="font-mono font-semibold text-lg">Klatka {{ frame.frame }}</div>
+                    <div v-if="frame.defect_type" class="mt-1">
+                      <span class="text-base">
+                        {{ defectTypes.find(d => d.value === frame.defect_type)?.icon || '❓' }}
+                        {{ defectTypes.find(d => d.value === frame.defect_type)?.label || frame.defect_type }}
+                      </span>
+                      <span class="text-sm text-gray-500 ml-2">({{ frame.defect_confidence?.toFixed(1) }}%)</span>
+                    </div>
+                  </div>
+                  <div class="text-sm">
+                    <span class="px-2 py-1 rounded bg-red-200 text-red-800">
+                      NOK {{ frame.confidence?.toFixed(1) }}%
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div class="border-t p-4 bg-gray-50 flex justify-end">
+        <button 
+          @click="analysisResults.show = false"
+          class="px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded"
+        >
+          Zamknij
+        </button>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script setup>
@@ -706,6 +855,7 @@ const recordingDuration = ref(0)
 const recordings = ref([])
 const overlayStatus = ref({})  // filename -> status
 const trimStatus = ref({})  // filename -> 'trimming' | 'trimmed'
+const analysisPolling = ref(null)  // interval ID for polling analysis status
 const streamError = ref(false)
 
 // Frame Viewer state
@@ -881,6 +1031,142 @@ async function deleteRecording(filename) {
   }
 }
 
+// ===== VIDEO ANALYSIS FUNCTIONS =====
+
+async function startVideoAnalysis(filename) {
+  try {
+    // Start analysis
+    const response = await fetch(`${API}/ml/analyze-video/${filename}`, { 
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ skip_frames: 5 })  // Analyze every 5th frame for speed
+    })
+    
+    if (!response.ok) {
+      const error = await response.json()
+      throw new Error(error.detail || 'Nie można rozpocząć analizy')
+    }
+    
+    showToast('🔬 Analiza wideo rozpoczęta')
+    
+    // Update recording with analysis status - ensure reactivity
+    const recording = recordings.value.find(r => r.filename === filename)
+    if (recording) {
+      // Force reactivity by creating new object
+      recording.analysis = { 
+        in_progress: true, 
+        progress: 0,
+        results: null,
+        error: null
+      }
+    }
+    
+    // Start polling for status
+    startAnalysisPolling()
+  } catch (e) {
+    showToast('❌ ' + e.message, 'error')
+  }
+}
+
+function startAnalysisPolling() {
+  if (analysisPolling.value) return  // Already polling
+  
+  analysisPolling.value = setInterval(async () => {
+    const analyzingRecordings = recordings.value.filter(r => r.analysis?.in_progress)
+    
+    if (analyzingRecordings.length === 0) {
+      stopAnalysisPolling()
+      return
+    }
+    
+    for (const rec of analyzingRecordings) {
+      try {
+        const response = await fetch(`${API}/ml/analyze-video/${rec.filename}/status`)
+        if (response.ok) {
+          const status = await response.json()
+          
+          if (status.status === 'completed') {
+            // Fetch full results
+            const resultsResponse = await fetch(`${API}/ml/analyze-video/${rec.filename}/results`)
+            if (resultsResponse.ok) {
+              const results = await resultsResponse.json()
+              rec.analysis = { in_progress: false, results }
+              showToast(`✅ Analiza "${rec.filename}" zakończona`)
+            }
+          } else if (status.status === 'in_progress') {
+            // Update progress - ensure reactivity
+            if (!rec.analysis) rec.analysis = {}
+            rec.analysis.in_progress = true
+            rec.analysis.progress = status.progress || 0
+          } else if (status.status === 'error') {
+            rec.analysis = { error: status.error || 'Unknown error' }
+            showToast(`❌ Błąd analizy "${rec.filename}"`, 'error')
+          }
+        }
+      } catch (e) {
+        console.error('Error polling analysis status:', e)
+      }
+    }
+  }, 2000)  // Poll every 2 seconds
+}
+
+function stopAnalysisPolling() {
+  if (analysisPolling.value) {
+    clearInterval(analysisPolling.value)
+    analysisPolling.value = null
+  }
+}
+
+function getAnalysisSummary(recording) {
+  if (!recording.analysis?.results) return 'Brak danych'
+  
+  const { summary, defect_summary } = recording.analysis.results
+  let text = `OK: ${summary.ok}, NOK: ${summary.nok}`
+  
+  if (defect_summary && Object.keys(defect_summary).length > 0) {
+    const defects = Object.entries(defect_summary)
+      .map(([type, count]) => {
+        const defectInfo = defectTypes.find(d => d.value === type)
+        return `${defectInfo?.icon || '❓'} ${defectInfo?.label || type}: ${count}`
+      })
+      .join(', ')
+    text += `\nWady: ${defects}`
+  }
+  
+  return text
+}
+
+function viewAnalysisResults(filename) {
+  const recording = recordings.value.find(r => r.filename === filename)
+  if (!recording?.analysis?.results) {
+    showToast('❌ Brak wyników analizy', 'error')
+    return
+  }
+  
+  // Show detailed results modal
+  analysisResults.value = {
+    show: true,
+    filename,
+    results: recording.analysis.results
+  }
+}
+
+function openFrameInViewer(filename, frameNumber) {
+  // Close analysis modal
+  analysisResults.value.show = false
+  
+  // Open frame viewer at specific frame
+  openFrameViewer(filename, frameNumber)
+}
+
+// Analysis Results Modal state
+const analysisResults = ref({
+  show: false,
+  filename: '',
+  results: null
+})
+
+
 async function applyOverlay(filename) {
   try {
     const response = await fetch(`${API}/recording/${filename}/apply-overlay`, { method: 'POST' })
@@ -1033,9 +1319,9 @@ async function fetchMonochrome() {
 
 // ============== FRAME VIEWER ==============
 
-async function openFrameViewer(filename) {
+async function openFrameViewer(filename, startFrame = 0) {
   frameViewer.value.filename = filename
-  frameViewer.value.currentFrame = 0
+  frameViewer.value.currentFrame = startFrame
   frameViewer.value.loading = true
   frameViewer.value.show = true
   frameViewer.value.currentLabel = null
@@ -1472,6 +1758,7 @@ onMounted(() => {
 onUnmounted(() => {
   if (statusInterval) clearInterval(statusInterval)
   if (overlayPollInterval) clearInterval(overlayPollInterval)
+  stopAnalysisPolling()
 })
 </script>
 
