@@ -196,10 +196,16 @@
                 ✂️ Przycięte
               </span>
               <span 
-                v-else-if="trimStatus[rec.filename] === 'trimming'" 
+                v-if="rec.filename.includes('_postprocess')" 
+                class="text-xs ml-2 px-2 py-0.5 rounded bg-blue-200 text-blue-800"
+              >
+                ⚡ Post-processing
+              </span>
+              <span 
+                v-else-if="trimStatus[rec.filename] === 'trimming' || trimStatus[rec.filename] === 'postprocessing'" 
                 class="text-xs ml-2 px-2 py-0.5 rounded bg-yellow-200 text-yellow-800 animate-pulse"
               >
-                ⏳ Przycinanie...
+                ⏳ {{ trimStatus[rec.filename] === 'postprocessing' ? 'Wycinanie spawania...' : 'Przycinanie...' }}
               </span>
               <span 
                 v-if="overlayStatus[rec.filename]" 
@@ -254,15 +260,23 @@
                   🔍
                 </button>
                 <button 
-                  v-if="!rec.filename.includes('_trimmed') && trimStatus[rec.filename] !== 'trimming'"
+                  v-if="!rec.filename.includes('_trimmed') && !rec.filename.includes('_postprocess') && trimStatus[rec.filename] !== 'trimming' && trimStatus[rec.filename] !== 'postprocessing'"
                   @click="trimToMotion(rec.filename)" 
                   class="text-orange-500 hover:text-orange-700 px-2 py-1 text-sm"
                   title="Przytnij do ruchu"
                 >
                   ✂️
                 </button>
+                <button 
+                  v-if="!rec.filename.includes('_postprocess') && trimStatus[rec.filename] !== 'trimming' && trimStatus[rec.filename] !== 'postprocessing'"
+                  @click="trimToPostProcessing(rec.filename)" 
+                  class="text-blue-500 hover:text-blue-700 px-2 py-1 text-sm"
+                  title="Zostaw tylko post-processing (bez spawania)"
+                >
+                  ⚡
+                </button>
                 <span 
-                  v-else-if="trimStatus[rec.filename] === 'trimming'"
+                  v-if="trimStatus[rec.filename] === 'trimming' || trimStatus[rec.filename] === 'postprocessing'"
                   class="text-orange-400 px-2 py-1 text-sm animate-spin"
                 >
                   ⏳
@@ -1025,9 +1039,44 @@ async function fetchRecordings() {
     const response = await fetch(`${API}/recording/list`)
     const data = await response.json()
     recordings.value = data.recordings || []
+    
+    // Przywróć zapisane wyniki analizy z localStorage
+    restoreAnalysisResults()
   } catch (e) {
     console.error('Error fetching recordings:', e)
     showToast('❌ Nie można pobrać listy nagrań', 'error')
+  }
+}
+
+// Zapisz wyniki analizy do localStorage
+function saveAnalysisResults() {
+  try {
+    const analysisData = {}
+    recordings.value.forEach(rec => {
+      if (rec.analysis?.results) {
+        analysisData[rec.filename] = rec.analysis
+      }
+    })
+    localStorage.setItem('analysisResults', JSON.stringify(analysisData))
+  } catch (e) {
+    console.error('Error saving analysis results:', e)
+  }
+}
+
+// Przywróć wyniki analizy z localStorage
+function restoreAnalysisResults() {
+  try {
+    const saved = localStorage.getItem('analysisResults')
+    if (!saved) return
+    
+    const analysisData = JSON.parse(saved)
+    recordings.value.forEach(rec => {
+      if (analysisData[rec.filename]) {
+        rec.analysis = analysisData[rec.filename]
+      }
+    })
+  } catch (e) {
+    console.error('Error restoring analysis results:', e)
   }
 }
 
@@ -1122,6 +1171,7 @@ function startAnalysisPolling() {
             if (resultsResponse.ok) {
               const results = await resultsResponse.json()
               rec.analysis = { in_progress: false, results }
+              saveAnalysisResults()  // Zapisz do localStorage
               showToast(`✅ Analiza "${rec.filename}" zakończona`)
             }
           } else if (status.status === 'in_progress') {
@@ -1239,6 +1289,32 @@ async function trimToMotion(filename) {
       delete trimStatus.value[filename]
       fetchRecordings()
     }
+  } catch (e) {
+    showToast('❌ ' + e.message, 'error')
+    delete trimStatus.value[filename]
+  }
+}
+
+async function trimToPostProcessing(filename) {
+  try {
+    trimStatus.value[filename] = 'postprocessing'
+    showToast('⚡ Wycinanie procesu spawania...')
+    
+    const response = await fetch(`${API}/recording/${filename}/trim-to-postprocessing`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' }
+    })
+    
+    if (!response.ok) {
+      const error = await response.json()
+      throw new Error(error.detail || 'Nie można przetworzyć wideo')
+    }
+    
+    const data = await response.json()
+    
+    showToast(`⚡ Gotowe! ${data.output_filename} - tylko post-processing (${data.duration_seconds}s, -${data.reduction_percent}%)`)
+    delete trimStatus.value[filename]
+    fetchRecordings()
   } catch (e) {
     showToast('❌ ' + e.message, 'error')
     delete trimStatus.value[filename]

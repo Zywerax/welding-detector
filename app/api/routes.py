@@ -445,6 +445,44 @@ async def trim_to_motion(
         raise HTTPException(500, f"Trim failed: {e}")
 
 
+@recording_router.post("/{filename}/trim-to-postprocessing")
+async def trim_to_postprocessing(
+    filename: str,
+    output_filename: Optional[str] = Query(None, description="Nazwa pliku wyjściowego"),
+    brightness_threshold: int = Query(150, ge=100, le=255, description="Próg jasności dla detekcji spawania"),
+    min_bright_percent: float = Query(2.0, ge=0.5, le=20.0, description="Minimalny % jasnych pikseli"),
+    camera: CameraService = Depends(get_camera_service),
+    motion: MotionDetectionService = Depends(get_motion_detection_service)
+):
+    """
+    Przycina wideo usuwając proces spawania (jasne światło lasera).
+    Zostawia tylko post-processing - fragment po spawaniu.
+    
+    Wykrywa moment spawania na podstawie jasności obrazu (laser = jasne światło).
+    """
+    path = camera.get_recording_path(filename)
+    if not path:
+        raise HTTPException(404, "File not found")
+    
+    # Ustal ścieżkę wyjściową
+    output_path = None
+    if output_filename:
+        output_path = path.parent / output_filename
+    
+    try:
+        result = motion.trim_to_post_processing(
+            path,
+            output_path=output_path,
+            brightness_threshold=brightness_threshold,
+            min_bright_percent=min_bright_percent
+        )
+        return result
+    except ValueError as e:
+        raise HTTPException(400, str(e))
+    except Exception as e:
+        raise HTTPException(500, f"Trim to post-processing failed: {e}")
+
+
 # ============== LABELING ==============
 
 @labeling_router.post("/{filename}/frame/{frame_index}", response_model=FrameLabelResponse)
