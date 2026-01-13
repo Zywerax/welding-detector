@@ -227,15 +227,15 @@
                 class="text-xs ml-2 px-2 py-0.5 rounded"
                 :class="{
                   'bg-blue-200 text-blue-800': rec.analysis.in_progress,
-                  'bg-green-200 text-green-800': rec.analysis.results && !rec.analysis.in_progress,
-                  'bg-red-200 text-red-800': rec.analysis.error
+                  'bg-green-200 text-green-800': rec.analysis.results && !rec.analysis.in_progress && !isNokPercentageHigh(rec),
+                  'bg-red-200 text-red-800': rec.analysis.error || (rec.analysis.results && !rec.analysis.in_progress && isNokPercentageHigh(rec))
                 }"
                 :title="getAnalysisSummary(rec)"
               >
                 {{ rec.analysis.in_progress 
                   ? `🔍 ${rec.analysis.progress}%` 
                   : rec.analysis.results 
-                    ? `✅ OK:${rec.analysis.results.summary.ok} NOK:${rec.analysis.results.summary.nok}`
+                    ? `${isNokPercentageHigh(rec) ? '❌' : '✅'} OK:${rec.analysis.results.summary.ok} NOK:${rec.analysis.results.summary.nok}`
                     : '❌ Błąd' }}
               </span>
             </td>
@@ -774,11 +774,22 @@
         <div class="mb-6">
           <h3 class="text-lg font-semibold mb-3">Podsumowanie</h3>
           <div class="grid grid-cols-2 gap-4">
-            <div class="bg-green-100 border border-green-300 rounded-lg p-4">
-              <div class="text-3xl font-bold text-green-700">
+            <div 
+              :class="isNokPercentageHighInResults() ? 'bg-red-100 border-red-300' : 'bg-green-100 border-green-300'"
+              class="border rounded-lg p-4"
+            >
+              <div 
+                :class="isNokPercentageHighInResults() ? 'text-red-700' : 'text-green-700'"
+                class="text-3xl font-bold"
+              >
                 {{ analysisResults.results.summary.ok }}
               </div>
-              <div class="text-sm text-green-600">Klatki OK ✅</div>
+              <div 
+                :class="isNokPercentageHighInResults() ? 'text-red-600' : 'text-green-600'"
+                class="text-sm"
+              >
+                Klatki OK ✅
+              </div>
             </div>
             <div class="bg-red-100 border border-red-300 rounded-lg p-4">
               <div class="text-3xl font-bold text-red-700">
@@ -1215,6 +1226,30 @@ function getAnalysisSummary(recording) {
   }
   
   return text
+}
+
+function isNokPercentageHigh(recording) {
+  if (!recording.analysis?.results?.summary) return false
+  
+  const { ok, nok } = recording.analysis.results.summary
+  const total = ok + nok
+  
+  if (total === 0) return false
+  
+  const nokPercentage = (nok / total) * 100
+  return nokPercentage > 10
+}
+
+function isNokPercentageHighInResults() {
+  if (!analysisResults.value?.results?.summary) return false
+  
+  const { ok, nok } = analysisResults.value.results.summary
+  const total = ok + nok
+  
+  if (total === 0) return false
+  
+  const nokPercentage = (nok / total) * 100
+  return nokPercentage > 10
 }
 
 function viewAnalysisResults(filename) {
