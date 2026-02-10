@@ -169,4 +169,10 @@ cython_debug/
 # Ignore model files
 models/defects/*.pth
 models/defects/training_info.json
-*.json
+
+# Ignore recordings and labels
+recordings/*
+!recordings/.gitkeep
+labels/*.json
+labels/training_data/**/*
+!labels/training_data/**/.gitkeep
