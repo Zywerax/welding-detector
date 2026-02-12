@@ -164,15 +164,28 @@ cython_debug/
 *.jpeg
 *.png
 *.gif
+
+# Ignore video files
 *.mp4
+*.avi
+*.mov
 
-# Ignore model files
-models/defects/*.pth
-models/defects/training_info.json
+# Ignore all model files (ML models can be large)
+models/*.pth
+models/**/*.pth
+models/**/training_info.json
 
-# Ignore recordings and labels
-recordings/*
-!recordings/.gitkeep
+# Ignore all recordings (videos and analysis)
+recordings/*.mp4
+recordings/*.avi
+recordings/*.json
+recordings/analysis/*.json
+
+# Ignore all labels and training data
 labels/*.json
 labels/training_data/**/*
 !labels/training_data/**/.gitkeep
+
+# Ignore backup files from refactoring
+*.backup
+app/api/routes.py.backup
