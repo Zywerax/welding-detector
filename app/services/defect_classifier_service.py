@@ -105,7 +105,7 @@ class DefectClassifierService(MLClassificationService):
         
         # Load defect model if it exists
         if self.load_model("defect_classifier.pth"):
-            logger.info("✅ Loaded defect classifier successfully")
+            logger.info("Loaded defect classifier successfully")
         else:
             logger.info("ℹ️ No defect classifier found, will need to train first")
     

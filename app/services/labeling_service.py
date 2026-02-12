@@ -41,7 +41,7 @@ class FrameLabel:
     frame_index: int
     label: LabelType
     timestamp: str
-    defect_type: Optional[DefectType] = None  # Typ wady (gdy label=nok)
+    defect_type: Optional[DefectType] = None  # Defect type (when label=nok)
     notes: str = ""
     filters_used: Optional[dict] = None  # Jakie filtry były użyte przy etykietowaniu
 

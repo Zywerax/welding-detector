@@ -32,7 +32,7 @@ class EnhancementParams:
     clahe_clip_limit: float = 2.0      # 1.0-4.0, higher = more contrast
     clahe_grid_size: int = 8           # Grid size (8x8)
     
-    # Sharpening (wyostrzanie)
+    # Sharpening
     sharpen_enabled: bool = False
     sharpen_amount: float = 1.0        # 0.5-3.0, sharpening strength
     
@@ -128,7 +128,7 @@ class ImageEnhancementService:
     }
     
     def __init__(self):
-        logger.info("🖼️ ImageEnhancementService initialized")
+        logger.info("ImageEnhancementService initialized")
     
     def apply_preset(self, frame: np.ndarray, preset: EnhancementPreset) -> np.ndarray:
         """Applies a preset to the image."""

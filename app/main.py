@@ -18,26 +18,26 @@ logger = logging.getLogger(__name__)
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    logger.info("🚀 Starting Welding Detector API...")
+    logger.info("Starting Welding Detector API...")
     
     camera = get_camera_service()
     health = await camera.health_check()
     
     if health.get("status") == "healthy":
-        logger.info(f"✅ Camera ready: {health.get('resolution')} @ {health.get('fps')}fps")
+        logger.info(f"Camera ready: {health.get('resolution')} @ {health.get('fps')}fps")
     else:
-        logger.warning("⚠️ Camera not available")
+        logger.warning("Camera not available")
     
     yield
     
-    logger.info("👋 Shutting down...")
+    logger.info("Shutting down...")
     camera.release()
 
 
 app = FastAPI(
     title=settings.APP_TITLE,
     version=settings.APP_VERSION,
-    description="API do monitorowania procesu spawania z kamerą USB.",
+    description="API for welding process monitoring with USB camera.",
     lifespan=lifespan
 )
 

@@ -60,7 +60,7 @@ class MotionDetectionService:
         self.min_area_percent = min_area_percent
         self.min_segment_frames = min_segment_frames
         self.padding_frames = padding_frames
-        logger.info("🔍 MotionDetectionService initialized")
+        logger.info("MotionDetectionService initialized")
     
     def detect_motion(
         self,
@@ -94,7 +94,7 @@ class MotionDetectionService:
             fps = cap.get(cv2.CAP_PROP_FPS) or 30.0
             duration = total_frames / fps if fps > 0 else 0
             
-            logger.info(f"🎬 Analyzing motion in {path.name} ({total_frames} frames)")
+            logger.info(f"Analyzing motion in {path.name} ({total_frames} frames)")
             
             # Read the first frame to initialize
             ret, prev_frame = cap.read()
