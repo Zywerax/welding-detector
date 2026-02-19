@@ -159,11 +159,17 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 
-# Ignore image files
+# Ignore image files (except docs/screenshots for README)
 *.jpg
 *.jpeg
 *.png
 *.gif
+
+# Allow documentation screenshots for README
+!docs/screenshots/*.jpg
+!docs/screenshots/*.jpeg
+!docs/screenshots/*.png
+!docs/screenshots/*.gif
 
 # Ignore video files
 *.mp4
